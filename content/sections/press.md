@@ -2,8 +2,9 @@
 color = "blue"
 weight = 2
 menu = "main"
-header = "Press about a-me, Asher Perlman."
 +++
+
+## Press
 
 “Asher Perlman is… \[a\] standout and comes armed with a dry sense of humor” - The Chicago Tribune
 
