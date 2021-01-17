@@ -1,3 +1,7 @@
++++
+title = "Asher Perlman"
++++
+
 # Client Questions / Answers
 
 1. Do you prefer control or consistency?
