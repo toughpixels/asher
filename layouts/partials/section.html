@@ -1,8 +1,9 @@
 <div class="section" style="background-color:{{.Params.color}};">
     {{ $folder := .File.ContentBaseName }}
     {{ if (fileExists (print "assets/" $folder)) }}
-        {{ $images := resources.Get "aboutme/*.jpg" }}
-        {{ $images }}
+        {{ range resources.Match (print $folder "/*") }}
+            {{ partial "image.html" . }}
+        {{ end }}
     {{ end }}
     {{ .Content }}
 </div>
