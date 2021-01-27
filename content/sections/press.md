@@ -13,3 +13,5 @@ menu = "main"
 “Asher Perlman is a comedian and writer living in Brooklyn” - Vulture.
 
 “Asher is a fucking genius!” - My dad in a YouTube comment.
+
+{{<  logo "mewyorker.svg" >}}
