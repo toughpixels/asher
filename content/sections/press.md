@@ -1,5 +1,6 @@
 +++
-color = "blue"
+id = "press"
+title = "Press"
 weight = 20
 menu = "main"
 +++

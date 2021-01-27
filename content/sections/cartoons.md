@@ -1,5 +1,6 @@
 +++
-color = "orange"
+id = "cartoons"
+title = "Cartoons"
 weight = 30
 menu = "main"
 +++

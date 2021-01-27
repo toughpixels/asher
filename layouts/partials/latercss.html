@@ -1,0 +1,9 @@
+{{- $later := resources.Get "css/later.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+{{- if .Site.IsServer }}
+    <link rel="stylesheet" href="{{ $later.RelPermalink }}">
+{{ else }}
+    {{- $later := $later | minify | fingerprint | resources.PostProcess -}}
+    <link rel="preload" href="{{ $later.Permalink }}" integrity="{{ $later.Data.Integrity }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="{{ $later.Permalink }}" integrity="{{ $later.Data.Integrity }}" /></noscript>
+{{ end -}}
+

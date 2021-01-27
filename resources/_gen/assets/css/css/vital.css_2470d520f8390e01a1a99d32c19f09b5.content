@@ -1,0 +1,9 @@
+body {
+  background: pink;
+  font-size: 20px;
+}
+
+section {
+  min-height: 100vh;
+  position: relative;
+}

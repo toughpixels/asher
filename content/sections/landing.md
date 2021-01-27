@@ -1,5 +1,5 @@
 +++
-color = "skyblue"
+id = "landing"
 weight = 10
 menu = "main"
 imageFill = "images/landing.jpg"
