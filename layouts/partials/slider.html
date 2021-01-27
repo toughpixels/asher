@@ -1,0 +1,67 @@
+<div class="slider" data-position="0" style="max-width: 400px">
+    <div class="slider__slidesWrap" >
+        <div class="slider__slides">
+            <div style="background-color: blue;">this</div>
+            <div style="background-color: red;">is</div>
+            <div style="background-color: green;">a</div>
+            <div style="background-color: yellow;">test</div>
+        </div>
+    </div>
+    <a role="button" class="slider__prev">previous</a>
+    <a role="button" class="slider__next">next</a>
+</div>
+
+<script>
+    const sliders = document.querySelectorAll('.slider');
+    sliders.forEach(slider => {
+        let slidesWrap = slider.querySelectorAll('.slider__slides');
+        let slides = slider.querySelectorAll('.slider__slides > div');
+        let slideMaxIndex = slides.length - 1;
+        let sliderNav = slider.querySelectorAll('.slider__prev, .slider__next');
+        slidesWrap[0].style.left = '0%';
+        slidesWrap[0].style.width = slides.length + '00%';
+        sliderNav.forEach(button => {
+            button.addEventListener('click', () => {
+                let sliderPosition = slider.dataset.position;
+                if(button.classList.contains("slider__prev")) {
+                    sliderPosition--;
+                    if(sliderPosition < 0) {
+                        sliderPosition = slideMaxIndex;
+                    }
+                }
+                if(button.classList.contains("slider__next")) {
+                    sliderPosition++;
+                    if(sliderPosition > slideMaxIndex) {
+                        sliderPosition = 0;
+                    }
+                }
+                slider.dataset.position = sliderPosition;
+                slidesWrap[0].style.left = '-' + sliderPosition + '00%';
+            });
+        });
+
+        // sliderPrev.addEventListener('click', () => {
+        //     console.log('h0ads')
+        // });
+    });
+
+</script>
+
+<style>
+    .slider {
+
+    }
+    .slider__slidesWrap {
+        width: 100%;
+        overflow: hidden;
+    }
+    .slider__slides {
+        transition-duration: 0.3s;
+        display: flex;
+        position: relative;
+    }
+    .slider__slides > div {
+        flex: 1;
+        
+    }
+</style>

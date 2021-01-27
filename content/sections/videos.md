@@ -1,6 +1,6 @@
 +++
 color = "silver"
-weight = 4
+weight = 40
 menu = "main"
 +++
 

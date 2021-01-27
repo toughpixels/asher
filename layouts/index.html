@@ -1,5 +1,4 @@
 {{- define "main" }}
-    <h1>{{ .Title }}</h1>
     {{ range where .Site.Pages "Section" "sections" }}
         {{ partial "section.html" . }}
     {{ end }}

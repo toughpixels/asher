@@ -1,6 +1,6 @@
 +++
 color = "purple"
-weight = 6
+weight = 60
 menu = "main"
 +++
 

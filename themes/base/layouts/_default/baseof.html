@@ -5,6 +5,8 @@
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
+        {{- partial "modal.html" . -}}
+        {{- partial "slider.html" . -}}
         </div>
         {{- partial "footer.html" . -}}
     </body>

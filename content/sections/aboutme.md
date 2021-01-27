@@ -1,12 +1,12 @@
 +++
 color = "red"
-weight = 1
+weight = 15
 menu = "main"
 +++
 
 ## About Me
 
-{{< image src="aboutme/aboutme.jpg" title="Asher Perlman stares back at you, hungrily.">}}
+{{< image src="images/aboutme.jpg" title="Asher Perlman stares back at you, hungrily.">}}
 
 Hi! I am an Emmy-nominated comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate. I am currently a writer for The Late Show with Stephen Colbert, a contributing cartoonist at The New Yorker, and a performer with the Improvised Shakespeare Company. I also perform all around New York City as myself. My award-winning short film, “Accountabilibuddies,” was an official selection at the 2019 Just For Laughs Film Festival in Vancouver, and I’ve had two pilots premiere at the New York Television Festival, one of which went on to become an original series on the the women-centric streaming platform, Pypo.
 

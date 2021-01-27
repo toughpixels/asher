@@ -1,3 +1,8 @@
-<div class="section" style="background-color:{{.Params.color}};">
+<section class="section" style="background-color:{{.Params.color}};">
+    {{ $image := .Params.imageFill }}
+    {{ $alt := .Params.imageFillAlt }}
+    {{ if $image }}
+    {{ partial "image.html" (resources.Get $image) }}
+    {{ end }}
     {{ .Content }}
-</div>
+</section>

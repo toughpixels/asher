@@ -1,6 +1,6 @@
 +++
 color = "orange"
-weight = 3
+weight = 30
 menu = "main"
 +++
 
