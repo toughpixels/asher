@@ -15,4 +15,4 @@ menu = "main"
 
 “Asher is a fucking genius!” - My dad in a YouTube comment.
 
-{{<  logo "mewyorker.svg" >}}
+{{<  logo "logos/newyorker.svg" >}}

@@ -1,12 +1,8 @@
-<header class="fixed z-20 top-0 left-0">
+<header class="z-20 top-0 left-0">
     <a href="#landing" class="inline-block border-8 border-asher-blue text-blue-500 text-4xl text-asher-lblue bg-default">
         <h1 class="border-8 border-asher-pink px-4">{{ .Title }}</h1>
     </a>
-    
     <nav>
-       
-        
-    
         <ul>
             {{ range where .Site.Pages "Section" "sections" }}
             {{ if and (not (eq .Params.id "landing")) (not (eq .Params.title "")) }}
@@ -15,8 +11,7 @@
             </li>
             {{end}}
             {{ end }}
-        </ul>
-        
+        </ul>     
     </nav>
 </header>
 

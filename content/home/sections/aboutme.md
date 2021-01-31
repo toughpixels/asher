@@ -3,9 +3,8 @@ id = "about"
 title = "About"
 weight = 15
 menu = "main"
-featuredImage = "images/aboutme.jpg"
-featuredImageAlt = "Asher Perlman Smiling Headshot"
-layout = "image-left-screen"
+section = "sections/leftImage"
+src = "images/aboutme.jpg"
 +++
 
 ## About Me
@@ -18,4 +17,4 @@ On television, I have appeared on Comedy Central, Pop TV, and several national c
 
 Before The Late Show, I was a staff writer for The Opposition with Jordan Klepper. I’ve also written for The Onion Labs and McSweeney’s.
 
-Please keep scrolling and thanks for being here. The 2018 Ron Perlman movie, “Asher,” totally tanked my search results, so arriving at this page is a genuine achievement. 
+Please keep scrolling and thanks for being here. The 2018 Ron Perlman movie, “Asher,” totally tanked my search results, so arriving at this page is a genuine achievement.

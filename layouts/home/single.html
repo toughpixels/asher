@@ -1,0 +1,16 @@
+
+    <script>console.log({{ . }})</script>
+    {{ .Pages }}
+    {{ .RegularPages }}
+    {{ .RegularPagesRecursive }}
+    {{ .CurrentSection }}
+    aa
+    {{ .Sections }}
+    {{ .Type }}
+    {{ range where .Site.Pages "Section" "sections" }} 
+        <section id="{{.Params.id}}" class="section bg-{{.Params.id}}-200">    
+            {{ .Render (.Param "section") }}
+        </section>
+    {{ end }}
+    asdfasdfaaaa
+    {{ .Content }}

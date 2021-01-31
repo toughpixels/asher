@@ -1,10 +1,6 @@
-
 {{- $vital := resources.Get "css/vital.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-
-
 {{- if not .Site.IsServer }}
     {{- $vital := $vital | minify | fingerprint | resources.PostProcess -}}
 {{ end -}}
-
 {{- $vitalContent := $vital.Content | safeCSS }}
 <style type="text/css">{{- $vitalContent -}}</style> 
