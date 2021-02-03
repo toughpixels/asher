@@ -1,9 +1,8 @@
 <picture>
-    {{ $image  := .Resources.Get . }}
-    {{- $small := $image.Resize "320x" }}
-    {{- $medium := $image.Resize "640x" }}
-    {{- $large := $image.Resize "1280x" }}
+    {{- $small := .Resize "320x" }}
+    {{- $medium := .Resize "640x" }}
+    {{- $large := .Resize "1280x" }}
     <source media="(min-width: 1280px)" srcset="{{ $large.RelPermalink }}">
     <source media="(min-width: 640px)" srcset="{{ $medium.RelPermalink }}">
-    <img src="{{ $small.RelPermalink }}" loading="lazy" alt="{{ $image.Title }}" />
+    <img src="{{ $small.RelPermalink }}" loading="lazy" alt="{{ .Title }}" />
 </picture>

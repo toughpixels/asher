@@ -1,5 +1,10 @@
-{{- define "main" }}
-    {{ with .Site.GetPage "/home" }}
-        {{ .Render }}
+{{ define "main" }}
+    {{ range where .Pages "Section" "home" }}
+        {{ range .Pages }}
+            <section id="{{ .Params.id }}" class="section bg-{{ .Params.id }}-200"> 
+                {{ .Render }}
+            </section>
+        {{ end }}
     {{ end }}
-{{- end }}
+    {{ .Content }}
+{{ end }}

@@ -1,10 +1,8 @@
 +++
 id = "about"
-title = "About"
 weight = 15
 menu = "main"
-section = "sections/leftImage"
-src = "images/aboutme.jpg"
+layout = "left"
 +++
 
 ## About Me
