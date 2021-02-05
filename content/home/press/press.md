@@ -3,6 +3,9 @@ id = "press"
 title = "Press"
 weight = 20
 menu = "main"
+[[resources]]
+  src = "newyorker.svg"
+  title = "The New Yorker logo, where Asher Perlman has had cartoons published."
 +++
 
 ## Press

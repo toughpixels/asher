@@ -3,6 +3,9 @@ id = "about"
 weight = 15
 menu = "main"
 layout = "left"
+[[resources]]
+  src = "aboutme.jpg"
+  title = "Asher Perlman, smiling and laughing at the camera because he's a comedian who just told a great joke."
 +++
 
 ## About Me
