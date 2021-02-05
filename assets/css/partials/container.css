@@ -1,0 +1,5 @@
+.container {
+  max-width: 92rem;
+  padding-left: calc(var(--xGap) + var(--sideNavWidth));
+  @apply pr-xGap mx-auto;
+}

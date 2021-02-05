@@ -17,7 +17,12 @@ module.exports = {
       "writings" : colors.indigo,
       "contact" : colors.violet
     },
-    extend: {}
+    extend: {
+      spacing: {
+        "xGap" : "1rem",
+        'yGap' : "1.5rem"
+      }
+    }
   },
   variants: {},
   plugins: [

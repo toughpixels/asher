@@ -3,6 +3,9 @@
 /* Tailwind component classes registered by plugins*/
 @import "node_modules/tailwindcss/components";
 /* Site Specific */
+
+@import "assets/css/partials/vars";
 @import "assets/css/partials/html";
+@import "assets/css/partials/container";
 /* Tailwind's utility classes - generated based on config file */
 @import "node_modules/tailwindcss/utilities";

@@ -1,4 +1,5 @@
 +++
+title = "About"
 id = "about"
 weight = 15
 menu = "main"
