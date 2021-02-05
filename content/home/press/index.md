@@ -3,13 +3,15 @@ id = "press"
 title = "Press"
 weight = 20
 menu = "main"
-
+[[resources]]
+    src = "quotes.png"
+    title = "Asher speaking into a microphone on stage with a group of performers laughing behind him."
 +++
 
 ## Press
 
 
-{{< image_text_row src="/images/aboutme2.jpg" image_position="left" >}}
+{{< image_text_row src="quotes.png" image_position="left" >}}
 
 
 “Asher Perlman is… \[a\] standout and comes armed with a dry sense of humor” - The Chicago Tribune
