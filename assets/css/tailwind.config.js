@@ -19,6 +19,7 @@ module.exports = {
     },
     extend: {
       spacing: {
+        "navWidth" : "15rem",
         "xGap" : "1rem",
         'yGap' : "1.5rem"
       }

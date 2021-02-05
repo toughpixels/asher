@@ -3,7 +3,7 @@
     {{- partial "head.html" . -}}
     <body class="{{ .Kind }} {{ .Layout }}">
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div id="content" class="ml-navWidth">
         {{- block "main" . }}{{- end }}
         {{- partial "modal.html" . -}}
         {{- partial "slider.html" . -}}

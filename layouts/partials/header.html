@@ -1,13 +1,13 @@
-<header class="z-20 top-0 left-0 fixed">
+<header class="z-20 top-0 left-0 fixed h-screen w-navWidth">
     <a href="#landing" class="inline-block border-8 border-asher-blue text-blue-500 text-4xl text-asher-lblue bg-default">
-        <h1 class="border-8 border-asher-pink px-4">{{ .Title }}</h1>
+        <h1 class="border-8 border-asher-pink px-4 text-center">{{ .Title }}</h1>
     </a>
     <nav>
         <ul>
             {{ range .Site.Menus.main }}
 
             <li>
-                <a style="max-width: 8rem" class="block align-top px-4 py-2 bg-default text-white hover:text-default hover:bg-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
+                <a class="block align-top px-4 py-2 text-center text-white hover:text-default hover:bg-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
             </li>
 
             {{ end }}

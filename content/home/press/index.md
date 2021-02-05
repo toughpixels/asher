@@ -11,12 +11,12 @@ menu = "main"
 ## Press
 
 
-{{< image_text_row src="quotes.png" image_position="left" >}}
+{{% image_text_row src="quotes.png" image_position="left" %}}
 
 
-“Asher Perlman is… \[a\] standout and comes armed with a dry sense of humor” - The Chicago Tribune
+“Asher Perlman is… standout and comes armed with a dry sense of humor” - The Chicago Tribune
 
-{{< /image_text_row >}}
+{{% /image_text_row %}}
 
 “Very smart work from an unselfish player.” - The Chicago Tribune
 
