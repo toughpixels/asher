@@ -9,6 +9,5 @@ section {
 }
 
 header {
-  background: #0f0d0e;
   height: 100vh;
 }

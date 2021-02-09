@@ -1,0 +1,44 @@
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 267.12668 43.896555">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0.47553775,-33.213028)"
+     id="bolt">
+    <rect
+       ry="0"
+       y="33.213028"
+       x="0"
+       height="43.896553"
+       width="267.12659"
+       id="boltback"
+       class="fill-current text-asher-blue" />
+    <path
+       id="boltmid"
+       d="m 199.04389,40.178798 -5.91362,3.701078 -61.85971,-5.462866 -0.27346,6.325542 -62.142936,-6.223233 -1.671104,8.609963 -67.65720075,-8.10922 -0.001397,21.138595 90.69935975,4.818615 0.818768,-5.382879 71.29545,10.567384 -0.65278,-9.674635 48.69309,3.545363 3.15445,-5.728239 53.09457,6.158502 0.0185,-19.732684 z"
+       class="fill-current text-asher-lblue" />
+    <path
+       id="boltfront"
+       d="m 70.826301,42.837409 0.05725,8.64647 -71.33057675,-8.68435 -0.028512,10.437466 86.35268175,8.623719 -1.01085,-6.391517 69.592116,8.128861 -1.32123,-8.887701 47.6728,4.985967 3.7105,-6.025561 62.12457,4.749589 0.008,-7.891862 -64.24864,-5.805257 -2.53877,5.618147 -57.94516,-6.283794 1.39577,7.716437 z"
+       class="fill-current text-asher-pink" />
+  </g>
+</svg>

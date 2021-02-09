@@ -1,5 +1,6 @@
 +++
 title = "Asher Perlman"
+description = "Asher Perlman, comedian, illustrator, humorist."
 +++
 
 # Client Questions / Answers

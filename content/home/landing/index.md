@@ -5,5 +5,5 @@ type = "home"
 layout = "fill"
 [[resources]]
   src = "landing.jpg"
-  title = "Asher Perlman, standing on stage at The Second City flanked by red curtains."
+  title = "Asher Perlman, a trained humorist, stands on stage at The Second City flanked by red curtains."
 +++

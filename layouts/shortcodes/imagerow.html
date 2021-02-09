@@ -1,5 +1,5 @@
-{{ $image  := .Get "src" }}
-{{ $image_position  := .Get "image_position" }}
+{{- $image := .Get "src" -}}
+{{- $imagePosition := .Get "image_position" -}}
 <div class="flex items-center">
     <div class="flex-1">
         {{ partial "image.html" (.Page.Resources.GetMatch $image) }}

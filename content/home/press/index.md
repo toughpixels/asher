@@ -7,21 +7,12 @@ menu = "main"
     src = "quotes.png"
     title = "Asher speaking into a microphone on stage with a group of performers laughing behind him."
 +++
+"Asher Perlman is… standout and comes armed with a dry sense of humor" {{<  logo "tribune.svg" >}}
 
-## Press
+“Very smart work from an unselfish player." {{<  logo "tribune.svg" >}}
 
+“Asher Perlman is a comedian and writer living in Brooklyn” {{<  logo "vulture.svg" >}}
 
-{{% image_text_row src="quotes.png" image_position="left" %}}
-
-
-“Asher Perlman is… standout and comes armed with a dry sense of humor” - The Chicago Tribune
-
-{{% /image_text_row %}}
-
-“Very smart work from an unselfish player.” - The Chicago Tribune
-
-“Asher Perlman is a comedian and writer living in Brooklyn” - Vulture.
-
-“Asher is a fucking genius!” - My dad in a YouTube comment.
+“Asher is a fucking genius! Love, dad” - {{< logo "youtube.svg">}}
 
 {{<  logo "newyorker.svg" >}}

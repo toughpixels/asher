@@ -1,4 +1,4 @@
-<div class="icon">
-   {{ $img := .Page.Resources.GetMatch (.Get 0) }}
-   {{ $img.Content }}
+<div class="w-1/4">
+   {{ $img := resources.GetMatch (print "logos/" (.Get 0)) }}
+   {{ $img.Content | safeHTML }}
 </div>
