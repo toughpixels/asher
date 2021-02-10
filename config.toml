@@ -1,5 +1,3 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Asher Perlman"
-[params]
-  section = "sections/text"
