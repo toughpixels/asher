@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/home/landing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/aboutme/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/press/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/cartoons/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/writings/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/videos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/home/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>
