@@ -6,7 +6,7 @@
         {{ $bolt  := resources.GetMatch "sidebar/bolt.svg" }}
         {{ $bolt.Content | safeHTML }}
     </div>
-    <nav>
+    <nav class="text-3xl">
         <ul>
             {{- range .Site.Menus.main }}
             <li>

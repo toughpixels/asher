@@ -1,3 +1,17 @@
 html {
     scroll-behavior: smooth;
   }
+
+.alternate-grid p {
+  grid-column: 1 / span 2;
+  text-align: right;
+}
+
+.alternate-grid p:nth-child(even) {
+  grid-column-start: 2;
+  text-align: left;
+}
+
+.alternate-grid p:empty { 
+  display: none 
+}
