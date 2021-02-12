@@ -1,4 +1,4 @@
 <div class="icon">
    {{ $img := .Page.Resources.GetMatch (.Get 0) }}
-   {{ $img.Content }}
+   {{ $img.Content | safeHTML }}
 </div>

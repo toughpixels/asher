@@ -11,12 +11,12 @@ menu = "main"
 ## Press
 
 
-{{% image_text_row src="quotes.png" image_position="left" %}}
+{{< image_text_row src="quotes.png" image_position="left" quote="Asher Perlman is… standout and comes armed with a dry sense of humor" source="The Chicago Tribune" sourceIcon="tribune.svg" >}}
 
 
 “Asher Perlman is… standout and comes armed with a dry sense of humor” - The Chicago Tribune
 
-{{% /image_text_row %}}
+
 
 “Very smart work from an unselfish player.” - The Chicago Tribune
 
