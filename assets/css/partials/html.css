@@ -15,3 +15,13 @@ html {
 .alternate-grid p:empty { 
   display: none 
 }
+
+.contact div:nth-child(n+3) {
+  margin-left: 3rem;
+  margin-top: -6rem;
+}
+
+.contact img {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
