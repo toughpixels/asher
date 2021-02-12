@@ -1,6 +1,3 @@
-baseURL = "http://example.org/"
+baseURL = "https://compassionate-hamilton-c8240b.netlify.app"
 languageCode = "en-us"
 title = "Asher Perlman"
-publishDir = "docs"
-[params]
-  section = "sections/text"
