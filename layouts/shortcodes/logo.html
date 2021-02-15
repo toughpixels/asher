@@ -1,4 +1,4 @@
-<div class="m-6">
+<div>
    {{ $img := resources.GetMatch (print "logos/" (.Get 0)) }}
    {{ $img.Content | safeHTML }}
 </div>
