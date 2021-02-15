@@ -1,0 +1,13 @@
+<div class="container py-4">
+    <div class="max-w-2xl mx-auto ">
+    <div class="relative mb-8">
+        {{ partial "image.html" (.Resources.GetMatch "*.*") }}
+        <h2 class="absolute text-white inset-0 flex items-center justify-center text-center text-4xl">{{ .Params.title }}</h2>
+    </div>
+    <div class="text-center space-y-4">
+        {{ .Content }}
+    </div>
+</div>
+            
+    
+</div>

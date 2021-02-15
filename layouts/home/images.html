@@ -37,16 +37,21 @@
         let slides = slider.querySelectorAll('.slider__slides > div');
         let slideMaxIndex = slides.length - 1;
         let sliderNav = slider.querySelectorAll('.slider__prev, .slider__next');
+        
         slidesWrap[0].style.left = '0%';
         slidesWrap[0].style.width = slides.length + '00%';
+
+        // console.log(remoteSliderNavLinks);
         for (i = 0; i < remoteSliderNavLinks.length; i++) {
-            console.log(i);
+          remoteSliderNavLinks[i].setAttribute('index', i);
         }
-        // remoteSliderNavLinks.forEach(button => {
-        //     button.addEventListener('click', () => {
-        //         console.log(remoteSliderNavLinks.find(button));
-        //     });
-        // });
+        
+        remoteSliderNavLinks.forEach(button => {
+            button.addEventListener('click', () => {
+              slidesWrap[0].style.left = '-' + button.getAttribute('index') + '00%';
+            });
+        });
+
         sliderNav.forEach(button => {
             button.addEventListener('click', () => {
                 let sliderPosition = slider.dataset.position;
@@ -76,6 +81,11 @@
 
 <style>
     .slider {
+
+    }
+    .slider img {
+      max-height: calc(100vh - 4rem);
+      width: auto;
 
     }
     .slider__slidesWrap {
