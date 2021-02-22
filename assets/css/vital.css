@@ -1,6 +1,7 @@
 body {
     background: pink;
     font-size: 20px;
+    display: flex;
 }
 
 section {
@@ -9,4 +10,13 @@ section {
 
 header {
     height: 100vh;
+}
+
+.pageNav {
+    li:not(.active) {
+        background: transparent !important;
+    }
+    li.active a {
+@apply text-default;
+    }
 }

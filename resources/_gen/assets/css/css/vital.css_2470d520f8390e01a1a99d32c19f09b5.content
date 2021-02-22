@@ -1,6 +1,7 @@
 body {
   background: pink;
   font-size: 20px;
+  display: flex;
 }
 
 section {
@@ -11,3 +12,12 @@ section {
 header {
   height: 100vh;
 }
+
+.pageNav li:not(.active) {
+    background: transparent !important;
+  }
+
+.pageNav li.active a {
+    --tw-text-opacity: 1;
+    color: rgba(29, 31, 32, var(--tw-text-opacity));
+  }
