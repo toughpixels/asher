@@ -17,5 +17,3 @@ menu = "main"
   src = "obscurity.jpg"
   title = ""
 +++
-
-## Cartoons

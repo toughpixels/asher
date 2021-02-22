@@ -3,11 +3,11 @@
     {{- partial "head.html" . -}}
     <body class="{{ .Kind }} {{ .Layout }}">
         {{- partial "header.html" . -}}
-        <div id="content" class="ml-navWidth">
+        <div id="content" class="flex-1">
         {{- block "main" . }}{{- end }}
         {{- partial "modal.html" . -}}
         {{- partial "slider.html" . -}}
         </div>
-        {{- partial "footer.html" . -}}
+        {{- partial "scripts.html" . -}}
     </body>
 </html>

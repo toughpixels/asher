@@ -1,13 +1,20 @@
-<div class="container py-4">
-    <div class="max-w-2xl mx-auto ">
-    <div class="relative mb-8">
-        {{ partial "image.html" (.Resources.GetMatch "*.*") }}
-        <h2 class="absolute text-white inset-0 flex items-center justify-center text-center text-4xl">{{ .Params.title }}</h2>
-    </div>
-    <div class="text-center space-y-4">
-        {{ .Content }}
-    </div>
+<div class="paralaxBanner">
+  {{ partial "image.html" (.Resources.GetMatch "*.*") }}
 </div>
-            
-    
+<div class="relative z-10 container py-4 text-white">
+    <div class="paralaxBannerHeader flex items-center justify-center mb-8">
+        <h2 class="sectionHeader py-0 my-0">{{ .Params.title }}</h2>
+      </div>
+  <div class="max-w-4xl mx-auto text-white">
+    <div class="text-center space-y-4 prose">{{ .Content }}</div>
+  </div>
 </div>
+
+<!-- 6.611111111 -->
+<!-- 4.347826087 -->
+<!-- (6.611111111 - 4.347826087)/2 = 1.131642512 -->
+<!-- (1.131642512 + 4.347826087)/6.611111111 -->
+
+<!-- 4.347826087/6.611111111 = makes it the same height -->
+
+<!-- width: 82.8827183% -->
