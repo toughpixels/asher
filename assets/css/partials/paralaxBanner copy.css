@@ -1,0 +1,28 @@
+.paralaxBanner {
+  @apply fixed top-0 right-0 bottom-0 left-navWidth z-0;
+  img {
+    @apply absolute w-full h-full object-cover;
+  }
+}
+section {
+  z-index: 10;
+}
+#videos {
+  z-index: 0;
+  padding-bottom: 3rem;
+  .prose {
+    max-width: none;
+  }
+  .prose,
+  .prose > * {
+    color: inherit;
+  }
+}
+.paralaxBannerHeader {
+  min-height: 20rem;
+  height: 50vh;
+}
+
+.sectionHeader {
+  @apply text-center text-4xl pt-6 mb-8;
+}
