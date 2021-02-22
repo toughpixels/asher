@@ -18,17 +18,17 @@ layout = "contact"
   title = "Holding a whiteboard, the funny writer with no hat prepares another humorous anecdote."
 +++
 
-{{< tile >}}
+{{< tile "https://twitter.com/asherperlman" >}}
   {{< image "quotes2.jpg" >}}
-  {{< logo "twitter.svg" "https://twitter.com/asherperlman" >}}
+  {{< logo "twitter.svg" >}}
 {{< /tile >}}
 
-{{< tile >}}
+{{< tile  "https://www.instagram.com/asherperlman/" >}}
   {{< image "quotes3.jpg" >}}
-  {{< logo "instagram.svg" "https://www.instagram.com/asherperlman/" >}}
+  {{< logo "instagram.svg" >}}
 {{< /tile >}}
 
-{{< tile >}}
+{{< tile "" >}}
   {{< image "quotes4.jpg" >}}
-  {{< logo "tribune.svg" "" >}}
+  {{< logo "tribune.svg" >}}
 {{< /tile >}}

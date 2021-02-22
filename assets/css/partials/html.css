@@ -16,11 +16,11 @@ html {
   display: none 
 }
 
-.contact div:nth-child(n+3) {
-  margin-left: 3rem;
-  margin-top: -6rem;
+.contact svg {
+  width: 60%;
+  margin: auto;
 }
 
-.contact svg {
-  width: 40%;
+.contact img {
+  max-height: 40vh;
 }
