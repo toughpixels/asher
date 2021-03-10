@@ -68,6 +68,7 @@ module.exports = {
     borderWidth: {
       DEFAULT: '1px',
       0: '0px',
+      8: '8px'
     },
     boxShadow: {
       DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
@@ -341,19 +342,19 @@ module.exports = {
     appearance: [],
     backgroundAttachment: [],
     backgroundClip: [],
-    backgroundColor: ['group-hover', 'focus-within', 'hover', 'focus'],
+    backgroundColor: [ 'hover', 'focus'],
     backgroundImage: [],
     backgroundOpacity: [],
     backgroundPosition: [],
     backgroundRepeat: [],
     backgroundSize: [],
     borderCollapse: [],
-    borderColor: [ 'group-hover', 'focus-within', 'hover', 'focus'],
+    borderColor: [ 'hover', 'focus'],
     borderOpacity: [],
     borderRadius: [],
     borderStyle: [],
     borderWidth: [],
-    boxShadow: [ 'focus-within', 'hover', 'focus'],
+    boxShadow: [ 'hover', 'focus'],
     boxSizing: [],
     clear: [],
     container: ['responsive'],

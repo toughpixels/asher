@@ -9,7 +9,6 @@ section {
   z-index: 10;
 }
 #videos {
-  display: none;
   z-index: 0;
   padding-bottom: 3rem;
   .prose {
