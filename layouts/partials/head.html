@@ -1,14 +1,23 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ block "title" . }}{{ if .Title }}{{ .Title }} | {{ end }}{{end }}{{ .Site.Title }}</title>
-    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
-    <meta name="keywords" content="KEYWORDS HERE!">  
-    <meta name="author" content="YOUR NAME">
-    {{ template "_internal/opengraph.html" . }}  
-    <!-- For any google font you choose, please add "&display=swap" to the end of the href  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap">
-    {{- partial "vitalcss.html" -}}
-    {{- partial "latercss.html" -}}
-    {{- partial "favicons.html" . -}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ block "title" . }}{{ if .Title }}{{ .Title }} | {{ end }}{{end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+  <meta name="keywords" content="KEYWORDS HERE!">  
+  <meta name="author" content="YOUR NAME">
+  {{ template "_internal/opengraph.html" . }}  
+  <!-- For any google font you choose, please add "&display=swap" to the end of the href  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap">
+
+  {{ $styles := resources.Get "css/styles.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+{{ if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ else }}
+  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ end }}
+  
+  {{- partial "favicons.html" . -}}
 </head>
+
+

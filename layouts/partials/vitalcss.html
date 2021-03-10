@@ -1,4 +1,4 @@
-{{- $vital := resources.Get "css/vital.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+{{- $vital := resources.Get "css/vital.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
 {{- if not .Site.IsServer }}
     {{- $vital := $vital | minify | fingerprint | resources.PostProcess -}}
 {{ end -}}

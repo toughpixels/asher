@@ -1,3 +1,5 @@
 baseURL = "https://unruffled-almeida-17624f.netlify.app/"
 languageCode = "en-us"
 title = "Asher Perlman"
+[build]
+  writeStats = true

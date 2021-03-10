@@ -2,3 +2,7 @@
   max-width: 92rem;
   @apply px-xGap mx-auto;
 }
+
+#content {
+  flex: 1;
+}
