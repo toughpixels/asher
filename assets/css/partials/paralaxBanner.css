@@ -19,11 +19,16 @@ section {
     color: inherit;
   }
 }
+
 .paralaxBannerHeader {
   min-height: 20rem;
   height: 50vh;
 }
 
 .sectionHeader {
-  @apply text-center text-4xl pt-6 mb-8;
+  @apply text-center text-6xl pt-6 mb-8;
+}
+
+.gridHeader {
+  grid-column: 1 / span 3;
 }

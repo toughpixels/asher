@@ -21,3 +21,7 @@ header {
 @apply text-default;
   }
 }
+
+.logo {
+  max-height: 10rem;
+}
