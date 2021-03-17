@@ -12,5 +12,3 @@ layout = "alternategrid"
 "Asher Perlman is a comedian and writer living in Brooklyn" {{<  logo "vulture.svg" >}}
 
 "Asher is a fucking genius! Love, dad" {{< logo "youtube.svg">}}
-
-"these arbitrary rules might end up making communication more difficult" {{<  logo "newyorker.svg" >}}

@@ -5,11 +5,13 @@ html {
 .alternate-grid p {
   grid-column: 1 / span 2;
   text-align: right;
+  margin: auto;
 }
 
 .alternate-grid p:nth-child(even) {
   grid-column-start: 2;
   text-align: left;
+  margin: auto;
 }
 
 .alternate-grid p:empty { 
