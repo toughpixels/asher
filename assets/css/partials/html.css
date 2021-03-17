@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
   }
 
+
 .alternate-grid p {
   grid-column: 1 / span 2;
   text-align: right;
