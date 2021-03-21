@@ -1,16 +1,15 @@
 +++
 id = "writings"
 title = "Writings"
-weight = 30
+weight = 20
 menu = "main"
 layout = "alternategrid"
 +++
-"Asher Perlman is… standout and comes armed with a dry sense of humor" {{<  logo "twitter.svg" >}}
 
-"Very smart work from an unselfish player." {{<  logo "tribune.svg" >}}
+### [Clifford the Big Red Dog’s Latest Adventures](https://www.newyorker.com/humor/daily-shouts/clifford-the-big-red-dogs-latest-adventures)
 
-"Asher Perlman is a comedian and writer living in Brooklyn" {{<  logo "vulture.svg" >}}
+{{<  logo "newyorker.svg" >}}
 
-"Asher is a fucking genius! Love, dad" {{< logo "youtube.svg">}}
+### [From This Moment Forward, I Will Only Accept Gratitude In The Form Of Jet Flyovers](https://www.mcsweeneys.net/articles/from-this-moment-forward-i-will-only-accept-gratitude-in-the-form-of-jet-flyovers)
 
-"these arbitrary rules might end up making communication more difficult" {{<  logo "newyorker.svg" >}}
+{{<  logo "mcsweenys.svg" >}}
