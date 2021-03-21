@@ -9,13 +9,11 @@
   <!-- For any google font you choose, please add "&display=swap" to the end of the href  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap">
 
-  {{ $styles := resources.Get "css/styles.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
-{{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-{{ else }}
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
-{{ end }}
+  {{/* */}}
+  {{- partial "cssCompile.html" . -}}
+  
+
+  <!-- <link rel="stylesheet" href="css/style.css?v=2">  -->
   
   {{- partial "favicons.html" . -}}
 </head>

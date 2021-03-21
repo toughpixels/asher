@@ -4,12 +4,13 @@
   "description": "[this is my guiding star](https://dev.to/divrhino/how-to-add-tailwindcss-to-your-hugo-site-5290)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "hugo --gc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
