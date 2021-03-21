@@ -2,4 +2,5 @@
   --sideNavWidth: 8rem;
   --xGap: theme('spacing.xGap');
   --yGap: 1.5rem;
+  --mobileHeaderHeight: 2rem;
 }

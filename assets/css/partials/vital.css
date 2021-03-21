@@ -2,7 +2,9 @@
 body {
   background: pink;
   font-size: 20px;
-  display: flex;
+  @screen md {
+    display: flex;
+  }
 }
 
 section {
@@ -10,7 +12,9 @@ section {
 }
 
 header {
-  height: 100vh;
+  position: relative;
+  z-index: 10;
+  
 }
 
 .pageNav {
@@ -18,8 +22,9 @@ header {
       background: transparent !important;
   }
   li.active a {
-@apply text-default;
+    @apply text-default;
   }
+  
 }
 
 .logo {
