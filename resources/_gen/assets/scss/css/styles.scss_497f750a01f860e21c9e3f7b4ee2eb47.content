@@ -1950,24 +1950,19 @@ html {
   display: none;
 }
 
-.contact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.contact p:nth-child(1) {
+.contact a:nth-child(1) {
   position: relative;
   right: -1rem;
   bottom: -2rem;
-  align-self: end;
+  margin-right: auto;
 }
 
-.contact p:nth-child(2) {
+.contact a:nth-child(2) {
   grid-row: 2;
   grid-column: 2;
   position: relative;
   right: 1rem;
-  align-self: center;
+  margin-left: auto;
 }
 
 .contact picture:nth-child(3) {
@@ -1976,6 +1971,7 @@ html {
   position: relative;
   top: -2rem;
   z-index: -1000;
+  margin-right: auto;
 }
 
 .contact .contactform {
@@ -1984,8 +1980,6 @@ html {
 }
 
 .contact img {
-  max-height: 140%;
-  margin-left: auto;
   border-radius: 20px;
 }
 
