@@ -9,7 +9,7 @@
     <nav class="text-3xl pageNav">
         <ul>
             {{- range .Site.Menus.main }}
-            <li class="bg-{{ .Page.Params.id }}-200 hover:border-8 hover:border-asher-blue">
+            <li class="bg-{{ .Page.Params.id }}-200 border-t-2 border-b-2 border-l-4 border-r-4 border-asher-blue hover:border-asher-blue">
                 <a class="block align-top px-4 py-2 text-center text-white hover:text-default hover:bg-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
             </li>
             {{- end }}
