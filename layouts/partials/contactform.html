@@ -1,9 +1,15 @@
 <div class="flex justify-center items-center contactform">
     <form action="post">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="comment">Your Very Friendly Comment:</label><br>
-        <textarea type="comment" id="comment" name="comment"></textarea><br>
-        <input type="submit" value="Submit">
+        <div class="mb-4">
+            <label for="email">Your Email:</label><br>
+            <input type="email" class="w-full" id="email" name="email"><br>
+        </div>
+        <div class="mb-4">
+            <label for="comment">Your Very Friendly Comment:</label><br>
+            <textarea type="comment"  class="w-full" id="comment" name="comment"></textarea><br>
+        </div>
+        <div class="flex items-center">
+            <input class="bg-asher-blue font-bold text-white py-2 px-4" type="submit" value="Say Hello!">
+        </div>
     </form>
 </div>
