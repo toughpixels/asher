@@ -1950,37 +1950,34 @@ html {
   display: none;
 }
 
-.contact a:nth-child(1) {
-  position: relative;
-  right: -1rem;
-  bottom: -2rem;
-  margin-right: auto;
+.contact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  grid-template-areas: ". image1" "image2 ." "form image3" "form image3";
 }
 
-.contact a:nth-child(2) {
-  grid-row: 2;
-  grid-column: 2;
-  position: relative;
-  right: 1rem;
-  margin-left: auto;
-}
-
-.contact picture:nth-child(3) {
-  grid-row: 3;
-  grid-column: 1;
-  position: relative;
-  top: -2rem;
-  z-index: -1000;
-  margin-right: auto;
-}
-
-.contact .contactform {
-  grid-row: 3;
-  grid-column: 2;
+.contact {
+  grid-area: form;
 }
 
 .contact img {
   border-radius: 20px;
+}
+
+.contactform {
+  grid-area: form;
+}
+
+.contact > p:nth-child(1) {
+  grid-area: image1;
+}
+
+.contact > p:nth-child(2) {
+  grid-area: image2;
+}
+
+.contact > p:nth-child(3) {
+  grid-area: image3;
 }
 
 .container {

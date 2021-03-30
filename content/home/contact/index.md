@@ -19,4 +19,4 @@ layout = "contact"
 
 [{{< image "quotes4.png" >}}](https://www.instagram.com/asherperlman/)
 
-{{< image "quotes3.jpg" >}}
+[{{< image "quotes3.jpg" >}}](Asher Perlman sits at a bar and leans close to you, smiling in a friendly way after telling a pun.)
