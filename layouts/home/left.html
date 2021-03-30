@@ -1,9 +1,9 @@
 <div class="relative z-10">
-    <div class="flex min-h-screen">
-        <div class="w-1/2 coverWrap relative">
+    <div class="block md:flex min-h-screen">
+        <div class="aboutImg w-100 md:w-1/2 coverWrap relative">
             {{ partial "image.html" (.Resources.GetMatch "*.*") }}
         </div>
-        <div class="w-1/2 p-6 prose">
+        <div class="w-100 md:w-1/2 p-6 prose">
             {{ .Content }}
         </div>
     </div>
