@@ -6,7 +6,9 @@
         {{ $bolt  := resources.GetMatch "sidebar/bolt.svg" }}
         {{ $bolt.Content | safeHTML }}
     </div>
-    <nav class="text-3xl pageNav">
+    
+    
+    <nav class="text-3xl pageNav bg-asher-blue" id="pageNav">
         <ul>
             {{- range .Site.Menus.main }}
             <li class="bg-{{ .Page.Params.id }}-200 hover:border-8 hover:border-asher-blue">
@@ -15,5 +17,19 @@
             {{- end }}
         </ul>
     </nav>
-    <!-- <button type="button" data-toggle-body-class="" aria-expanded="false" >Toggle</a> -->
+    {{- partial "mobileMenuToggle.html" . -}}
 </header>
+<script type="text/javascript">
+    const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
+    toggleActions.forEach(function(toggleAction){
+        var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
+        let toggleState = toggleAction.getAttribute('aria-expanded');
+        console.log(toggleState);
+        toggleAction.addEventListener('click', function(){
+            document.body.classList.toggle(toggleClass);
+            toggleState = (toggleState === 'false') ? 'true' : 'false';
+            toggleAction.setAttribute('aria-expanded', toggleState);
+            console.log(toggleState);
+        });
+    });
+</script>

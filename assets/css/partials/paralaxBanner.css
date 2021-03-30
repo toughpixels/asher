@@ -1,13 +1,14 @@
 .paralaxBanner {
-  @apply fixed top-0 right-0 bottom-0 left-navWidth z-0;
+  @apply absolute top-0 right-0 bottom-0 left-0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
 }
 .paralaxBanner img {
   width: 100%;
   @apply absolute h-full object-cover;
 }
-section {
-  z-index: 10;
-}
+
 #videos {
   z-index: 0;
   padding-bottom: 3rem;

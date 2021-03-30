@@ -1893,7 +1893,7 @@ video {
   --sideNavWidth: 8rem;
   --xGap: 1rem;
   --yGap: 1.5rem;
-  --mobileHeaderHeight: 2rem;
+  --mobileHeaderHeight: 4rem;
 }
 
 body {
@@ -1914,7 +1914,13 @@ section {
 
 header {
   position: relative;
-  z-index: 10;
+  z-index: 11;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 2rem;
+  }
 }
 
 .pageNav li:not(.active) {
@@ -1926,8 +1932,108 @@ header {
   color: rgba(29, 31, 32, var(--tw-text-opacity));
 }
 
+@media screen and (max-width: 767px) {
+  .pageNav {
+    position: fixed;
+    z-index: 50;
+    top: var(--mobileHeaderHeight);
+    bottom: 0;
+    overflow: auto;
+    left: 0;
+    width: 50%;
+    max-width: 12rem;
+    transition-duration: 0.3s;
+    transform: translateX(-100%);
+  }
+
+  body.mobileNavShow .pageNav {
+    transform: translateX(0);
+  }
+
+  body:not(.mobileNavShow) .pageNav a {
+    pointer-events: none;
+    cursor: default;
+    -webkit-user-select: none;
+            user-select: none;
+  }
+}
+
 .logo {
   max-height: 10rem;
+}
+
+@media (max-width: 767px) {
+  .aboutImg {
+    display: none;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+}
+
+.mobileMenuToggle {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  display: none;
+}
+
+.mobileMenuToggle:before, .mobileMenuToggle span:before, .mobileMenuToggle span:after {
+  display: block;
+  height: 0.3rem;
+  width: 100%;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  transition-duration: 0.3s;
+}
+
+.mobileMenuToggle:before {
+  top: 0;
+}
+
+body.mobileNavShow .mobileMenuToggle:before {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+}
+
+.mobileMenuToggle span:before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body.mobileNavShow .mobileMenuToggle span:before {
+  opacity: 0;
+}
+
+.mobileMenuToggle span:after {
+  bottom: 0;
+}
+
+body.mobileNavShow .mobileMenuToggle span:after {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  .mobileMenuToggle {
+    display: block;
+  }
 }
 
 html {
@@ -1987,12 +2093,14 @@ html {
 }
 
 .paralaxBanner {
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 15rem;
-  z-index: 0;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .paralaxBanner img {
@@ -2001,10 +2109,6 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-}
-
-section {
-  z-index: 10;
 }
 
 #videos {
@@ -2036,6 +2140,47 @@ section {
 
 .gridHeader {
   grid-column: 1 / span 3;
+}
+
+@media (max-width: 767px) {
+  .slider picture {
+    width: 100%;
+  }
+}
+
+.slider img {
+  max-height: calc(100vh - 4rem);
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .slider img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+
+.slider__slidesWrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__slides {
+  transition-duration: 0.3s;
+  display: flex;
+  position: relative;
+}
+
+.slider__slides > div {
+  flex: 1;
+}
+
+.slider_nav {
+  font-size: 3rem;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

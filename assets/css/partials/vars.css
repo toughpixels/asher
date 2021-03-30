@@ -2,5 +2,15 @@
   --sideNavWidth: 8rem;
   --xGap: theme('spacing.xGap');
   --yGap: 1.5rem;
-  --mobileHeaderHeight: 2rem;
+  --mobileHeaderHeight: 4rem;
 }
+
+@mixin respond($media) {
+	@if $media == 'xs' {
+		@media (max-width: 767px) { @content; }
+	}
+  @if $media == 'sm' {
+		@media (min-width: 768px) { @content; }
+	}
+}
+  
