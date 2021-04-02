@@ -1,0 +1,5 @@
+<div class="flex justify-center logo">
+    {{ .logoName }}
+    {{ $img := resources.GetMatch (print "logos/" (.logoName)) }}
+    {{ $img.Content | safeHTML }}
+ </div>

@@ -2152,6 +2152,18 @@ html {
 }
 
 @media (max-width: 767px) {
+  .slider {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .slider .slider__slidesWrap {
+    width: 100%;
+    order: -1;
+  }
+}
+
+@media (max-width: 767px) {
   .slider picture {
     width: 100%;
   }
