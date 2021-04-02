@@ -18,7 +18,7 @@ header {
 }
 
 .pageNav {
-  li:not(.active) {
+  li:not(.actitve) {
       background: transparent !important;
   }
   li.active a {
