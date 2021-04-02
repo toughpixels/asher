@@ -110,7 +110,7 @@
       "md:block",
       "md:flex",
       "md:grid-cols-2",
-      "md:grid-rows-3",
+      "md:grid-rows-4",
       "md:h-screen",
       "md:max-h-full",
       "md:p-16",
