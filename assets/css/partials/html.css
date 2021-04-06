@@ -19,38 +19,26 @@ html {
 }
 
 .contact p:nth-child(1) {
-  position: relative;
-  right: -5rem;
-  bottom: -2rem;
-  margin-right: auto;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .contact p:nth-child(2) {
   grid-row: 2;
   grid-column: 2;
-  position: relative;
-  right: 2rem;
-  margin-left: auto;
 }
 
 .contact picture:nth-child(3) {
   grid-row: 3;
   grid-column: 1;
-  margin-left: 1rem;
-  margin-top: -2rem;
-  margin-right: 1rem;
 }
 
 .contact .contactform {
   grid-row: 3 / span 2;
   grid-column: 2;
-  align-self:center;
+  align-self: center;
 }
 
-.contact > p:nth-child(2) {
-  grid-area: image2;
-}
-
-.contact > p:nth-child(3) {
-  grid-area: image3;
+.contact img {
+  border-radius: 20px;
 }
