@@ -1,0 +1,44 @@
+.slider {
+  @include respond(xs) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .slider__slidesWrap {
+      width: 100%;
+      order: -1;
+    }
+    
+  }
+}
+.slider picture {
+  @include respond(xs) {
+    width: 100%;
+  }
+}
+.slider img {
+  max-height: calc(100vh - 4rem);
+  width: auto;
+  @include respond(xs) {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+  
+}
+.slider__slidesWrap {
+    width: 100%;
+    overflow: hidden;
+}
+.slider__slides {
+    transition-duration: 0.3s;
+    display: flex;
+    position: relative;
+}
+.slider__slides > div {
+    flex: 1;
+    
+}
+.slider_nav {
+    font-size: 3rem;
+    color: #fff;
+    @apply px-4;
+}

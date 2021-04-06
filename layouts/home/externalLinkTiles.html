@@ -1,0 +1,9 @@
+<div class="container grid grid-cols-3 gap-2">
+    {{ range $item := .Params.tiles }}
+    {{ $logoName := $item.logo}}
+    <a href="{{ $item.url }}" class="tile">
+        {{ $item.title }}
+        {{- partial "logo" (dict "logoName" $logoName ) -}}
+    </a>
+    {{ end }}
+</div>

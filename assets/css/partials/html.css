@@ -47,6 +47,10 @@ html {
   align-self:center;
 }
 
-.contact img {
-  border-radius: 20px;
+.contact > p:nth-child(2) {
+  grid-area: image2;
+}
+
+.contact > p:nth-child(3) {
+  grid-area: image3;
 }

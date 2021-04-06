@@ -1,7 +1,7 @@
 <h2 class="sectionHeader">{{ .Params.title }}</h2>
 {{ .Content }}
 <div data-slider-nav="#cartoonsSlider" 
-  class="py-8 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+  class="py-8 container grid grid-cols-2 sm:grid-cols-3 gap-4"
 >
   {{ range .Resources.ByType "image" }}
   <a role="button" class="block" data-modal-target="#cartoonsModal">
@@ -79,32 +79,3 @@
     });
 
 </script>
-
-<style>
-    .slider {
-
-    }
-    .slider img {
-      max-height: calc(100vh - 4rem);
-      width: auto;
-
-    }
-    .slider__slidesWrap {
-        width: 100%;
-        overflow: hidden;
-    }
-    .slider__slides {
-        transition-duration: 0.3s;
-        display: flex;
-        position: relative;
-    }
-    .slider__slides > div {
-        flex: 1;
-        
-    }
-    .slider_nav {
-        font-size: 3rem;
-        color: #fff;
-        @apply px-4;
-    }
-</style>

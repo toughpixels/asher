@@ -3,7 +3,8 @@ id = "writings"
 title = "Writings"
 weight = 20
 menu = "main"
-layout = "alternategrid"
+layout = "externalLinkTiles"
+tiles = [{title = "Clifford the Big Red Dog’s Latest Adventures", url = "https://www.newyorker.com/humor/daily-shouts/clifford-the-big-red-dogs-latest-adventures", logo = "newyorker.svg"}]
 +++
 
 ### [Clifford the Big Red Dog’s Latest Adventures](https://www.newyorker.com/humor/daily-shouts/clifford-the-big-red-dogs-latest-adventures)
