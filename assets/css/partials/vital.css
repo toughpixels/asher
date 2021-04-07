@@ -22,14 +22,14 @@ header {
 }
 
 .pageNav {
-  li:not(.actitve) {
+  li:not(.active) {
       background: transparent !important;
   }
   li.active a {
     @apply text-default;
   }
-  
 }
+
 @media screen and (max-width: 767px) {
   .pageNav {
     position:fixed;

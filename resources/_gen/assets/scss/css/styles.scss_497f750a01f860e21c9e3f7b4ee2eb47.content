@@ -1922,7 +1922,7 @@ header {
   }
 }
 
-.pageNav li:not(.actitve) {
+.pageNav li:not(.active) {
   background: transparent !important;
 }
 
@@ -2055,24 +2055,6 @@ html {
   display: none;
 }
 
-<<<<<<< HEAD
-.contact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(4, minmax(0, 1fr));
-  grid-template-areas: ". image1" "image2 ." "form image3" "form image3";
-}
-
-.contact {
-  grid-area: form;
-}
-
-.contact img {
-  border-radius: 20px;
-}
-
-.contactform {
-  grid-area: form;
-=======
 .contact p:nth-child(1) {
   grid-row: 1;
   grid-column: 1;
@@ -2092,19 +2074,10 @@ html {
   grid-row: 3 / span 2;
   grid-column: 2;
   align-self: center;
->>>>>>> 17d96379ec7ab788507d2aa1c7c00b4ef8872c04
 }
 
-.contact > p:nth-child(1) {
-  grid-area: image1;
-}
-
-.contact > p:nth-child(2) {
-  grid-area: image2;
-}
-
-.contact > p:nth-child(3) {
-  grid-area: image3;
+.contact img {
+  border-radius: 20px;
 }
 
 .container {
@@ -2176,57 +2149,45 @@ html {
   color: currentColor;
 }
 
-@media (max-width: 767px) {
-  .slider {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .slider .slider__slidesWrap {
-    width: 100%;
-    order: -1;
-  }
+.linkTile {
+  border: 5px solid currentColor;
 }
 
-@media (max-width: 767px) {
-  .slider picture {
-    width: 100%;
-  }
+.linkTile h3 {
+  color: currentColor;
 }
 
-.slider img {
-  max-height: calc(100vh - 4rem);
-  width: auto;
+.linkTile .icon-external-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 3px 3px 0 0;
+  font-size: 2rem;
+  opacity: 0;
+  --tw-text-opacity: 1;
+  color: rgba(99, 102, 241, var(--tw-text-opacity));
 }
 
-@media (max-width: 767px) {
-  .slider img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-  }
+.linkTile:hover .logo svg {
+  --tw-text-opacity: 1;
+  color: rgba(99, 102, 241, var(--tw-text-opacity));
 }
 
-.slider__slidesWrap {
-  width: 100%;
-  overflow: hidden;
+.linkTile:hover .icon-external-link {
+  opacity: 1;
 }
 
-.slider__slides {
-  transition-duration: 0.3s;
-  display: flex;
-  position: relative;
+svg {
+  max-width: 100%;
 }
 
-.slider__slides > div {
-  flex: 1;
-}
-
-.slider_nav {
-  font-size: 3rem;
-  color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

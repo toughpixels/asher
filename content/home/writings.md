@@ -9,5 +9,3 @@ tiles = [
     {title = "From This Moment Forward, I Will Only Accept Gratitude In The Form Of Jet Flyovers", url = "", logo = "mcsweenys.svg"}
     ]
 +++
-
-## Writings
