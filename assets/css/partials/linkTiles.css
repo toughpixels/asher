@@ -1,5 +1,6 @@
 .linkTile {
   border: 5px solid currentColor;
+  border-radius: 1rem;
   h3 {
     color: currentColor;
   }
@@ -13,6 +14,7 @@
     @apply text-writings-500;
   }
   &:hover {
+    border-top-right-radius: 0rem;
     .logo svg {
       @apply text-writings-500;
     }

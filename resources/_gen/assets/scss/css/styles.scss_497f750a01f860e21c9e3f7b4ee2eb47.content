@@ -1913,13 +1913,7 @@ section {
 
 header {
   position: relative;
-  z-index: 11;
-}
-
-@media (max-width: 767px) {
-  header h1 {
-    font-size: 2rem;
-  }
+  z-index: 10;
 }
 
 .pageNav li:not(.active) {
@@ -1929,32 +1923,8 @@ header {
 .pageNav li.active a {
   --tw-text-opacity: 1;
   color: rgba(29, 31, 32, var(--tw-text-opacity));
-}
-
-@media screen and (max-width: 767px) {
-  .pageNav {
-    position: fixed;
-    z-index: 50;
-    top: var(--mobileHeaderHeight);
-    bottom: 0;
-    overflow: auto;
-    left: 0;
-    width: 50%;
-    max-width: 12rem;
-    transition-duration: 0.3s;
-    transform: translateX(-100%);
-  }
-
-  body.mobileNavShow .pageNav {
-    transform: translateX(0);
-  }
-
-  body:not(.mobileNavShow) .pageNav a {
-    pointer-events: none;
-    cursor: default;
-    -webkit-user-select: none;
-            user-select: none;
-  }
+  text-decoration: underline;
+  text-shadow: none;
 }
 
 .logo {
@@ -2040,11 +2010,11 @@ html {
 }
 
 .light-shadow:hover, .light-shadow:focus, .light-shadow a:active {
-  text-shadow: 0 0 black;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.61);
 }
 
 .light-shadow {
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.741);
 }
 
 .alternate-grid p, .alternate-grid h3 {
@@ -2181,6 +2151,7 @@ html {
 
 .linkTile {
   border: 5px solid currentColor;
+  border-radius: 1rem;
 }
 
 .linkTile h3 {
@@ -2196,6 +2167,10 @@ html {
   opacity: 0;
   --tw-text-opacity: 1;
   color: rgba(99, 102, 241, var(--tw-text-opacity));
+}
+
+.linkTile:hover {
+  border-top-right-radius: 0rem;
 }
 
 .linkTile:hover .logo svg {
