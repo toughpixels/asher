@@ -1,7 +1,7 @@
 <div class="grid md:grid-cols-2 md:grid-rows-4 md:max-h-full contact h-screen">
     <div class="right image1">
         {{ $image1  := .Resources.GetMatch "twitter"  }}
-        <a href="{{ .Params.twitter }}" target="_blank">
+        <a href="{{ .Params.twitter }}" target="_blank }}">
             {{ partial "image.html" $image1 }}
         </a>
     </div>

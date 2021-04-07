@@ -1,0 +1,36 @@
+.linkTile {
+  border: 5px solid currentColor;
+  h3 {
+    color: currentColor;
+  }
+  .icon-external-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3px 3px 0 0;
+    font-size: 2rem;
+    opacity: 0;
+    @apply text-writings-500;
+  }
+  &:hover {
+    .logo svg {
+      @apply text-writings-500;
+    }
+    .icon-external-link {
+      opacity: 1;
+    }
+  }
+}
+
+svg {
+  max-width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
