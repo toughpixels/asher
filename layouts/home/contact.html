@@ -1,4 +1,19 @@
 <div class="grid md:grid-cols-2 md:grid-rows-4 md:max-h-full contact h-screen">
-    {{ .Content }}
+    <div class="right image1">
+        {{ $image1  := .Resources.GetMatch "twitter"  }}
+        <a href="{{ .Params.twitter }}" target="_blank">
+            {{ partial "image.html" $image1 }}
+        </a>
+    </div>
+    <div class="image2">
+        {{ $image2  := .Resources.GetMatch "instagram"  }}
+        <a href="{{ .Params.instagram }}" target="_blank">
+            {{ partial "image.html" $image2 }}
+        </a>
+    </div>
+    <div class="right image3">
+        {{ $image3  := .Resources.GetMatch "friendly"  }}
+        {{ partial "image.html" $image3 }}
+    </div>
     {{ partial "contactform.html" . }}
 </div>
