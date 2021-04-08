@@ -1,7 +1,7 @@
 +++
 id = "press"
 title = "Press"
-weight = 30
+weight = 45
 menu = "main"
 layout = "alternategrid"
 +++

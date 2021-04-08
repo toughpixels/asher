@@ -13,12 +13,8 @@ section {
 
 header {
   position: relative;
-  z-index: 11;
-  h1 {
-    @include respond(xs) {
-      font-size: 2rem;
-    }
-  }
+  z-index: 10;
+
 }
 
 .pageNav {
@@ -27,30 +23,10 @@ header {
   }
   li.active a {
     @apply text-default;
+    text-decoration: underline;
+    text-shadow: none;
   }
-}
 
-@media screen and (max-width: 767px) {
-  .pageNav {
-    position:fixed;
-    z-index: 50;
-    top: var(--mobileHeaderHeight);
-    bottom: 0;
-    overflow: auto;
-    left: 0;
-    width: 50%;
-    max-width: 12rem;
-    transition-duration: 0.3s;
-    transform: translateX(-100%);
-  }
-  body.mobileNavShow .pageNav {
-    transform: translateX(0);
-  }
-  body:not(.mobileNavShow) .pageNav a {
-    pointer-events: none;
-    cursor: default;
-    user-select: none;
-  }
 }
 
 .logo {
