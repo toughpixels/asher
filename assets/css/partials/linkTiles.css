@@ -13,7 +13,8 @@
     opacity: 0;
     @apply text-writings-500;
   }
-  &:hover {
+  &:hover, &:focus {
+    outline: 0;
     border-top-right-radius: 0rem;
     .logo svg {
       @apply text-writings-500;
