@@ -2114,48 +2114,55 @@ html {
 .contact .image1 {
   grid-row: 1;
   grid-column: 1;
-  margin-bottom: -1rem;
-  margin-right: -1rem;
-  margin-top: .5rem;
 }
 
 .contact .image2 {
   grid-row: 2;
   grid-column: 2;
-  margin-left: -.5rem;
+  margin-top: -12px;
+  margin-left: -12px;
+  max-width: calc(100% + 12px);
 }
 
 .contact .image3 {
   grid-row: 3 / span 2;
   grid-column: 1;
-  margin-bottom: 1rem;
-  margin-right: -.5rem;
-  margin-top: -.5rem;
+  margin-top: -12px;
 }
 
 .contact .contactform {
   grid-row: 3 / span 2;
   grid-column: 2;
   align-self: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  max-width: 25rem;
-}
-
-.contact .right img {
-  float: right;
+  margin-left: 2rem;
 }
 
 .contact img {
   border-radius: 20px;
-  max-height: 100%;
-  object-fit: contain;
 }
 
-.contact img {
+.contact a {
+  display: block;
   border-radius: 20px;
-  max-height: 100%;
-  object-fit: contain;
+}
+
+.contact a:hover, .contact a:focus {
+  outline: 0;
+  box-shadow: 0 0 0 4px #00eaff;
+}
+
+.container.container-contact {
+  max-width: 50rem;
+}
+
+.textInput {
+  padding: 0.5rem 1rem;
+  border: 2px solid #333;
+}
+
+.textInput:focus {
+  border-color: #1a8cb9;
+  outline: 0;
 }
 
 .container {
@@ -2329,16 +2336,17 @@ html {
   color: rgba(99, 102, 241, var(--tw-text-opacity));
 }
 
-.linkTile:hover {
+.linkTile:hover, .linkTile:focus {
+  outline: 0;
   border-top-right-radius: 0rem;
 }
 
-.linkTile:hover .logo svg {
+.linkTile:hover .logo svg, .linkTile:focus .logo svg {
   --tw-text-opacity: 1;
   color: rgba(99, 102, 241, var(--tw-text-opacity));
 }
 
-.linkTile:hover .icon-external-link {
+.linkTile:hover .icon-external-link, .linkTile:focus .icon-external-link {
   opacity: 1;
 }
 

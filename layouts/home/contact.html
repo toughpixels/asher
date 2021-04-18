@@ -1,7 +1,8 @@
-<div class="sm:grid md:grid-cols-2 md:grid-rows-4 md:max-h-full contact h-screen">
+<div class="container container-contact">
+<div class="sm:grid md:grid-cols-2 contact">
     <div class="right image1">
         {{ $image1  := .Resources.GetMatch "twitter"  }}
-        <a href="{{ .Params.twitter }}" target="_blank }}">
+        <a href="{{ .Params.twitter }}" target="_blank">
             {{ partial "image.html" $image1 }}
         </a>
     </div>
@@ -16,4 +17,5 @@
         {{ partial "image.html" $image3 }}
     </div>
     {{ partial "contactform.html" . }}
+</div>
 </div>

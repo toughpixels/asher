@@ -29,46 +29,67 @@ html {
 .contact .image1 {
   grid-row: 1;
   grid-column: 1;
-  margin-bottom: -1rem;
-  margin-right: -1rem;
-  margin-top: .5rem;
+  // margin-bottom: -1rem;
+  // margin-right: -1rem;
+  // margin-top: .5rem;
 }
 
 .contact .image2 {
   grid-row: 2;
   grid-column: 2;
-  margin-left: -.5rem;
+  // margin-left: -.5rem;
+  margin-top: -12px;
+    margin-left: -12px;
+    max-width: calc(100% + 12px);
 }
 
 .contact .image3 {
   grid-row: 3 / span 2;
   grid-column: 1;
-  margin-bottom: 1rem;
-  margin-right: -.5rem;
-  margin-top: -.5rem;
+  margin-top: -12px;
+  // margin-bottom: 1rem;
+  // margin-right: -.5rem;
+  // margin-top: -.5rem;
 }
 
 .contact .contactform {
   grid-row: 3 / span 2;
   grid-column: 2;
   align-self: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  max-width: 25rem;
+  margin-left: 2rem;
+  // margin-left: 1rem;
+  // margin-right: 1rem;
+  // max-width: 25rem;
 }
 
-.contact .right img {
-  float: right;
-}
-
-.contact img {
-  border-radius: 20px;
-  max-height: 100%;
-  object-fit: contain;
-}
+// .contact .right img {
+//   float: right;
+// }
 
 .contact img {
   border-radius: 20px;
-  max-height: 100%;
-  object-fit: contain;
+  // max-height: 100%;
+  // object-fit: contain;
+}
+
+.contact a {
+  display: block;
+  border-radius: 20px;
+  &:hover, &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 4px rgb(0, 234, 255);
+  }
+}
+
+.container.container-contact {
+  max-width: 50rem;
+}
+
+.textInput {
+  padding: 0.5rem 1rem;
+  border: 2px solid #333;
+  &:focus {
+    border-color: rgb(26, 140, 185);
+    outline: 0;
+  }
 }
