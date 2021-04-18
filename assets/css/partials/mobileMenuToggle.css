@@ -1,42 +1,45 @@
-@mixin mobileMenuToggle($color, $barWidth, $width, $height: $width) {
+@mixin mobileMenuToggle($color, $barWidth, $width, $height, $sandwichSpeed, $rotateSpeed, $timingFunction) {
   width: $width;
   height: $height;
   position: relative;
   display: block;
-  &:before, span:before, span:after {
+  $gapWidth: $height - $barWidth*3;
+  $barPull: ($gapWidth)*-1;
+  
+  span, span:before, span:after {
     display: block;
     height: $barWidth;
     width: 100%;
     background-color: $color;
     content: "";
     position: absolute;
-    transition-duration: 0.3s;
   }
-  &:before {
-    top: 0;
+  span {
+    position: relative;
+    transition: background-color 0s #{$timingFunction} #{$rotateSpeed};
     body.mobileNavShow & {
-      top: 50%;
-      transform: translateY(-50%);
-      transform: rotate(45deg);
+      background-color: transparent;
+      transition: background-color 0s #{$timingFunction} #{$sandwichSpeed};
     }
   }
   span:before {
-    top: 50%;
-    transform: translateY(-50%);
+    top: $barPull;
+    transition: top #{$sandwichSpeed} #{$timingFunction} #{$rotateSpeed}, transform #{$rotateSpeed} #{$timingFunction};
     body.mobileNavShow & {
-      opacity: 0;
+      top: 0;
+      transform: rotate(45deg);
+      transition: top #{$sandwichSpeed} #{$timingFunction}, transform #{$rotateSpeed} #{$timingFunction} #{$sandwichSpeed};
     }
   }
   span:after {
-    bottom: 0;
+    bottom: $barPull;
+    transition: bottom #{$sandwichSpeed} #{$timingFunction} #{$rotateSpeed}, transform #{$rotateSpeed} #{$timingFunction};
     body.mobileNavShow & {
-      bottom: auto;
-      top: 50%;
-      transform: translateY(-50%);
+      bottom: 0;
       transform: rotate(-45deg);
+      transition: bottom #{$sandwichSpeed} #{$timingFunction},transform #{$rotateSpeed} #{$timingFunction} #{$sandwichSpeed};
     }
   }
-  
 }
 .aboutImg {
   @include respond(xs) {
@@ -52,8 +55,10 @@
   }
 }
 .mobileMenuToggle {
-  
-  @include mobileMenuToggle(#fff, 0.3rem, 2rem);
+  &:focus {
+    outline: 0;
+  }
+  @include mobileMenuToggle(#fff, 0.4rem, 2rem, 2rem, .2s, .2s, cubic-bezier(.215,.61,.355,1));
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

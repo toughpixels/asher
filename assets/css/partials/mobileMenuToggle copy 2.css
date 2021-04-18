@@ -1,0 +1,72 @@
+@mixin mobileMenuToggle($color, $barWidth, $width, $height: $width) {
+  width: $width;
+  height: $height;
+  position: relative;
+  display: block;
+  &:before, span:before, span:after {
+    display: block;
+    height: $barWidth;
+    width: 100%;
+    background-color: $color;
+    content: "";
+    position: absolute;
+    transition-duration: 0.3s;
+  }
+  &:before {
+    top: 0;
+    body.mobileNavShow & {
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(45deg);
+    }
+  }
+  span:before {
+    top: 50%;
+    transform: translateY(-50%);
+    body.mobileNavShow & {
+      opacity: 0;
+    }
+  }
+  span:after {
+    bottom: 0;
+    body.mobileNavShow & {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(-45deg);
+    }
+  }
+}
+.aboutImg {
+  @include respond(xs) {
+    display: none;
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.md\:w-1\/2 {
+  @include respond(sm) {
+    width: 50%;
+  }
+}
+.mobileMenuToggle {
+  
+  @include mobileMenuToggle(#fff, 0.3rem, 2rem);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  display: none;
+  @include respond(xs) {
+    display: block;
+  }
+}
+
+
+// section {
+//   display: none !important;
+//   &:nth-child(4) {
+//     display: block !important;
+//   }
+// }

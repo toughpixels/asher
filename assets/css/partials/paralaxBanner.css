@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
+  @include respond(xs) {
+    background-image: none !important;
+    background-color: #000;
+  }
 }
 .paralaxBanner img {
   width: 100%;
@@ -22,14 +26,31 @@
 }
 
 .paralaxBannerHeader {
-  min-height: 20rem;
-  height: 50vh;
+  
+  @include respond(sm) {
+    min-height: 20rem;
+    height: 50vh;
+  }
 }
 
 .sectionHeader {
-  @apply text-center text-6xl pt-6 mb-8;
+  @apply text-center text-4xl sm:text-6xl pt-4 sm:pt-6 mb-4 sm:mb-8;
+  font-weight: bold;
+}
+.sectionContent {
+  > p:first-child {
+    max-width: 57rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    @include respond(sm) {
+      font-size: 2rem;
+    }
+  }
 }
 
 .gridHeader {
   grid-column: 1 / span 3;
 }
+

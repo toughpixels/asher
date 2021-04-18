@@ -10,6 +10,6 @@ layout = "top-image"
   position = "40% 5%"
 +++
 
-### This is my reel!
+I’ve written a handful of things and performed in an armful. Here’s a taste:
 
 {{< youtube zbR1A95Ll8Q >}}

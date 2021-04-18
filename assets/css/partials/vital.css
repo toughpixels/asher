@@ -7,17 +7,48 @@ body {
   }
 }
 
+.coverWrap {
+  @include respond(xs) {
+    padding-bottom: 60%;
+    position: relative !important;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    object-position: 50% 18%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
 section {
-  @apply relative min-h-screen;
+  @apply relative sm:min-h-screen;
+  &#writings {
+    min-height: 0px;
+  }
+}
+body .pb-section {
+  padding-bottom: 4rem;
 }
 
-header {
+.siteHeader {
   position: relative;
-  z-index: 10;
+  z-index: 11;
+  @include respond(xs) {
+    height: var(--mobileHeaderHeight);
+  }
+  h1 {
+    @include respond(xs) {
+      font-size: 25px;
+    }
+  }
 
 }
-
 .pageNav {
+  @include respond(xs) {
+    padding-top: 1rem;
+  }
   li:not(.active) {
       background: transparent !important;
   }
@@ -27,6 +58,29 @@ header {
     text-shadow: none;
   }
 
+}
+
+@media screen and (max-width: 767px) {
+  .pageNav {
+    position:fixed;
+    z-index: 50;
+    top: var(--mobileHeaderHeight);
+    bottom: 0;
+    overflow: auto;
+    left: 0;
+    width: 100%;
+    max-width: 12rem;
+    transition-duration: 0.3s;
+    transform: translateX(-100%);
+  }
+  body.mobileNavShow .pageNav {
+    transform: translateX(0);
+  }
+  body:not(.mobileNavShow) .pageNav a {
+    pointer-events: none;
+    cursor: default;
+    user-select: none;
+  }
 }
 
 .logo {

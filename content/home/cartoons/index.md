@@ -17,3 +17,5 @@ menu = "main"
   src = "obscurity.jpg"
   title = ""
 +++
+
+My cartoons have appeared in The New Yorker and Weekly Humorist. Here’s a few that I enjoy:

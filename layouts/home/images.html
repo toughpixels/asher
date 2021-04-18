@@ -1,7 +1,10 @@
+<div class="container pb-section">
 <h2 class="sectionHeader">{{ .Params.title }}</h2>
-{{ .Content }}
+<div class="sectionContent">
+  {{ .Content }}
+</div>
 <div data-slider-nav="#cartoonsSlider" 
-  class="py-8 container grid grid-cols-2 sm:grid-cols-3 gap-4"
+  class="py-8 grid grid-cols-2 sm:grid-cols-3 gap-4"
 >
   {{ range .Resources.ByType "image" }}
   <a role="button" class="block" data-modal-target="#cartoonsModal">
@@ -10,7 +13,10 @@
   {{ end }}
 </div>
 
-<div id="cartoonsModal" class="modal flex items-center">
+<div id="cartoonsModal" class="modal md:flex items-center hide">
+  <div class="flex md:block justify-end">
+    <button data-close-button class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl text-white bg-asher-blue">&times;</button>
+  </div>
   <div id="cartoonsSlider" class="slider flex items-center" data-position="0">
     <a role="button" class="slider_nav slider__prev">&larr;</a>
     <div class="slider__slidesWrap">
@@ -24,12 +30,19 @@
     </div>
     <a role="button" class="slider_nav slider__next">&rarr;</a>
   </div>
-  <button data-close-button class="absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl text-white bg-asher-blue">&times;</button>
+  
 </div>
 <div id="overlay"></div>
 
+<script type="module">
+  import swipedEvents from 'https://cdn.skypack.dev/swiped-events'; 
+
+</script>
 
 <script>
+
+
+  
     const sliders = document.querySelectorAll('.slider');
     sliders.forEach(slider => {
         let slidesWrap = slider.querySelectorAll('.slider__slides');
@@ -72,6 +85,18 @@
                 slidesWrap[0].style.left = '-' + sliderPosition + '00%';
             });
         });
+        const prevButton = document.querySelector('.slider__prev');
+        const nextButton = document.querySelector('.slider__next');
+
+        document.addEventListener('swiped', function(e) {
+
+          if(e.detail.dir == 'right') {
+            prevButton.click();
+  }
+  if(e.detail.dir == 'left') {
+    nextButton.click();
+}
+});
 
         // sliderPrev.addEventListener('click', () => {
         //     console.log('h0ads')
@@ -79,3 +104,4 @@
     });
 
 </script>
+</div>

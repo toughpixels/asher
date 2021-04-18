@@ -1,6 +1,6 @@
 .container {
   max-width: 92rem;
-  @apply px-xGap mx-auto;
+  @apply px-xGap mx-auto pb-4;
 }
 
 #content {

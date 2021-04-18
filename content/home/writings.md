@@ -9,3 +9,5 @@ tiles = [
     {title = "From This Moment Forward, I Will Only Accept Gratitude In The Form Of Jet Flyovers", url = "", logo = "mcsweenys.svg"}
     ]
 +++
+
+My writing has appeared in The New Yorker, McSweeney’s, the Chicago RedEye, and The Second City Network. Here’s a taste:

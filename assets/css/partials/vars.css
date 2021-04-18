@@ -2,7 +2,7 @@
   --sideNavWidth: 8rem;
   --xGap: theme('spacing.xGap');
   --yGap: 1.5rem;
-  --mobileHeaderHeight: 4rem;
+  --mobileHeaderHeight: 92px;
 }
 
 @mixin respond($media) {
