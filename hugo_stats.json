@@ -127,6 +127,7 @@
       "md:absolute",
       "md:block",
       "md:flex",
+      "md:grid",
       "md:grid-cols-2",
       "md:grid-rows-4",
       "md:h-screen",

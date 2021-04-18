@@ -26,27 +26,42 @@ html {
   display: none
 }
 
+.contact {
+  @include respond(xs) {
+    padding-top: 1rem;
+  }
+}
+
 .contact .image1 {
   grid-row: 1;
   grid-column: 1;
-  // margin-bottom: -1rem;
-  // margin-right: -1rem;
-  // margin-top: .5rem;
+  @include respond(xs) {
+    margin-left: -1rem;
+  }
 }
 
 .contact .image2 {
   grid-row: 2;
   grid-column: 2;
-  // margin-left: -.5rem;
-  margin-top: -12px;
+  @include respond(xs) {
+    margin-right: -1rem;
+  }
+  @include respond(sm) {
+    margin-top: -12px;
     margin-left: -12px;
     max-width: calc(100% + 12px);
+  }
 }
 
 .contact .image3 {
   grid-row: 3 / span 2;
   grid-column: 1;
-  margin-top: -12px;
+  @include respond(xs) {
+    margin-top: 2rem;
+  }
+  @include respond(sm) {
+    margin-top: -12px;
+  }
   // margin-bottom: 1rem;
   // margin-right: -.5rem;
   // margin-top: -.5rem;
@@ -56,7 +71,12 @@ html {
   grid-row: 3 / span 2;
   grid-column: 2;
   align-self: center;
-  margin-left: 2rem;
+  @include respond(xs) {
+    margin-top: 2rem;
+  }
+  @include respond(sm) {
+    margin-left: 2rem;
+  }
   // margin-left: 1rem;
   // margin-right: 1rem;
   // max-width: 25rem;
@@ -70,6 +90,9 @@ html {
   border-radius: 20px;
   // max-height: 100%;
   // object-fit: contain;
+  @include respond(xs) {
+    width: 100%;
+  }
 }
 
 .contact a {
@@ -83,6 +106,7 @@ html {
 
 .container.container-contact {
   max-width: 50rem;
+
 }
 
 .textInput {
