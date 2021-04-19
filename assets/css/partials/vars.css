@@ -2,7 +2,8 @@
   --sideNavWidth: 8rem;
   --xGap: theme('spacing.xGap');
   --yGap: 1.5rem;
-  --mobileHeaderHeight: 92px;
+  --mobileHeaderHeight: 70px;
+  --contactOutlines: rgb(76, 29, 149);
 }
 
 @mixin respond($media) {

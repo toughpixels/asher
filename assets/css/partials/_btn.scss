@@ -1,0 +1,6 @@
+.btn {
+    &:hover, &:focus {
+        outline: 0;
+        background: var(--contactOutlines);
+    }
+}

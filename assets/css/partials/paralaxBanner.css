@@ -34,7 +34,11 @@
 }
 
 .sectionHeader {
-  @apply text-center text-4xl sm:text-6xl pt-4 sm:pt-6 mb-4 sm:mb-8;
+  @apply text-center pt-8 mb-12;
+  font-weight: bold;
+}
+h2 {
+  @apply text-4xl sm:text-6xl;
   font-weight: bold;
 }
 .sectionContent {
