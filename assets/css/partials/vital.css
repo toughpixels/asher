@@ -54,7 +54,6 @@ body .pb-section {
   }
   li.active a {
     @apply text-default;
-    text-decoration: underline;
     text-shadow: none;
   }
 

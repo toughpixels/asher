@@ -1970,7 +1970,6 @@ body .pb-section {
 .pageNav li.active a {
   --tw-text-opacity: 1;
   color: rgba(29, 31, 32, var(--tw-text-opacity));
-  text-decoration: underline;
   text-shadow: none;
 }
 
