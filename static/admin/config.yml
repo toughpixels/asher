@@ -5,15 +5,14 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'cartoons'
-    media_folder: static/img
-    public_folder: /img
-    label: 'Cartoon'
+    media_folder: ./cartoons/
+    label: 'Manage Cartoons Here'
     folder: 'cartoons/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Alt Text', name: 'title', widget: 'string' }
+      - { label: 'A Solid Image Description', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
