@@ -7,7 +7,7 @@
   class="py-8 grid grid-cols-2 sm:grid-cols-3 gap-4"
 >
   {{ range .Resources.ByType "image" }}
-  <a role="button" class="block" data-modal-target="#cartoonsModal">
+  <a role="button" tabindex="0" class="block cartoonLink" data-modal-target="#cartoonsModal">
     {{ partial "image.html" . }}
   </a>
   {{ end }}
@@ -15,10 +15,10 @@
 
 <div id="cartoonsModal" class="modal md:flex items-center hide">
   <div class="flex md:block justify-end">
-    <button data-close-button class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl text-white bg-asher-blue">&times;</button>
+    <button tabindex="0" data-close-button class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl sliderAction">&times;</button>
   </div>
   <div id="cartoonsSlider" class="slider flex items-center" data-position="0">
-    <a role="button" class="slider_nav slider__prev">&larr;</a>
+    <a tabindex="0" role="button" class="sliderAction slider_nav slider__prev">&larr;</a>
     <div class="slider__slidesWrap">
       <div class="slider__slides">
         {{ range .Resources.ByType "image" }}
@@ -28,7 +28,7 @@
         {{ end }}
       </div>
     </div>
-    <a role="button" class="slider_nav slider__next">&rarr;</a>
+    <a tabindex="0" role="button" class="sliderAction slider_nav slider__next">&rarr;</a>
   </div>
   
 </div>
@@ -41,7 +41,8 @@
 
 <script>
 
-
+    const prevButton = document.querySelector('.slider__prev');
+    const nextButton = document.querySelector('.slider__next');
   
     const sliders = document.querySelectorAll('.slider');
     sliders.forEach(slider => {
@@ -85,11 +86,12 @@
                 slidesWrap[0].style.left = '-' + sliderPosition + '00%';
             });
         });
-        const prevButton = document.querySelector('.slider__prev');
-        const nextButton = document.querySelector('.slider__next');
+        
+
+        
 
         document.addEventListener('swiped', function(e) {
-
+          
           if(e.detail.dir == 'right') {
             prevButton.click();
   }
@@ -102,6 +104,16 @@
         //     console.log('h0ads')
         // });
     });
+
+    document.addEventListener('keydown', function(event) {
+          var keycode = event.which || event.keyCode;
+          if(keycode === 37) {
+            prevButton.click();
+          }
+          if(keycode === 39) {
+            nextButton.click();
+          }
+        });
 
 </script>
 </div>

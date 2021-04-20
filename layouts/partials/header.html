@@ -10,22 +10,10 @@
         <ul>
             {{- range .Site.Menus.main }}
             <li class="bg-{{ .Page.Params.id }}-200 rounded-full border-t-2 border-b-2 border-l-4 border-r-4 border-asher-blue light-shadow">
-                <a class="block align-top px-4 py-2 rounded-full text-center text-{{ .Page.Params.id }}-200 hover:underline hover:text-default hover:bg-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
+                <a class="block align-top px-4 py-2 rounded-full text-center text-{{ .Page.Params.id }}-200 hover:text-default hover:bg-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
             </li>
             {{- end }}
         </ul>
     </nav>
     {{- partial "mobileMenuToggle.html" . -}}
 </header>
-<script type="text/javascript">
-    const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
-    toggleActions.forEach(function(toggleAction){
-        var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
-        let toggleState = toggleAction.getAttribute('aria-expanded');
-        toggleAction.addEventListener('click', function(){
-            document.body.classList.toggle(toggleClass);
-            toggleState = (toggleState === 'false') ? 'true' : 'false';
-            toggleAction.setAttribute('aria-expanded', toggleState);
-        });
-    });
-</script>

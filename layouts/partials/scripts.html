@@ -1,4 +1,27 @@
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@4/dist/gumshoe.polyfills.min.js"></script>
 <script>
 	var spy = new Gumshoe('.pageNav a');
+
+    const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
+    toggleActions.forEach(function(toggleAction){
+        var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
+        let toggleState = toggleAction.getAttribute('aria-expanded');
+        toggleAction.addEventListener('click', function(){
+            document.body.classList.toggle(toggleClass);
+            toggleState = (toggleState === 'false') ? 'true' : 'false';
+            toggleAction.setAttribute('aria-expanded', toggleState);
+        });
+    });
+    const pageContent = document.getElementById('content');
+    pageContent.addEventListener('click', function(){
+        document.body.classList.remove('mobileNavShow');
+    });
+	document.addEventListener('keydown', function(event) {
+          var keycode = event.which || event.keyCode;
+		  
+          if(keycode === 27) {
+            document.body.classList.remove('modal-active');
+			document.querySelector('.modal.active').classList.remove('active')
+          }
+    });
 </script>

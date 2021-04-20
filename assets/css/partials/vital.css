@@ -23,9 +23,9 @@ body {
 }
 
 section {
-  @apply relative sm:min-h-screen;
-  &#writings {
-    min-height: 0px;
+  @apply relative;
+  &#landing {
+    @apply sm:min-h-screen;
   }
 }
 body .pb-section {

@@ -1,4 +1,5 @@
 .slider {
+  width: 100%;
   @include respond(xs) {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,8 +38,15 @@
     flex: 1;
     
 }
+
 .slider_nav {
     font-size: 3rem;
-    color: #fff;
     @apply px-4;
+}
+
+.sliderAction {
+  @apply text-white bg-asher-blue;
+  &:hover, &:focus {
+    background: #000;
+  }
 }
