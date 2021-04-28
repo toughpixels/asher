@@ -38,20 +38,20 @@ html {
 .contact .image1 {
   grid-row: 1;
   grid-column: 1;
-  
+
 }
 
 .contact .image2 {
   grid-row: 2;
   grid-column: 2;
-  
-  
+
+
 }
 
 .contact .image3 {
   grid-row: 3 / span 2;
   grid-column: 1;
-  
+
   // margin-bottom: 1rem;
   // margin-right: -.5rem;
   // margin-top: -.5rem;
@@ -104,6 +104,7 @@ html {
   border: 2px solid rgba(0, 0, 0, 0.2);
   &:focus {
     border-color: var(--contactOutlines);
+    border-width: .2rem;
     outline: 0;
   }
 }

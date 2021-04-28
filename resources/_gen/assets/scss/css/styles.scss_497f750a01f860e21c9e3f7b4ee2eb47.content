@@ -2181,6 +2181,7 @@ html {
 
 .textInput:focus {
   border-color: var(--contactOutlines);
+  border-width: .2rem;
   outline: 0;
 }
 

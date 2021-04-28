@@ -49,6 +49,9 @@ body .pb-section {
   @include respond(xs) {
     padding-top: 1rem;
   }
+  li {
+    width: calc;
+  }
   li:not(.active) {
       background: transparent !important;
   }
