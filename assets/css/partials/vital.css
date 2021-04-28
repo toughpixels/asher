@@ -88,3 +88,7 @@ body .pb-section {
 .logo {
   max-height: 10rem;
 }
+
+.text-success {
+  color: rgb(14, 99, 14);
+}

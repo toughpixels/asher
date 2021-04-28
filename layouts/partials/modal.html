@@ -1,54 +1,54 @@
 <script>
-    const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+//     const openModalButtons = document.querySelectorAll('[data-modal-target]')
+// const closeModalButtons = document.querySelectorAll('[data-close-button]')
+// const overlay = document.getElementById('overlay')
 
-const modals = document.querySelectorAll('.modal');
+// const modals = document.querySelectorAll('.modal');
 
-setTimeout(() => {
-  modals.forEach(function(modal, index) {
-    modal.classList.remove('hide');
-  });
-}, 300);
+// setTimeout(() => {
+//   modals.forEach(function(modal, index) {
+//     modal.classList.remove('hide');
+//   });
+// }, 300);
 
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
+// openModalButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const modal = document.querySelector(button.dataset.modalTarget)
+//     openModal(modal)
+//   })
+// })
 
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
+// overlay.addEventListener('click', () => {
+//   const modals = document.querySelectorAll('.modal.active')
+//   modals.forEach(modal => {
+//     closeModal(modal)
+//   })
+// })
 
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
+// closeModalButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const modal = button.closest('.modal')
+//     closeModal(modal)
+//   })
+// })
 
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-  document.body.classList.add('modal-active')
-}
+// function openModal(modal) {
+//   if (modal == null) return
+//   modal.classList.add('active')
+//   overlay.classList.add('active')
+//   document.body.classList.add('modal-active')
+// }
 
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-  document.body.classList.remove('modal-active')
-}
+// function closeModal(modal) {
+//   if (modal == null) return
+//   modal.classList.remove('active')
+//   overlay.classList.remove('active')
+//   document.body.classList.remove('modal-active')
+// }
 </script>
 
 <style>
-
+/* 
 body.modal-active {
   overflow: hidden;
 }
@@ -67,7 +67,26 @@ body.modal-active {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
+} 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+  z-index: 99;
 }
+
+body.modal-active #overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+*/
 
 .modal-header {
   padding: 10px 15px;
@@ -92,21 +111,13 @@ body.modal-active {
 }
 
 
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
-  z-index: 99;
+
+.modal {
+  display: none;
 }
 
-body.modal-active #overlay {
-  opacity: 1;
-  pointer-events: all;
+.modal.is-open {
+  display: block;
 }
+
 </style>
