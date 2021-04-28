@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: assets/images/
+public_folder: /img
+collections:
+  - name: 'cartoons'
+    media_folder: cartoons/
+    label: 'Manage Cartoons Here'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'A Solid Image Description', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
