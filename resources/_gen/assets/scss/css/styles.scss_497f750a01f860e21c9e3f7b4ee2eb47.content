@@ -1885,8 +1885,7 @@ video {
   color: #7c3aed;
 }
 
-/*
-*/
+/* purgecss start ignore */
 
 :root {
   --sideNavWidth: 8rem;
@@ -2450,6 +2449,8 @@ svg {
 .quotes svg[aria-label="Vulture"] {
   width: 6.5em;
 }
+
+/* purgecss end ignore */
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;

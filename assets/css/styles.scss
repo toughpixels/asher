@@ -1,7 +1,6 @@
 @import "node_modules/tailwindcss/base";
 @import "node_modules/tailwindcss/components";
-/*
-*/
+/* purgecss start ignore */
 @import "assets/css/partials/vars";
 @import "assets/css/partials/vital";
 @import "assets/css/partials/mobileMenuToggle";
@@ -13,6 +12,6 @@
 @import "assets/css/partials/btn";
 @import "assets/css/partials/cartoonLink";
 @import "assets/css/partials/press";
-
+/* purgecss end ignore */
 
 @import "node_modules/tailwindcss/utilities";
