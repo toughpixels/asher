@@ -1,6 +1,6 @@
 +++
 id = "contact"
-title = "More of Me"
+title = "More Me"
 weight = 60
 menu = "main"
 layout = "contact"
