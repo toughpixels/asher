@@ -2,26 +2,42 @@
 <script>
 	var spy = new Gumshoe('.pageNav a');
 
-    const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
-    toggleActions.forEach(function(toggleAction){
-        var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
-        let toggleState = toggleAction.getAttribute('aria-expanded');
-        toggleAction.addEventListener('click', function(){
-            document.body.classList.toggle(toggleClass);
-            toggleState = (toggleState === 'false') ? 'true' : 'false';
-            toggleAction.setAttribute('aria-expanded', toggleState);
-        });
-    });
-    const pageContent = document.getElementById('content');
-    pageContent.addEventListener('click', function(){
-        document.body.classList.remove('mobileNavShow');
-    });
-	document.addEventListener('keydown', function(event) {
-          var keycode = event.which || event.keyCode;
+    // toggle class - modal??
+    // const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
+    // toggleActions.forEach(function(toggleAction){
+    //     var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
+    //     let toggleState = toggleAction.getAttribute('aria-expanded');
+    //     toggleAction.addEventListener('click', function(){
+    //         document.body.classList.toggle(toggleClass);
+    //         toggleState = (toggleState === 'false') ? 'true' : 'false';
+    //         toggleAction.setAttribute('aria-expanded', toggleState);
+    //     });
+    // });
+    // const pageContent = document.getElementById('content');
+    // pageContent.addEventListener('click', function(){
+    //     document.body.classList.remove('mobileNavShow');
+    // });
+	// document.addEventListener('keydown', function(event) {
+    //       var keycode = event.which || event.keyCode;
 		  
-          if(keycode === 27) {
-            document.body.classList.remove('modal-active');
-			document.querySelector('.modal.active').classList.remove('active')
-          }
-    });
+    //       if(keycode === 27) {
+    //         document.body.classList.remove('modal-active');
+	// 		document.querySelector('.modal.active').classList.remove('active')
+    //       }
+    // });
+</script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js
+"></script>
+<script>
+    MicroModal.init();
+
+getParameter = (key) => {
+  address = window.location.search
+  parameterList = new URLSearchParams(address)
+  return parameterList.get(key)
+}
+console.log(getParameter("success"));
+if(getParameter("success") == 1) {
+    MicroModal.show('modal-success');
+}
 </script>

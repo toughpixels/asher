@@ -1,32 +1,18 @@
-Business account => chase => sunrise banks
+# Top todos
 
+* outline tab/focus states for side nav
+* mobile nav not working
+* open graph?
 
-Click out close
-Shorten header
-Stack bottom things
-Press openings
-Open graph
-Seo
-Change order of press 
-Hook up contact form
-Get his logo
-Short press
-Cartoons - waiting on stuff
-Videos - waiting
-CMS aspect for cartoons
-Checkered photos 
-Get ashers approval on alt text
-Make alt text very seo friendly
-Fix colorS  (find better - see if Asher has pref , higher hanging fruit)
-Escape out of the modal 
-Tanning with the modal (get a plungin if I need to)
-Remove min height
-Make videos a little shorter
-More of me
+# Pending Asher's cartoons
 
+* Figure out how to compile them to 600px
+* write great alt tags for them
 
-Asher - how many cartoons do you want to add?
+# also waiting on..
+* videos
+* hand-written logo
 
-
-Tips
-Writing great alt tags
+# Project End
+* Get ashers approval on alt text
+* Fix colorS  (find better - see if Asher has pref , higher hanging fruit)

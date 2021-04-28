@@ -1,15 +1,20 @@
-<div class="contactform">
-    <form action="post">
+<div class="contactform" id="contact">
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="3d9c8623-8415-4e40-9710-38323a0ba553">
+        <input type="hidden" name="subject" value="message from ashermaxperlman.com">
+        <input type="text" name="honeypot" style="display: none;"> 
+        <input type="hidden" name="redirectTo" value="{{ $.Site.BaseURL }}?success=1">
         <div class="mb-4">
             <label for="email">Your Email:</label><br>
             <input type="email" class="w-full textInput" id="email" name="email"><br>
         </div>
         <div class="mb-4">
-            <label for="comment">Your Friendly Comment:</label><br>
-            <textarea type="comment"  class="w-full textInput" id="comment" name="comment"></textarea><br>
+            <label for="message">Your Friendly Comment:</label><br>
+            <textarea class="w-full textInput" id="message" name="message"></textarea><br>
         </div>
         <div class="flex items-center">
             <input class="bg-asher-blue font-bold text-white py-2 px-4 btn" type="submit" value="Say Hello!">
         </div>
+        
     </form>
 </div>

@@ -2000,6 +2000,10 @@ body .pb-section {
   max-height: 10rem;
 }
 
+.text-success {
+  color: #0e630e;
+}
+
 @media (max-width: 767px) {
   .aboutImg {
     display: none;
@@ -2238,13 +2242,12 @@ html {
 
 @media (min-width: 768px) {
   .paralaxBannerHeader {
-    min-height: 20rem;
-    height: 50vh;
+    min-height: 14rem;
   }
 }
 
 .sectionHeader {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
   font-weight: bold;
@@ -2319,25 +2322,32 @@ h2 {
   }
 }
 
-.slider__slidesWrap {
+[role="dialog"] {
   width: 100%;
-  overflow: hidden;
 }
 
 .slider__slides {
-  transition-duration: 0.3s;
-  display: flex;
-  position: relative;
+  width: 100%;
+  height: calc(100vh - 4rem);
+  width: 100%;
 }
 
-.slider__slides > div {
-  flex: 1;
+.slider__slides img {
+  pointer-events: none;
+}
+
+.slider__slidesWrap {
+  width: 100%;
 }
 
 .slider_nav {
   font-size: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.slider__prev {
+  order: -1;
 }
 
 .sliderAction {
@@ -2405,6 +2415,40 @@ svg {
 
 .cartoonLink {
   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.quotes {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .quotes p {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .quotes {
+    font-size: 2.5vw;
+  }
+}
+
+.quotes svg {
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .quotes svg {
+    margin: 1rem 0 2rem;
+  }
+}
+
+.quotes svg[aria-label="Chicago Tribune"] {
+  width: 10em;
+}
+
+.quotes svg[aria-label="Vulture"] {
+  width: 6.5em;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
