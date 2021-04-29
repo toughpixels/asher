@@ -1,6 +1,6 @@
-<header class="bg-asher-blue md:h-screen md:w-navWidth sticky top-0 flex md:block siteHeader">
-    <a href="#landing" class="inline-flex items-center border-8 border-asher-blue text-blue-500 text-4xl text-asher-lblue ">
-        <h1 class="border-8 border-asher-pink px-4 text-center bg-default">{{ .Title }}</h1>
+<header class="siteHeader">
+    <a href="#landing" class="logoLink">
+        <h1 class="logoH1">{{ .Title }}</h1>
     </a>
     <div class="hidden md:block">
         {{ $bolt  := resources.GetMatch "sidebar/bolt.svg" }}
