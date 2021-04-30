@@ -2,6 +2,11 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   theme: {
+    screens: {
+
+      md: '768px',
+
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

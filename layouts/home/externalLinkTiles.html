@@ -3,7 +3,7 @@
     <div class="sectionContent">
         {{ .Content }}
     </div>
-    <div class="grid sm:grid-cols-2 gap-4 mt-8">
+    <div class="grid md:grid-cols-2 gap-4 mt-8">
         {{ range $item := .Params.tiles }}
         {{ $logoName := $item.logo}}
         <a href="{{ $item.url }}" class="linkTile p-4 pt-8 hover:text-writings-800 flex flex-col text-center hover:border-writings-900 relative" target="_blank">

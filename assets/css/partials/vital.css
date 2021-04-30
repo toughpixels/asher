@@ -25,7 +25,7 @@ body {
 section {
   @apply relative;
   &#landing {
-    @apply sm:min-h-screen;
+    @apply md:min-h-screen;
   }
 }
 body .pb-section {

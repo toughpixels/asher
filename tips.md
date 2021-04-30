@@ -21,3 +21,4 @@ tip: great alt text
     * how to disable images to see where it's missing (??)
 
 Here's [an accessibility checklist](https://www.a11yproject.com/checklist/)
+
