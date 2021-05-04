@@ -54,12 +54,20 @@ body .pb-section {
   }
   li:not(.active) {
       background: transparent !important;
+      a:hover, a:focus {
+        border-color: currentColor;
+        outline: 0;
+      }
   }
   li.active a {
     @apply text-default;
     text-shadow: none;
   }
-
+  a {
+    border-width: 2px;
+    border-color: transparent;
+  }
+  
 }
 
 @media screen and (max-width: 767px) {

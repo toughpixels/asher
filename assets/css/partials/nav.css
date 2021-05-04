@@ -4,6 +4,10 @@
 
 .logoLink {
   @apply inline-flex items-center border-8 border-asher-blue  text-4xl text-asher-lblue;
+  &:hover, &:focus {
+    outline: 0;
+    @apply text-asher-pink;
+  }
 }
 .logoH1 {
   @apply border-8 border-asher-pink px-4 text-center bg-default;

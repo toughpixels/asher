@@ -10,7 +10,7 @@
         <ul>
             {{- range .Site.Menus.main }}
             <li class="bg-{{ .Page.Params.id }}-200 rounded-full border-t-2 border-b-2 border-l-4 border-r-4 border-asher-blue light-shadow">
-                <a class="block align-top px-4 py-2 rounded-full text-center text-{{ .Page.Params.id }}-200 hover:text-default hover:bg-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
+                <a class="block align-top px-4 py-2 rounded-full text-center text-{{ .Page.Params.id }}-200" href="#{{.Page.Params.id}}">{{ .Title}}</a>
             </li>
             {{- end }}
         </ul>

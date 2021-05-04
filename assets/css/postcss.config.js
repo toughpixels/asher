@@ -14,7 +14,7 @@ module.exports = {
             'h2',
             'h3',
             'h4',
-            'p', 'md:grid-cols-2', 'lg:grid-cols-3', 'hover:text-default']
+            'p', 'md:grid-cols-2', 'lg:grid-cols-3', 'hover:text-default', 'md:flex', 'md:grid', 'md:mb-0', 'md:grid-cols-3']
         }),
         require('autoprefixer')({      
             overrideBrowserslist: ['>1%']

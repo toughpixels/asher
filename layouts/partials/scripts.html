@@ -3,16 +3,17 @@
 	var spy = new Gumshoe('.pageNav a');
 
     // toggle class - modal??
-    // const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
-    // toggleActions.forEach(function(toggleAction){
-    //     var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
-    //     let toggleState = toggleAction.getAttribute('aria-expanded');
-    //     toggleAction.addEventListener('click', function(){
-    //         document.body.classList.toggle(toggleClass);
-    //         toggleState = (toggleState === 'false') ? 'true' : 'false';
-    //         toggleAction.setAttribute('aria-expanded', toggleState);
-    //     });
-    // });
+    const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
+    toggleActions.forEach(function(toggleAction){
+        var toggleClass = toggleAction.getAttribute('data-toggle-body-class');
+        let toggleState = toggleAction.getAttribute('aria-expanded');
+        toggleAction.addEventListener('click', function(){
+            document.body.classList.toggle(toggleClass);
+            toggleState = (toggleState === 'false') ? 'true' : 'false';
+            toggleAction.setAttribute('aria-expanded', toggleState);
+        });
+    });
+    
     // const pageContent = document.getElementById('content');
     // pageContent.addEventListener('click', function(){
     //     document.body.classList.remove('mobileNavShow');

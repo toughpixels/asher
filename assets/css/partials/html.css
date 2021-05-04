@@ -102,9 +102,9 @@ html {
 .textInput {
   padding: 0.5rem 1rem;
   border: 2px solid rgba(0, 0, 0, 0.2);
+  border-width: .2rem;
   &:focus {
     border-color: var(--contactOutlines);
-    border-width: .2rem;
     outline: 0;
   }
 }

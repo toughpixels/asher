@@ -3,10 +3,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ block "title" . }}{{ if .Title }}{{ .Title }} | {{ end }}{{end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
-  <meta name="keywords" content="KEYWORDS HERE!">  
-  <meta name="author" content="YOUR NAME">
+  <meta name="author" content="Asher Perlman">
   {{ template "_internal/opengraph.html" . }}  
-  <!-- For any google font you choose, please add "&display=swap" to the end of the href  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap">
 
   {{/* */}}
