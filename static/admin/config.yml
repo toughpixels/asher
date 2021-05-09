@@ -3,15 +3,18 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: assets/images/
 public_folder: /img
-collections:
-  - name: 'cartoons'
-    media_folder: cartoons/
-    label: 'Manage Cartoons Here'
+  - name: 'images'
+    label: 'Image'
+    folder: 'home/cartoons/'
+    path: '{{slug}}'
+    media_folder: 'assets/cartoons'
+    public_folder: 'assets/cartoons'
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'A Solid Image Description', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Quick deescription of the action or premise of the image', name: 'description', widget: 'string' }
+      - { label: 'Date (Images are ordered newest to oldest)', name: 'date', widget: 'datetime' }
