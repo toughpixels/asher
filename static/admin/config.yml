@@ -8,8 +8,8 @@ collections:
     label: 'Image'
     folder: 'home/cartoons/'
     path: '{{slug}}'
-    media_folder: 'assets/cartoons'
-    public_folder: 'assets/cartoons'
+    media_folder: '/assets/cartoons'
+    public_folder: '/assets/cartoons'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
