@@ -4,9 +4,9 @@ backend:
 media_folder: assets/images/
 public_folder: /img
 collections:
-  - name: 'images'
-    label: 'Image'
-    folder: 'home/cartoons/'
+  - name: 'cartoons'
+    label: 'Cartoons'
+    folder: 'content/home/cartoons/'
     path: '{{slug}}'
     media_folder: '/assets/cartoons'
     public_folder: '/assets/cartoons'
