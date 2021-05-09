@@ -6,11 +6,11 @@
 <div data-slider-nav="#cartoonsSlider" 
   class="py-8 grid grid-cols-2 md:grid-cols-3 gap-4"
 > 
-{{ .Pages }}
   {{ range .Pages }}
-    {{ . }}
   <button type="button" class="block cartoonLink" data-micromodal-trigger="cartoonsModal" >
-    {{ partial "image.html" . }}
+    {{ $image  := resources.Get .Params.image }}
+    <img src="{{.Params.image}}" alt="">
+    {{ partial "image.html" $image }}
   </button>
   {{ end }}
 </div>
