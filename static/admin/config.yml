@@ -8,8 +8,8 @@ collections:
     label: 'Cartoons'
     folder: 'content/home/cartoons/'
     path: '{{slug}}'
-    media_folder: '/assets/cartoons'
-    public_folder: '/assets/cartoons'
+    media_folder: '/assets/cartoons/'
+    public_folder: 'cartoons/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
@@ -17,5 +17,5 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Quick deescription of the action or premise of the image', name: 'description', widget: 'string' }
+      - { label: 'Quick description of the action or premise of the image', name: 'alt', widget: 'string' }
       - { label: 'Date (Images are ordered newest to oldest)', name: 'date', widget: 'datetime' }
