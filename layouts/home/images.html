@@ -8,8 +8,7 @@
 > 
   {{ range .Pages }}
   <button type="button" class="block cartoonLink" data-micromodal-trigger="cartoonsModal" >
-    {{ $image  := resources.Get .Params.image }}
-    {{ partial "image.html" $image }}
+    {{ partial "pageImage.html" . }}
   </button>
   {{ end }}
 </div>
@@ -21,13 +20,11 @@
     <button aria-label="Close modal" data-micromodal-close class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl sliderAction">&times;</button>
   </header>
   <div  class="slider flex items-center" data-position="0">
-    
     <div class="slider__slidesWrap flex-1">
       <div class="slider__slides" id="cartoonsSlider">
         {{ range .Pages }}
         <div class="flex justify-center items-center w-full">
-          {{ $image  := resources.Get .Params.image }}
-          {{ partial "image.html" $image }}
+          {{ partial "pageImage.html" . }}
         </div>
         {{ end }}
       </div>
