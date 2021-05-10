@@ -879,6 +879,13 @@ html {
   margin: auto;
 }
 
+.alternate-grid .logo:nth-child(even)::before, .alternate-grid .logo:nth-child(odd)::after {
+  content: "";
+  border-right: .3rem solid black;
+  margin-left: .8rem;
+  margin-right: .8rem;
+}
+
 .alternate-grid h3:nth-child(2), .alternate-grid p:nth-child(even) {
   grid-column-start: 2;
   text-align: left;
