@@ -7,6 +7,7 @@ collections:
   - name: 'cartoons'
     media_folder: cartoons/
     label: 'Manage Cartoons Here'
+    folder: 'content/home/cartoons/'
     create: true
     slug: '{{slug}}'
     editor:
