@@ -5,34 +5,36 @@
 </div>
 <div data-slider-nav="#cartoonsSlider" 
   class="py-8 grid grid-cols-2 md:grid-cols-3 gap-4"
-> 
-  {{ range .Resources.ByType "image" }}
+>
+  {{ range .Pages }}
   <button type="button" class="block cartoonLink" data-micromodal-trigger="cartoonsModal" >
-    {{ partial "image.html" . }}
+    {{ partial "pageImage.html" . }}
   </button>
   {{ end }}
 </div>
-
 <div id="cartoonsModal" aria-hidden="true" class="modal micromodal-slide  md:flex items-center">
   <div class="modal__overlay" tabindex="-1" data-micromodal-close>
     <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
-  <header class="flex md:block justify-end">
+  <header class="flex justify-end">
     <h2 class="sr-only" id="modal-1-title">Cartoons Slider</h2>
-    <button aria-label="Close modal" data-micromodal-close class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl sliderAction">&times;</button>
+    <button aria-label="Close modal" data-micromodal-close class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-6xl sliderAction">&times;</button>
   </header>
   <div  class="slider flex items-center" data-position="0">
-    
     <div class="slider__slidesWrap flex-1">
       <div class="slider__slides" id="cartoonsSlider">
-        {{ range .Resources.ByType "image" }}
+        {{ range .Pages }}
         <div class="flex justify-center items-center w-full">
-          {{ partial "image.html" . }}
+          {{ partial "pageImage.html" . }}
         </div>
         {{ end }}
       </div>
     </div>
-    <button aria-label="Next Slide" type="button" class="sliderAction slider_nav slider__next">&rarr;</button>
-    <button aria-label="Previous Slide" type="button" class="sliderAction slider_nav slider__prev">&larr;</button>
+    <button aria-label="Next Slide" type="button" class="sliderAction slider_nav slider__next lh-none">
+      {{- partial "icon.html" (dict "name" "butter-arrow" "class" "inline-block r-90") -}}
+    </button>
+    <button aria-label="Previous Slide" type="button" class="sliderAction slider_nav slider__prev lh-none">
+      {{- partial "icon.html" (dict "name" "butter-arrow" "class" "inline-block -r-90") -}}
+    </button>
   </div>
 </div>
   </div>
