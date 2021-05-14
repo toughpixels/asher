@@ -15,9 +15,9 @@
 <div id="cartoonsModal" aria-hidden="true" class="modal micromodal-slide  md:flex items-center">
   <div class="modal__overlay" tabindex="-1" data-micromodal-close>
     <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
-  <header class="flex md:block justify-end">
+  <header class="flex justify-end">
     <h2 class="sr-only" id="modal-1-title">Cartoons Slider</h2>
-    <button aria-label="Close modal" data-micromodal-close class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-4xl sliderAction">&times;</button>
+    <button aria-label="Close modal" data-micromodal-close class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-6xl sliderAction">&times;</button>
   </header>
   <div  class="slider flex items-center" data-position="0">
     <div class="slider__slidesWrap flex-1">
@@ -29,8 +29,12 @@
         {{ end }}
       </div>
     </div>
-    <button aria-label="Next Slide" type="button" class="sliderAction slider_nav slider__next">&rarr;</button>
-    <button aria-label="Previous Slide" type="button" class="sliderAction slider_nav slider__prev">&larr;</button>
+    <button aria-label="Next Slide" type="button" class="sliderAction slider_nav slider__next lh-none">
+      {{- partial "icon.html" (dict "name" "butter-arrow" "class" "inline-block r-90") -}}
+    </button>
+    <button aria-label="Previous Slide" type="button" class="sliderAction slider_nav slider__prev lh-none">
+      {{- partial "icon.html" (dict "name" "butter-arrow" "class" "inline-block -r-90") -}}
+    </button>
   </div>
 </div>
   </div>
