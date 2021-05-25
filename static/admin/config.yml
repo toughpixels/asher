@@ -5,9 +5,9 @@ media_folder: assets/images/
 public_folder: /img
 collections:
   - name: 'cartoons'
-    media_folder: cartoons/
+    media_folder: assets/cartoons/
     label: 'Cartoons'
-    folder: 'content/home/cartoons/{{slug}}/'
+    folder: 'content/home/cartoons/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
