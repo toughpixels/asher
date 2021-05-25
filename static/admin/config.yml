@@ -6,8 +6,8 @@ public_folder: /img
 collections:
   - name: 'cartoons'
     media_folder: cartoons/
-    label: 'Manage Cartoons Here'
-    folder: 'content/home/cartoons/'
+    label: 'Cartoons'
+    folder: 'content/home/cartoons/{{slug}}/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
