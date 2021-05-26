@@ -41,4 +41,12 @@ console.log(getParameter("success"));
 if(getParameter("success") == 1) {
     MicroModal.show('modal-success');
 }
+
+    for (var links = document.querySelectorAll("a[href^=http], a[href^=mailto]"), i = 0, a; a = links[i]; i++) {
+        if (a.host !== location.host) {
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+        }
+    }
+
 </script>

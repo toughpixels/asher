@@ -10,4 +10,4 @@ tiles = [
     ]
 +++
 
-My writing has appeared in The New Yorker, McSweeney’s, the Chicago RedEye, and The Second City Network. Here’s a taste:
+My writing has appeared in places like The New Yorker, McSweeney’s, and the Chicago RedEye. Here's a taste:
