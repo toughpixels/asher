@@ -766,6 +766,11 @@ body .pb-section {
   color: rgba(186, 216, 199, var(--tw-text-opacity));
 }
 
+.logoLink svg {
+  width: 80%;
+  margin: auto;
+  fill: green
+}
 .logoLink:hover, .logoLink:focus {
   outline: 0;
   --tw-text-opacity: 1;

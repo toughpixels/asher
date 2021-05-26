@@ -1,11 +1,11 @@
 <header class="siteHeader">
     <a href="#landing" class="logoLink">
         <h1 class="logoH1 sr-only">{{ .Title }}</h1>
-        {{ $logo  := resources.GetMatch "asher/asher-logo-small.png" }}
-        <img src="{{$logo.RelPermalink}}" alt="Asher Perlman's name drawn beautifully">
+        {{ $logo  := resources.GetMatch "asher/asher-logo-filled.svg" }}
+        {{ $logo.Content | safeHTML }}
     </a>
     <div class="hidden md:block">
-        
+
     </div>
     <nav class="text-3xl pageNav bg-asher-blue" id="pageNav">
         <ul>

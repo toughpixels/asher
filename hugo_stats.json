@@ -194,6 +194,7 @@
       "contact",
       "content",
       "ct-full",
+      "defs154",
       "defs16",
       "defs56",
       "defs6",
@@ -208,6 +209,7 @@
       "icon-external-link",
       "landing",
       "message",
+      "metadata156",
       "metadata18",
       "metadata58",
       "metadata71",
@@ -223,6 +225,7 @@
       "namedview91",
       "pageNav",
       "path10",
+      "path160",
       "path46",
       "path48",
       "path60",
@@ -234,7 +237,11 @@
       "path87",
       "press",
       "svg12",
+<<<<<<< HEAD
       "svg2",
+=======
+      "svg150",
+>>>>>>> 14936a01d72f8ea9893135176d3306ef97d21204
       "svg52",
       "svg89",
       "tnyLogo",
