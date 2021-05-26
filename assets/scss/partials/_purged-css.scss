@@ -764,12 +764,25 @@ body .pb-section {
   line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgba(186, 216, 199, var(--tw-text-opacity));
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .logoLink svg {
   width: 80%;
   margin: auto;
-  fill: green
+  // fill: rgba(199, 210, 254, 1);
+  fill: rgba(199, 210, 254, 1);
+  stroke: rgb(253, 230, 138);
+  stroke: rgba(199, 210, 254, 0.1);
+  stroke-width: 5px;
+}
+.contact-grid {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 320px));
+    justify-content: center;
+  }
 }
 .logoLink:hover, .logoLink:focus {
   outline: 0;
@@ -884,7 +897,7 @@ html {
   text-align: right;
   margin: auto;
 }
-
+@media (min-width: 768px) {
 .alternate-grid .logo:nth-child(even)::before, .alternate-grid .logo:nth-child(odd)::after {
   content: "";
   border-right: .3rem solid black;
@@ -896,6 +909,7 @@ html {
   grid-column-start: 2;
   text-align: left;
   margin: auto;
+}
 }
 
 .alternate-grid p:empty {
@@ -1162,6 +1176,9 @@ h2 {
   background-color: rgba(47, 57, 92, var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .sliderAction:hover, .sliderAction:focus {
