@@ -5,8 +5,8 @@ media_folder: assets/images/
 public_folder: /img
 collections:
   - name: 'cartoons'
-    media_folder: cartoons/
-    label: 'Manage Cartoons Here'
+    media_folder: assets/cartoons/
+    label: 'Cartoons'
     folder: 'content/home/cartoons/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
