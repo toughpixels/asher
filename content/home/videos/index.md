@@ -10,6 +10,18 @@ layout = "top-image"
   position = "40% 5%"
 +++
 
-I’ve written a handful of things and performed in an armful. Here’s a taste:
+I’ve written a handful of things and performed in an armful. 
 
-{{< youtube zbR1A95Ll8Q >}}
+Here’s my reel:
+
+{{< vimeo 282193228 >}}
+
+Here's a short I wrote and performed in that premiered at Just For Laughs:
+
+{{< vimeo 334507378 >}}
+
+I lost my mind in quarantine and made this computer screen movie:
+
+{{< vimeo 402255857 >}}
+
+
