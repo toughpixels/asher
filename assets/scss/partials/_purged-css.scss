@@ -663,11 +663,31 @@ body .pb-section {
 @media (max-width: 767px) {
   .siteHeader {
     height: var(--mobileHeaderHeight);
-    display: flex
+    display: flex;
+    z-index: 30;
   }
   section {
-    scroll-margin-top: var(--mobileHeaderHeight);
+    position: relative;
+    margin-top: calc(var(--mobileHeaderHeight)*-1);
+    padding-top: var(--mobileHeaderHeight);
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    @for $var from 1 to 20 {
+      &:nth-child(#{$var}) {
+        z-index: #{20 - $var};
+      }
+    }
+    
   }
+  // section:before {
+  //   content: "";
+  //   position: relative;
+  //   display: block;
+  //   margin-top: calc(var(--mobileHeaderHeight)*-1);
+  //   padding-top: var(--mobileHeaderHeight);
+  // }
 }
 
 @media (max-width: 767px) {
