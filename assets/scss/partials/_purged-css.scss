@@ -670,8 +670,8 @@ body .pb-section {
     scroll-snap-margin-top: var(--mobileHeaderHeight);
     scroll-margin-top: var(--mobileHeaderHeight);
     &:first-child {
-      scroll-snap-margin-top: 0;
-      scroll-margin-top: 0;
+      scroll-snap-margin-top: 0px;
+      scroll-margin-top: 0px;
     }
   }
 }
@@ -1281,6 +1281,7 @@ svg {
 
 .quotes svg {
   height: auto;
+  fill: red;
 }
 
 @media (max-width: 767px) {
