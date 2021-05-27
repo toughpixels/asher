@@ -664,6 +664,7 @@ body .pb-section {
 @media (max-width: 767px) {
   .siteHeader {
     height: var(--mobileHeaderHeight);
+    display: flex
   }
 }
 
@@ -688,7 +689,7 @@ body .pb-section {
 }
 
 .pageNav li:not(.active) a:hover, .pageNav li:not(.active) a:focus {
-  border-color: currentColor;
+  text-decoration: underline;
   outline: 0;
 }
 
@@ -766,11 +767,11 @@ body .pb-section {
   color: rgba(186, 216, 199, var(--tw-text-opacity));
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .logoLink svg {
-  width: 80%;
+  width: 100%;
   margin: auto;
   // fill: rgba(199, 210, 254, 1);
   fill: rgba(199, 210, 254, 1);
