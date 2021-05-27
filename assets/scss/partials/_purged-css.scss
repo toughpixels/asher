@@ -669,7 +669,10 @@ body .pb-section {
   section {
     scroll-snap-margin-top: var(--mobileHeaderHeight);
     scroll-margin-top: var(--mobileHeaderHeight);
-    
+    &:first-child {
+      scroll-snap-margin-top: 0;
+      scroll-margin-top: 0;
+    }
   }
 }
 
