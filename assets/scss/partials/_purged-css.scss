@@ -645,7 +645,6 @@ body {
 section {
   position: relative;
 }
-
 @media (min-width: 768px) {
   section#landing {
     min-height: 100vh;
@@ -665,6 +664,9 @@ body .pb-section {
   .siteHeader {
     height: var(--mobileHeaderHeight);
     display: flex
+  }
+  section {
+    scroll-margin-top: var(--mobileHeaderHeight);
   }
 }
 

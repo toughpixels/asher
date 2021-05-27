@@ -1,6 +1,15 @@
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@4/dist/gumshoe.polyfills.min.js"></script>
 <script>
-	var spy = new Gumshoe('.pageNav a');
+
+    var header = document.querySelector('.siteHeader');
+	var spy = new Gumshoe('.pageNav a', {
+        offset: function () {
+            if(document.body.clientWidth >= 768) {
+                return 0;
+            }
+		    return header.getBoundingClientRect().height;
+	    }
+    });
 
     // toggle class - modal??
     const toggleActions = document.querySelectorAll('[data-toggle-body-class]');
@@ -13,6 +22,13 @@
             toggleAction.setAttribute('aria-expanded', toggleState);
         });
     });
+    const navLinks = document.querySelectorAll('.pageNav a, .logoLink');
+    for (let index = 0; index < navLinks.length; index++) {
+        const navLink = navLinks[index];
+        navLink.addEventListener('click', function(){
+        document.body.classList.remove('mobileNavShow');
+    });
+    }
 </script>
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
 "></script>
@@ -29,7 +45,7 @@ getParameter = (key) => {
   parameterList = new URLSearchParams(address)
   return parameterList.get(key)
 }
-console.log(getParameter("success"));
+
 if(getParameter("success") == 1) {
     MicroModal.show('modal-success');
 }
