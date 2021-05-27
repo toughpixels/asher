@@ -1,12 +1,15 @@
 <header class="siteHeader">
     <a href="#landing" class="logoLink">
         <h1 class="logoH1 sr-only">{{ .Title }}</h1>
-        {{ $logo  := resources.GetMatch "asher/asher-logo-filled.svg" }}
-        {{ $logo.Content | safeHTML }}
+        <div class="hide md:block">
+            {{ $logo  := resources.GetMatch "asher/asher-logo-filled.svg" }}
+            {{ $logo.Content | safeHTML }}
+        </div>
+        <div class="block md:hide">
+            {{ $logo  := resources.GetMatch "asher/asher-logo-vertical.svg" }}
+            {{ $logo.Content | safeHTML }}
+        </div>
     </a>
-    <div class="hidden md:block">
-
-    </div>
     <nav class="text-3xl pageNav bg-asher-blue" id="pageNav">
         <ul>
             {{- range .Site.Menus.main }}

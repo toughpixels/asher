@@ -765,9 +765,15 @@ body .pb-section {
   line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgba(186, 216, 199, var(--tw-text-opacity));
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 1rem;
-  margin: 1rem;
+  max-width: 15rem;
+  
+  
+  @media (min-width: 768px) {
+    max-width: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .logoLink svg {
@@ -828,6 +834,9 @@ body .pb-section {
   transform: translateY(-50%);
   right: 0.5rem;
   display: none;
+}
+.modal-active .mobileMenuToggle {
+  pointer-events: none;
 }
 
 .mobileMenuToggle:focus {
@@ -1122,6 +1131,7 @@ h2 {
   .slider .slider__slidesWrap {
     width: 100%;
     order: -1;
+    flex: auto;
   }
 }
 
@@ -1146,12 +1156,15 @@ h2 {
 
 [role="dialog"] {
   width: 100%;
+  height: 100vh;
 }
 
 .slider__slides {
   width: 100%;
-  height: calc(100vh - 4rem);
-  width: 100%;
+  height: calc(100vw);
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 4rem);
+  }
 }
 
 .slider__slides img {
@@ -1178,7 +1191,7 @@ h2 {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   @media screen and (max-width: 767px) {
-    display: none;
+    // display: none;
   }
 }
 
@@ -1405,6 +1418,11 @@ svg {
 .block {
   display: block;
 }
+
+.hide {
+  display: none !important;
+}
+
 
 .inline-block {
   display: inline-block;
@@ -1789,8 +1807,11 @@ svg {
   .md\:flex {
     display: flex;
   }
+  .md\:hide {
+    display: none;
+  }
   .md\:block {
-    display: block;
+    display: block !important;
   }
 
   .md\:grid {

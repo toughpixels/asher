@@ -13,24 +13,16 @@
             toggleAction.setAttribute('aria-expanded', toggleState);
         });
     });
-    
-    // const pageContent = document.getElementById('content');
-    // pageContent.addEventListener('click', function(){
-    //     document.body.classList.remove('mobileNavShow');
-    // });
-	// document.addEventListener('keydown', function(event) {
-    //       var keycode = event.which || event.keyCode;
-		  
-    //       if(keycode === 27) {
-    //         document.body.classList.remove('modal-active');
-	// 		document.querySelector('.modal.active').classList.remove('active')
-    //       }
-    // });
 </script>
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
 "></script>
 <script>
-    MicroModal.init();
+    MicroModal.init({
+        onShow: modal => document.body.classList.add('modal-active'), // [1]
+        onClose: modal => setTimeout(function(){
+            document.body.classList.remove('modal-active');
+        }, 300), // [2]
+    });
 
 getParameter = (key) => {
   address = window.location.search
