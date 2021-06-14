@@ -610,6 +610,7 @@ img {
   --yGap: 1.5rem;
   --mobileHeaderHeight: 70px;
   --contactOutlines: rgb(76, 29, 149);
+  --headerColor: #c7d2fe;
 }
 
 body {
@@ -688,6 +689,17 @@ body .pb-section {
   }
 }
 
+.pageNav {
+  height: 100%;
+}
+
+.pageNav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 66%;
+}
+
 .pageNav li {
   width: calc;
 }
@@ -722,7 +734,7 @@ body .pb-section {
     overflow: auto;
     left: 0;
     width: 100%;
-    max-width: 12rem;
+    max-width: 70vw;
     transition-duration: 0.3s;
     transform: translateX(-100%);
   }
@@ -774,8 +786,8 @@ body .pb-section {
   --tw-text-opacity: 1;
   color: rgba(186, 216, 199, var(--tw-text-opacity));
   max-width: 15rem;
-  
-  
+
+
   @media (min-width: 768px) {
     max-width: none;
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
@@ -787,9 +799,8 @@ body .pb-section {
 .logoLink svg {
   width: 100%;
   margin: auto;
-  // fill: rgba(199, 210, 254, 1);
-  fill: rgba(199, 210, 254, 1);
-  stroke: rgb(253, 230, 138);
+  padding-left: 2vh;
+  fill: var(--headerColor);
   stroke: rgba(199, 210, 254, 0.1);
   stroke-width: 5px;
 }
@@ -855,7 +866,7 @@ body .pb-section {
   display: block;
   height: 0.4rem;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--headerColor);
   content: "";
   position: absolute;
 }

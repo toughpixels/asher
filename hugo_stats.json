@@ -82,6 +82,7 @@
       "flex",
       "flex-1",
       "flex-col",
+      "flex-nav",
       "font-bold",
       "gap-4",
       "gap-8",
