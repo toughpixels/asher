@@ -1,7 +1,9 @@
 <picture>
     {{- $rotation := "" -}}
-    {{- $image  := . -}}
-    {{- $sizes := slice "1280" "640" "320" -}}
+    {{- $image  := .image -}}
+    
+    {{- $sizes := .sizes -}}
+    {{- $breakpoints := .breakpoints -}}
     {{- $formats := slice "webp" "jpeg" -}}
     {{- $defaultImage := $image -}}
     {{- with $image.Exif -}}
@@ -15,16 +17,19 @@
         {{- end -}}
     {{- end -}}
     {{- range $sizes -}}
-        {{- $size := . -}}
+    {{- $size := .size -}}
+    {{- $breakpoint := .breakpoint -}}
+    {{- $size2x := (mul $size 2) -}}
         {{- range $formats -}}
-            {{- $sized_image := $image.Resize (print $size "x " .  $rotation) -}}
-            {{- if and (eq $size (index $sizes -1)) (eq . (index $formats -1)) -}}
+        {{- $sized_image := $image.Resize (print $size "x " .  $rotation) -}}
+        {{- $sized_image2x := $image.Resize (print $size2x "x " .  $rotation) -}}
+        {{- if and (eq $size (index $sizes -1)) (eq . (index $formats -1)) -}}
                 {{- $defaultImage = $sized_image -}}
             {{- else -}}
-            <source media="(min-width: {{$size}}px)"
+            <source media="(min-width: {{$breakpoint}}px)"
                     width="{{ $sized_image.Width }}"
                     height="{{ $sized_image.Height }}"
-                    srcset="{{ $sized_image.RelPermalink }}"
+                    srcset="{{ $sized_image.RelPermalink }}, {{ $sized_image2x.RelPermalink}} 2x"
                     type="{{ print "image/" . }}" />
             {{- end -}}
         {{- end -}}
