@@ -2,6 +2,7 @@ baseURL = "https://unruffled-almeida-17624f.netlify.app/"
 languageCode = "en-us"
 title = "Asher Perlman"
 [params]
+
   description = "I’m Asher, an Emmy-nominated comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate."
 [build]
   writeStats = true
