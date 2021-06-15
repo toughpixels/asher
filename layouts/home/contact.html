@@ -5,18 +5,18 @@
     <div class="right image1">
         {{ $image1  := .Resources.GetMatch "twitter"  }}
         <a href="{{ .Params.twitter }}" target="_blank">
-            {{/* partial "image.html" $image1 */}}
+            {{ partial "image.html" (dict "image"  $image1 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
         </a>
     </div>
     <div class="image2">
         {{ $image2  := .Resources.GetMatch "instagram"  }}
         <a href="{{ .Params.instagram }}" target="_blank">
-            {{/* partial "image.html" $image2 */}}
+            {{ partial "image.html" (dict "image"  $image2 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
         </a>
     </div>
     <div class="right image3">
         {{ $image3  := .Resources.GetMatch "friendly"  }}
-        {{/* partial "image.html" $image3 */}}
+        {{ partial "image.html" (dict "image"  $image3 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
     </div>
     {{ partial "contactform.html" . }}
 </div>

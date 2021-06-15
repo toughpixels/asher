@@ -1,3 +1,43 @@
+:root {
+  --tw-bg-opacity: 1;
+  // --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
+  // --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
+  // --asher-pink: rgba(220, 119, 128, var(--tw-text-opacity));
+  // --about-200: rgba(254, 202, 202, var(--tw-bg-opacity));
+  // --cartoons-200: rgba(253, 230, 138, var(--tw-bg-opacity));
+  // --press-200: rgba(167, 243, 208, var(--tw-bg-opacity));
+  // --videos-200: rgba(191, 219, 254, var(--tw-bg-opacity));
+
+  // --writings-200: rgba(199, 210, 254, var(--tw-bg-opacity));
+  // --writings-800: rgba(55, 48, 163, var(--tw-text-opacity));
+  // --writings-900: rgba(49, 46, 129, var(--tw-border-opacity));
+  
+  // --contact-200: rgba(221, 214, 254, var(--tw-bg-opacity));
+
+  // --about-200:  #ddd1f6;
+  --about-200:  #daf8e9;
+  --writings-200: #fdf1b9;
+  --cartoons-200: #fdd9c0;
+  --videos-200: #fbc6c4;
+  --press-200: #D6D4FF;
+  --contact-200: #e6f6fa;
+
+  --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
+  --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
+  --asher-pink: rgba(220, 119, 128, var(--tw-text-opacity));
+  
+  
+  
+  
+
+  
+  --writings-800: rgba(55, 48, 163, var(--tw-text-opacity));
+  --writings-900: rgba(49, 46, 129, var(--tw-border-opacity));
+  
+  
+}
+
+
 /*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -697,7 +737,6 @@ body .pb-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 66%;
 }
 
 .pageNav li {
@@ -786,6 +825,7 @@ body .pb-section {
   --tw-text-opacity: 1;
   color: rgba(186, 216, 199, var(--tw-text-opacity));
   max-width: 15rem;
+  padding-left: 0.5rem;
 
 
   @media (min-width: 768px) {
@@ -799,7 +839,6 @@ body .pb-section {
 .logoLink svg {
   width: 100%;
   margin: auto;
-  padding-left: 2vh;
   fill: var(--headerColor);
   stroke: rgba(199, 210, 254, 0.1);
   stroke-width: 5px;
@@ -1208,7 +1247,7 @@ h2 {
   --tw-bg-opacity: 1;
   background-color: rgba(47, 57, 92, var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: var(--headerColor);
   @media screen and (max-width: 767px) {
     // display: none;
   }
@@ -1326,6 +1365,7 @@ svg {
   border-width: 0;
 }
 
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1333,77 +1373,77 @@ svg {
 
 .bg-asher-blue {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 57, 92, var(--tw-bg-opacity));
+  background-color: var(--asher-blue);
 }
 
 .bg-about-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  background-color: var(--about-200);
 }
 
 .bg-cartoons-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  background-color: var(--cartoons-200);
 }
 
 .bg-press-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  background-color: var(--press-200);
 }
 
 .bg-videos-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  background-color: var(--videos-200);
 }
 
 .bg-writings-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  background-color: var(--writings-200);
 }
 
 .bg-contact-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  background-color: var(--contact-200);
 }
 
 .hover\:bg-about-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  background-color: var(--about-200);
 }
 
 .hover\:bg-cartoons-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  background-color: var(--cartoons-200);
 }
 
 .hover\:bg-press-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  background-color: var(--press-200);
 }
 
 .hover\:bg-videos-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  background-color: var(--videos-200);
 }
 
 .hover\:bg-writings-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  background-color: var(--writings-200);
 }
 
 .hover\:bg-contact-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  background-color: var(--contact-200);
 }
 
 .border-asher-blue {
   --tw-border-opacity: 1;
-  border-color: rgba(47, 57, 92, var(--tw-border-opacity));
+  border-color: var(--asher-blue);
 }
 
 .border-writings-900 {
   --tw-border-opacity: 1;
-  border-color: rgba(49, 46, 129, var(--tw-border-opacity));
+  border-color: var(--writings-900);
 }
 
 .rounded-full {
@@ -1656,52 +1696,52 @@ svg {
 
 .text-asher-blue {
   --tw-text-opacity: 1;
-  color: rgba(47, 57, 92, var(--tw-text-opacity));
+  color: var(--asher-blue);
 }
 
 .text-asher-lblue {
   --tw-text-opacity: 1;
-  color: rgba(186, 216, 199, var(--tw-text-opacity));
+  color: var(--asher-lblue);
 }
 
 .text-asher-pink {
   --tw-text-opacity: 1;
-  color: rgba(220, 119, 128, var(--tw-text-opacity));
+  color: var(--asher-pink);
 }
 
 .text-about-200 {
   --tw-text-opacity: 1;
-  color: rgba(254, 202, 202, var(--tw-text-opacity));
+  color: var(--about-200);
 }
 
 .text-cartoons-200 {
   --tw-text-opacity: 1;
-  color: rgba(253, 230, 138, var(--tw-text-opacity));
+  color: var(--cartoons-200);
 }
 
 .text-press-200 {
   --tw-text-opacity: 1;
-  color: rgba(167, 243, 208, var(--tw-text-opacity));
+  color: var(--press-200);
 }
 
 .text-videos-200 {
   --tw-text-opacity: 1;
-  color: rgba(191, 219, 254, var(--tw-text-opacity));
+  color: var(--videos-200);
 }
 
 .text-writings-200 {
   --tw-text-opacity: 1;
-  color: rgba(199, 210, 254, var(--tw-text-opacity));
+  color: var(--writings-200);
 }
 
 .text-writings-800 {
   --tw-text-opacity: 1;
-  color: rgba(55, 48, 163, var(--tw-text-opacity));
+  color: var(--writings-800);
 }
 
 .text-contact-200 {
   --tw-text-opacity: 1;
-  color: rgba(221, 214, 254, var(--tw-text-opacity));
+  color: var(--contact-200);
 }
 
 .hover\:text-default:hover {

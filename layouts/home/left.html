@@ -1,7 +1,7 @@
 <div class="relative z-10">
     <div class="block md:flex min-h-screen">
         <div class="aboutImg w-100 md:w-1/2 coverWrap relative">
-            {{/* partial "image.html" (.Resources.GetMatch "*.*") */}}
+            {{ partial "image.html" (dict "image"  (.Resources.GetMatch "*.*") "sizes" (slice (dict "size" (div (sub 1530 240) 2) "breakpoint" 900) (dict "size" (div (sub 768 240) 2) "breakpoint" 768) (dict "size" 320 "breakpoint" 320))) }}
         </div>
         <div class="container w-100 md:w-1/2 py-4 md:py-6 prose">
             {{ .Content }}

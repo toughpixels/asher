@@ -11,12 +11,12 @@ layout = "left"
 
 ## Hi!
 
-Hi! I am an [Emmy-nominated](https://www.emmys.com/bios/asher-perlman), WGA-award-winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate. I am currently a writer/performer for [The Late Show with Stephen Colbert](https://www.cbs.com/shows/the-late-show-with-stephen-colbert/), a cartoonist at [The New Yorker](https://www.newyorker.com/), and a performer with the [The Improvised Shakespeare Company](http://www.improvisedshakespeare.com/). I also perform all around New York City as myself. My award-winning short film, [“Accountabilibuddies"](https://vimeo.com/334507378), was an official selection at the [Just For Laughs Film Festival](https://www.hahaha.com/) in Vancouver, and I’ve had two pilots premiere at the [New York Television Festival](https://www.nytvf.com/), one of which went on to become an original series on the women-centric streaming platform, [Pypo](https://www.pypo.com/).
+Hi! I am an Emmy-nominated, WGA-award-winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate. I am currently a writer/performer for The Late Show with Stephen Colbert, a cartoonist at The New Yorker, and a performer with the Improvised Shakespeare Company. I also perform all around New York City as myself. My award-winning short film, [“Accountabilibuddies,"](https://vimeo.com/334507378) was an official selection at the Just For Laughs Film Festival in Vancouver, and I’ve had two pilots premiere at the New York Television Festival, one of which went on to become an original series on the women-centric streaming platform, Pypo.
 
-I developed my comedy chops in Chicago, where I performed with [The Second City](https://www.secondcity.com/), the Chicago Just For Laughs Festival, [iO](https://ioimprov.com/), [The Annoyance](https://www.theannoyance.com/), [ComedySportz](https://www.cszchicago.com/), and approximately one thousand bars.
+I developed my comedy chops in Chicago, where I performed with The Second City, the Chicago Just For Laughs Festival, iO, The Annoyance, ComedySportz, and approximately one thousand bars.
 
-On television, I have appeared on [Comedy Central](https://www.cc.com/), CBS, [Pop TV](https://www.poptv.com/), and several national commercials, including one for Sprint where I was a 30-year-old man with a 15-year-old daughter. Whenever I think about it, I gasp.
+On television, I have appeared on Comedy Central, CBS, Pop TV, and several national commercials.
 
-Before The Late Show, I was a staff writer for [The Opposition with Jordan Klepper](https://www.cc.com/shows/the-opposition-with-jordan-klepper). I’ve also written humor for The New Yorker, [The Onion Labs](https://twitter.com/onionlabs?lang=en), and [McSweeney’s](https://www.mcsweeneys.net/).
+Before The Late Show, I was a staff writer for The Opposition with Jordan Klepper. I’ve also written humor for The New Yorker, The Onion Labs, and McSweeney’s.
 
-Please keep scrolling and thanks for being here. The 2018 Ron Perlman movie, “Asher,” totally tanked my search results, so arriving at this page is a genuine achievement.
+Please keep scrolling and thanks for being here. The 2018 Ron Perlman movie, *Asher*, totally tanked my search results, so arriving at this page is a genuine achievement.
