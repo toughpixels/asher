@@ -30,7 +30,6 @@
         {{- end -}}
     {{- end -}}
     <img src="{{ $defaultImage.RelPermalink }}"
-        width="{{ $defaultImage.Width }}"
         loading="lazy"
         {{ with .Params.alt }}alt="{{.}}"{{end}}
         {{ with .Params.title }}title="{{.}}"{{end}}>
