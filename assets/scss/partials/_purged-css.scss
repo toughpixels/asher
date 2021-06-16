@@ -649,7 +649,7 @@ img {
   --xGap: 1rem;
   --yGap: 1.5rem;
   --mobileHeaderHeight: 70px;
-  --contactOutlines: rgb(76, 29, 149);
+  --contactOutlines: rgb(22 90 56);
   --headerColor: #c7d2fe;
 }
 
@@ -740,7 +740,7 @@ body .pb-section {
 }
 
 .pageNav li {
-  width: calc;
+  margin: auto;
 }
 
 .pageNav li:not(.active) {
@@ -841,7 +841,7 @@ body .pb-section {
   margin: auto;
   fill: var(--headerColor);
   stroke: rgba(199, 210, 254, 0.1);
-  stroke-width: 5px;
+  stroke-width: .5rem;
 }
 .contact-grid {
   @media (min-width: 768px) {
@@ -853,6 +853,12 @@ body .pb-section {
   outline: 0;
   --tw-text-opacity: 1;
   color: rgba(220, 119, 128, var(--tw-text-opacity));
+}
+
+.logoLink:hover svg, .logoLink:focus svg {
+  fill: var(--press-200);
+  stroke: black;
+  stroke-width: .05rem;
 }
 
 .logoH1 {
