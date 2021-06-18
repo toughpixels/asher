@@ -674,6 +674,7 @@ body {
   .coverWrap {
     padding-bottom: 60%;
     position: relative !important;
+    border-bottom: var(--border-size) solid var(--header-border-color)
   }
 }
 
