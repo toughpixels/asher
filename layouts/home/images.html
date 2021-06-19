@@ -1,3 +1,4 @@
+{{ $cartoonImageSize := (slice (dict "size" 600 "breakpoint" 1200) (dict "size" 320 "breakpoint" 320)) }}
 <div class="container pb-section">
 <h2 class="sectionHeader">{{ .Params.title }}</h2>
 <div class="sectionContent">
@@ -8,7 +9,7 @@
 >
   {{ range .Pages }}
   <button type="button" class="block cartoonLink" data-micromodal-trigger="cartoonsModal" >
-    {{ partial "pageImage.html" . }}
+    {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize) }}
   </button>
   {{ end }}
 </div>
@@ -24,7 +25,7 @@
       <div class="slider__slides" id="cartoonsSlider">
         {{ range .Pages }}
         <div class="flex justify-center items-center w-full">
-          {{ partial "pageImage.html" . }}
+          {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize) }}
         </div>
         {{ end }}
       </div>
