@@ -1,14 +1,10 @@
 {
   "htmlElements": {
     "tags": [
-      "",
       "a",
       "body",
       "br",
       "button",
-      "dc:format",
-      "dc:title",
-      "dc:type",
       "defs",
       "div",
       "em",
@@ -27,7 +23,6 @@
       "li",
       "link",
       "meta",
-      "metadata",
       "nav",
       "p",
       "path",
@@ -207,9 +202,6 @@
       "icon-external-link",
       "landing",
       "message",
-      "metadata156",
-      "metadata18",
-      "metadata58",
       "modal-1-title",
       "modal-success",
       "modal-success-title",
