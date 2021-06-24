@@ -4,6 +4,7 @@ title = "More Me"
 weight = 60
 menu = "main"
 layout = "contact"
+border = "light-grey-border"
 twitter = "https://twitter.com/asherperlman"
 instagram = "https://www.instagram.com/asherperlman"
 [[resources]]

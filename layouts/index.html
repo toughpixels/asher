@@ -1,7 +1,7 @@
 {{ define "main" }}
     {{ range where .Pages "Section" "home" }}
         {{ range .Pages }}
-            <section id="{{ .Params.id }}" class="section bg-{{ .Params.id }}-200"> 
+            <section id="{{ .Params.id }}" class="section bg-{{ .Params.id }}-200 {{ .Param "border" }}">
                 {{ .Render }}
             </section>
         {{ end }}

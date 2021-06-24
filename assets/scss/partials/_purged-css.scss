@@ -1,5 +1,6 @@
 :root {
   --tw-bg-opacity: 1;
+  --border-width: 1px;
   // --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
   // --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
   // --asher-pink: rgba(220, 119, 128, var(--tw-text-opacity));
@@ -28,8 +29,8 @@
 
   --border-size: 1px;
   --border-color: grey;
-  --header-border-color: darkred;
-
+  --light-border-color: lightgrey;
+  --theater-border-color: darkred;
 
 
 
@@ -674,7 +675,7 @@ body {
   .coverWrap {
     padding-bottom: 60%;
     position: relative !important;
-    border-bottom: var(--border-size) solid var(--header-border-color)
+    border-bottom: var(--border-size) solid var(--theater-border-color)
   }
 }
 
@@ -689,7 +690,6 @@ body {
 
 section {
   position: relative;
-  border-top: var(--border-size) solid var(--border-color);
 }
 
 #landing {
@@ -709,7 +709,6 @@ body .pb-section {
 .siteHeader {
   position: relative;
   z-index: 11;
-  border-right: var(--border-size) solid var(--header-border-color);
 }
 
 @media (max-width: 767px) {
@@ -739,6 +738,37 @@ body .pb-section {
 @media (max-width: 767px) {
   .pageNav {
     padding-top: 1rem;
+  }
+}
+
+.light-grey-border {
+  border-top: var(--border-width) solid var(--light-border-color);
+}
+
+.grey-border {
+  border-top: var(--border-width) solid var(--border-color);
+}
+
+.theater-border {
+  border-top: var(--border-width) solid var(--theater-border-color);
+}
+
+  @media (min-width: 768px) {
+    .prose {
+      border-left: var(--border-width) solid var(--border-color);
+    }
+
+    .light-grey-border {
+    border-left: var(--border-width) solid var(--light-border-color);
+  }
+
+  .grey-border {
+    border-left: var(--border-width) solid var(--border-color);
+
+  }
+
+  .theater-border {
+    border-left: var(--border-width) solid var(--theater-border-color);
   }
 }
 
@@ -882,15 +912,14 @@ body .pb-section {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .aboutImg {
-    display: none;
-    border-right: none;
-  }
+.aboutImg {
+  display: none;
 }
 
-.aboutImg {
-  border-right: var(--border-size) solid var(--border-color);
+@media (min-width: 768px) {
+  .aboutImg {
+    display: block;
+  }
 }
 
 .w-100 {
@@ -1331,10 +1360,14 @@ svg {
 }
 
 .cartoonLink {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: var(--border-width) solid var(--light-border-color);
   img {
     width: 100%;
   }
+}
+
+.cartoonLink:hover, .cartoonLink:focus {
+  border: var(--border-width) solid black;
 }
 
 .quotes {
