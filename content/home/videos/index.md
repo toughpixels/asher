@@ -13,11 +13,11 @@ border = "theater-border"
 
 I’ve written a handful of things and performed in an armful.
 
-You might enjoy my reel:
+Here’s my reel:
 
 {{< vimeo 282193228 >}}
 
-I wrote and performed in this short that premiered at Just For Laughs:
+I wrote and performed this short, which premiered at Just For Laughs:
 
 {{< vimeo 334507378 >}}
 

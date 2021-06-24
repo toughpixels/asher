@@ -2,7 +2,7 @@ baseURL = "https://admiring-babbage-10400a.netlify.app/"
 languageCode = "en-us"
 title = "Asher Perlman, A Comedian"
 [params]
-  description = "Asher is an Emmy-nominated, WGA award-winning and Peabody-award winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate."
+  description = "Asher is an Emmy-nominated, WGA award-winning, Peabody-award winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate."
   images = ["preview.jpg"]
   border = "grey-border"
 [build]
