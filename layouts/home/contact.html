@@ -1,17 +1,19 @@
 <div class="container container-contact">
     <h2 class="sectionHeader">{{ .Title }}</h2>
-    <p class="lead">Follow me on social. PLEASE.</p>
+    <p class="lead">Follow me on social. <b>PLEASE</b>.</p>
 <div class="pt-8 md:grid contact-grid contact">
     <div class="right image1">
         {{ $image1  := .Resources.GetMatch "twitter"  }}
-        <a href="{{ .Params.twitter }}" target="_blank">
+        <a href="{{ .Params.twitter }}" target="_blank" class="external-link relative linkTile">
             {{ partial "image.html" (dict "image"  $image1 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
+            {{- partial "icon.html" (dict "name" "external-link") -}}
         </a>
     </div>
     <div class="image2">
         {{ $image2  := .Resources.GetMatch "instagram"  }}
-        <a href="{{ .Params.instagram }}" target="_blank">
+        <a href="{{ .Params.instagram }}" target="_blank" class="external-link relative linkTile">
             {{ partial "image.html" (dict "image"  $image2 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
+            {{- partial "icon.html" (dict "name" "external-link") -}}
         </a>
     </div>
     <div class="right image3">

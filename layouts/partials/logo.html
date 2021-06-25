@@ -1,4 +1,4 @@
-<div class="flex justify-center logo">
+<div class="flex justify-center logo logoBrick">
     {{ $img := resources.GetMatch (print "logos/" (.logoName)) }}
     {{ $img.Content | safeHTML }}
  </div>

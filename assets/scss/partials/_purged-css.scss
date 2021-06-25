@@ -1,6 +1,7 @@
 :root {
   --tw-bg-opacity: 1;
   --border-width: 1px;
+  --tw-text-opacity: 1;
   // --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
   // --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
   // --asher-pink: rgba(220, 119, 128, var(--tw-text-opacity));
@@ -22,6 +23,8 @@
   --videos-200: #fdd9c0;
   --press-200: #fdf1b9;
   --contact-200: var(--about-200);
+  --hover-link-color: cornflowerblue;
+  --hover-link-dark-color: #0e0d19;
 
   --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
   --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
@@ -29,6 +32,7 @@
 
   --border-size: 1px;
   --border-color: grey;
+  --dark-border-color: black;
   --light-border-color: lightgrey;
   --theater-border-color: darkred;
 
@@ -653,7 +657,7 @@ img {
   --xGap: 1rem;
   --yGap: 1.5rem;
   --mobileHeaderHeight: 70px;
-  --contactOutlines: rgb(22 90 56);
+  --contactOutlines: var(--hover-link-color);
   --headerColor: #c7d2fe;
 }
 
@@ -779,7 +783,6 @@ body .pb-section {
 .pageNav ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .pageNav li {
@@ -832,10 +835,6 @@ body .pb-section {
     -webkit-user-select: none;
             user-select: none;
   }
-}
-
-.logo {
-  max-height: 10rem;
 }
 
 .text-success {
@@ -898,7 +897,7 @@ body .pb-section {
 .logoLink:hover svg, .logoLink:focus svg {
   fill: var(--press-200);
   stroke: black;
-  stroke-width: .05rem;
+  stroke-width: .1rem;
 }
 
 .logoH1 {
@@ -1066,7 +1065,6 @@ html {
   }
 }
 
-
 .contact .contactform {
   grid-row: 3 / span 2;
   grid-column: 2;
@@ -1098,11 +1096,6 @@ html {
 .contact a {
   display: block;
   border-radius: 20px;
-}
-
-.contact a:hover, .contact a:focus {
-  outline: 0;
-  box-shadow: 0 0 0 8px var(--contactOutlines);
 }
 
 .container.container-contact {
@@ -1315,13 +1308,38 @@ h2 {
   background: #000;
 }
 
-.linkTile {
-  border: 5px solid currentColor;
-  border-radius: 1rem;
+.logo {
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 
-.linkTile h3 {
-  color: currentColor;
+.logoBrick {
+  border-bottom: var(--border-width) solid var(--asher-blue);
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+.logoMortar {
+  border-top: var(--border-width) solid var(--asher-blue);
+  margin-top: 1rem;
+  padding-top: .5rem;
+}
+
+@media (min-width: 768px) {
+  .logoMortar {
+    border-top-color: transparent;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .logo {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+.linkTile svg {
+  stroke-width: 1px;
+  stroke: black;
 }
 
 .linkTile .icon-external-link {
@@ -1332,17 +1350,41 @@ h2 {
   font-size: 2rem;
   opacity: 0;
   --tw-text-opacity: 1;
-  color: rgba(99, 102, 241, var(--tw-text-opacity));
+  color: var(--asher-blue);
+  stroke: var(--hover-link-dark-color);
+  stroke-width: 2px;
+}
+
+#contact svg {
+  color: var(--hover-link-color);
 }
 
 .linkTile:hover, .linkTile:focus {
   outline: 0;
-  border-top-right-radius: 0rem;
+  text-decoration: underline;
+  text-decoration-color: var(--hover-link-color);
+  box-shadow: .3rem .3rem var(--hover-link-color);
+  svg {
+    stroke: var(--hover-link-dark-color);
+  }
+}
+
+.linkTile:hover .logoBrick, .linkTile:focus .logoBrick {
+  border-color: var(--hover-link-color);
 }
 
 .linkTile:hover .logo svg, .linkTile:focus .logo svg {
   --tw-text-opacity: 1;
-  color: rgba(99, 102, 241, var(--tw-text-opacity));
+  color: var(--asher-blue);
+}
+
+
+#writings .linkTile {
+  border: var(--border-size) solid transparent;
+}
+
+#writings .linkTile:hover {
+  border-color: black;
 }
 
 .linkTile:hover .icon-external-link, .linkTile:focus .icon-external-link {
@@ -1351,13 +1393,13 @@ h2 {
 
 svg {
   max-width: 100%;
+
 }
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
+  width: 2em;
+  height: 2em;
   stroke: currentColor;
   fill: currentColor;
 }
@@ -1397,12 +1439,6 @@ svg {
 .quotes svg {
   height: auto;
   width: 100%;
-}
-
-@media (max-width: 767px) {
-  .quotes svg {
-    margin: 1rem 0 2rem;
-  }
 }
 
 .quotes svg[aria-label="Chicago Tribune"] {

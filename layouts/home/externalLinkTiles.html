@@ -6,9 +6,9 @@
     <div class="grid md:grid-cols-2 gap-4 mt-8">
         {{ range $item := .Params.tiles }}
         {{ $logoName := $item.logo}}
-        <a href="{{ $item.url }}" class="linkTile p-4 pt-8 hover:text-writings-800 flex flex-col text-center hover:border-writings-900 relative" target="_blank">
-            <h3 class="flex-1 mb-4 text-2xl font-bold">{{ $item.title }}</h3>
+        <a href="{{ $item.url }}" class="linkTile p-4 hover:text-writings-800 external-link flex flex-col text-center hover:border-writings-900 relative" target="_blank">
             {{- partial "logo" (dict "logoName" $logoName ) -}}
+            <h3 class="flex-1 mb-4 text-2xl font-bold">{{ $item.title }}</h3>
             {{- partial "icon.html" (dict "name" "external-link") -}}
         </a>
         {{ end }}

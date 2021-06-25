@@ -17,7 +17,7 @@ Here’s my reel:
 
 {{< vimeo 282193228 >}}
 
-I wrote and performed this short, which premiered at Just For Laughs:
+I wrote and performed in this short, which premiered at Just For Laughs:
 
 {{< vimeo 334507378 >}}
 
