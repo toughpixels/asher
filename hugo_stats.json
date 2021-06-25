@@ -94,6 +94,7 @@
       "grid-cols-2",
       "grid-flow-row-dense",
       "h-16",
+      "h-auto",
       "hide",
       "home",
       "hover:border-writings-900",
