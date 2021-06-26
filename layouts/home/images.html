@@ -9,7 +9,7 @@
 >
   {{ range .Pages }}
   <button type="button" class="block cartoonLink" data-micromodal-trigger="cartoonsModal" >
-    {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize) }}
+    {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize "alt" .Params.alt) }}
   </button>
   {{ end }}
 </div>
@@ -25,7 +25,7 @@
       <div class="slider__slides" id="cartoonsSlider">
         {{ range .Pages }}
         <div class="flex justify-center items-center w-full">
-          {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize) }}
+          {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize "alt" .Params.alt) }}
         </div>
         {{ end }}
       </div>
