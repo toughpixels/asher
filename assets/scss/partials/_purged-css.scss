@@ -1319,6 +1319,10 @@ h2 {
   padding-bottom: .5rem;
 }
 
+.logoBrick .icon {
+  display:none;
+}
+
 .logoMortar {
   border-top: var(--border-width) solid var(--asher-blue);
   margin-top: 1rem;
@@ -1343,16 +1347,19 @@ h2 {
 }
 
 .linkTile .icon-external-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 3px 3px 0 0;
   font-size: 2rem;
   opacity: 0;
   --tw-text-opacity: 1;
   color: var(--asher-blue);
   stroke: var(--hover-link-dark-color);
   stroke-width: 2px;
+}
+
+#contact .linkTile .icon-external-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 3px 3px 0 0;
 }
 
 #contact svg {
@@ -1366,6 +1373,9 @@ h2 {
   box-shadow: .3rem .3rem var(--hover-link-color);
   svg {
     stroke: var(--hover-link-dark-color);
+  }
+  .icon {
+    display: block;
   }
 }
 
@@ -1381,10 +1391,11 @@ h2 {
 
 #writings .linkTile {
   border: var(--border-size) solid transparent;
+  border-radius: 3rem;
 }
 
 #writings .linkTile:hover {
-  border-color: black;
+  border-color:var(--asher-blue);
 }
 
 .linkTile:hover .icon-external-link, .linkTile:focus .icon-external-link {

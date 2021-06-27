@@ -8,8 +8,9 @@
         {{ $logoName := $item.logo}}
         <a href="{{ $item.url }}" class="linkTile p-4 hover:text-writings-800 external-link flex flex-col text-center hover:border-writings-900 relative" target="_blank">
             {{- partial "logo" (dict "logoName" $logoName ) -}}
-            <h3 class="flex-1 mb-4 text-2xl font-bold">{{ $item.title }}</h3>
-            {{- partial "icon.html" (dict "name" "external-link") -}}
+            <h3 class="mb-4 text-2xl font-bold">
+                {{ $item.title }}
+            </h3>
         </a>
         {{ end }}
     </div>
