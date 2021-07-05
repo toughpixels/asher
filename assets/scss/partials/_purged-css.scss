@@ -1353,6 +1353,9 @@ h2 {
   color: var(--asher-blue);
   stroke: var(--hover-link-dark-color);
   stroke-width: 2px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 #contact .linkTile .icon-external-link {
@@ -1366,7 +1369,7 @@ h2 {
   color: var(--hover-link-color);
 }
 
-.linkTile:hover, .linkTile:focus {
+@mixin linkTileActive {
   outline: 0;
   text-decoration: underline;
   text-decoration-color: var(--hover-link-color);
@@ -1377,30 +1380,39 @@ h2 {
   .icon {
     display: block;
   }
+  .logoBrick {
+    border-color: var(--hover-link-color);
+  }
+  .logo svg {
+    --tw-text-opacity: 1;
+    color: var(--asher-blue);
+  }
+  .icon-external-link {
+    opacity: 1;
+  }
+  #writings & {
+    border-color:var(--asher-blue);
+  }
 }
 
-.linkTile:hover .logoBrick, .linkTile:focus .logoBrick {
-  border-color: var(--hover-link-color);
-}
-
-.linkTile:hover .logo svg, .linkTile:focus .logo svg {
-  --tw-text-opacity: 1;
-  color: var(--asher-blue);
-}
 
 
 #writings .linkTile {
   border: var(--border-size) solid transparent;
   border-radius: 3rem;
+  @media (max-width: 767px) {
+    padding-top: 4rem;
+  }
+}
+.linkTile:hover, .linkTile:focus {
+  @include linkTileActive;
+}
+.linkTile {
+  @media (hover: none) {
+    @include linkTileActive;
+  }
 }
 
-#writings .linkTile:hover {
-  border-color:var(--asher-blue);
-}
-
-.linkTile:hover .icon-external-link, .linkTile:focus .icon-external-link {
-  opacity: 1;
-}
 
 svg {
   max-width: 100%;
