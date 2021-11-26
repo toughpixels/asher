@@ -1,14 +1,12 @@
 <header class="siteHeader">
-    <a href="#home" class="logoLink">
-        <h1 class="logoH1 sr-only">{{ .Title }}</h1>
-        <div class="hide md:block">
+    <h1 id="homeTitle" class="logoH1 sr-only">{{ .Title }}</h1>
+    <a href="#home" aria-labelledby="homeTitle" class="justify-center items-center logoLink logoLinkLarge">
             {{ $logo  := resources.GetMatch "asher/asher-logo-filled.svg" }}
             {{ $logo.Content | safeHTML }}
-        </div>
-        <div class="block md:hide">
-            {{ $logo  := resources.GetMatch "asher/asher-logo-vertical.svg" }}
-            {{ $logo.Content | safeHTML }}
-        </div>
+    </a>
+    <a href="#home" aria-labelledby="homeTitle" class="justify-center items-center logoLink logoLinkSmall">
+        {{ $logo  := resources.GetMatch "asher/asher-logo-vertical.svg" }}
+        {{ $logo.Content | safeHTML }}
     </a>
     <nav class="text-4xl pageNav bg-asher-blue" id="pageNav">
         <ul>

@@ -4,14 +4,14 @@
 <div class="pt-8 md:grid contact-grid contact">
     <div class="right image1">
         {{ $image1  := .Resources.GetMatch "twitter"  }}
-        <a href="{{ .Params.twitter }}" target="_blank" class="external-link relative linkTile">
+        <a href="{{ .Params.twitter }}" aria-label="Twitter" target="_blank" class="external-link relative linkTile">
             {{ partial "image.html" (dict "image"  $image1 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
             {{- partial "icon.html" (dict "name" "external-link") -}}
         </a>
     </div>
     <div class="image2">
         {{ $image2  := .Resources.GetMatch "instagram"  }}
-        <a href="{{ .Params.instagram }}" target="_blank" class="external-link relative linkTile">
+        <a href="{{ .Params.instagram }}"  aria-label="Instagram" target="_blank" class="external-link relative linkTile">
             {{ partial "image.html" (dict "image"  $image2 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
             {{- partial "icon.html" (dict "name" "external-link") -}}
         </a>

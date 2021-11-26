@@ -34,7 +34,7 @@
   --border-color: grey;
   --dark-border-color: black;
   --light-border-color: lightgrey;
-  --theater-border-color: darkred;
+  --theater-border-color: rgb(90, 0, 0);
 
 
 
@@ -679,7 +679,6 @@ body {
   .coverWrap {
     padding-bottom: 60%;
     position: relative !important;
-    border-bottom: var(--border-size) solid var(--theater-border-color)
   }
 }
 
@@ -736,12 +735,6 @@ body .pb-section {
 @media (max-width: 767px) {
   .siteHeader h1 {
     font-size: 25px;
-  }
-}
-
-@media (max-width: 767px) {
-  .pageNav {
-    padding-top: 1rem;
   }
 }
 
@@ -851,36 +844,27 @@ body .pb-section {
 
 @media (min-width: 768px) {
   .siteHeader {
-    display: block;
+    flex-direction: column;
     height: 100vh;
     width: 15rem;
+    overflow-y: auto;
   }
 }
 
 .logoLink {
   --tw-border-opacity: 1;
-  display: inline-flex;
   align-items: center;
   font-size: 2.25rem;
   line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgba(186, 216, 199, var(--tw-text-opacity));
-  max-width: 15rem;
-  padding: .5rem .25rem .25rem .5rem;
-
-  @media (min-width: 768px) {
-    max-width: none;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
 }
 
 .logoLink svg {
-  width: 100%;
-  margin: auto;
+  width: 90%;
   fill: var(--headerColor);
-  stroke: rgba(199, 210, 254, 0.1);
-  stroke-width: .5rem;
+  stroke: black;
+  stroke-width: .1rem;
 }
 .contact-grid {
   @media (min-width: 768px) {
@@ -896,8 +880,6 @@ body .pb-section {
 
 .logoLink:hover svg, .logoLink:focus svg {
   fill: var(--press-200);
-  stroke: black;
-  stroke-width: .1rem;
 }
 
 .logoH1 {
@@ -999,10 +981,6 @@ body.mobileNavShow .mobileMenuToggle span:after {
 
 html {
   scroll-behavior: smooth;
-}
-
-.light-shadow:hover, .light-shadow:focus, .light-shadow a:active {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.741);
 }
 
 .light-shadow {
@@ -1478,6 +1456,9 @@ svg {
   border-width: 0;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
 
 .bg-white {
   --tw-bg-opacity: 1;
@@ -1591,10 +1572,12 @@ svg {
   display: block;
 }
 
-.hide {
-  display: none !important;
+.logoLinkSmall {
+  display:flex;
 }
-
+.logoLinkLarge {
+  display:none;
+}
 
 .inline-block {
   display: inline-block;
@@ -1978,12 +1961,15 @@ svg {
 }
 
 @media (min-width: 768px) {
-
+  .logoLinkSmall {
+    display:none;
+  }
+  .logoLinkLarge {
+    display:flex;
+    max-height: 70%;
+  }
   .md\:flex {
     display: flex;
-  }
-  .md\:hide {
-    display: none;
   }
   .md\:block {
     display: block !important;
@@ -2011,4 +1997,20 @@ svg {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+.patreon {
+  fill: rgba(255, 66, 75, 0.95);
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.big-cartel {
+  fill: rgba(0, 0, 0, 0.781)
+}
+
+.supportIcon {
+  height: 2rem;
+  max-width: 4rem;
+  margin-left: 1rem;
 }
