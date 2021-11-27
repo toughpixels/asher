@@ -1,7 +1,11 @@
 baseURL = "https://ashermaxperlman.com/"
 languageCode = "en-us"
 title = "Asher Perlman, A Comedian"
+theme = "base"
 [params]
   description = "Asher is an Emmy-nominated, WGA award-winning, Peabody-award winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate."
   images = ["preview.jpg"]
   border = "grey-border"
+  imageSizes = "1280 768 640 320"
+  imageFormats = "webp jpeg"
+  author = "Tough Pixels"
