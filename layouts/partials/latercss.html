@@ -1,4 +1,4 @@
-{{ $styles := resources.Get "css/later.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+{{ $styles := resources.Get "css/later.scss" | toCSS }}
 {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ else }}
