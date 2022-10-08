@@ -20,6 +20,6 @@
         {{ $image3  := .Resources.GetMatch "friendly"  }}
         {{ partial "image.html" (dict "image"  $image3 "sizes" (slice (dict "size" 320 "breakpoint" 320))) }}
     </div>
-    {{ partial "contactform.html" . }}
+
 </div>
 </div>
