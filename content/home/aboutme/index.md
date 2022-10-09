@@ -11,9 +11,11 @@ layout = "left"
 
 ## Hi!
 
-I am an Emmy-nominated, WGA award-winning, Peabody-award winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate. I am currently a writer/performer for The Late Show with Stephen Colbert, a cartoonist at The New Yorker, and a performer with the Improvised Shakespeare Company. I also perform all around New York City as myself. My award-winning short film, "[Accountabilibuddies](https://vimeo.com/334507378)," was an official selection at the Just For Laughs Film Festival in Vancouver, and I’ve had two pilots premiere at the New York Television Festival, one of which went on to become an original series on the women-centric streaming platform, Pypo.
+I am an [Emmy-nominated](https://www.emmys.com/bios/asher-perlman), WGA award-winning, Peabody-award winning comedian, writer, [actor](https://www.imdb.com/name/nm5465523/), cartoonist, and hyphen-hunting multi-hyphenate. 
 
-I developed my comedy chops in Chicago, where I performed with The Second City, the Chicago Just For Laughs Festival, iO, The Annoyance, ComedySportz, and approximately one thousand bars.
+I am currently a writer/performer for [The Late Show with Stephen Colbert](https://www.cbs.com/shows/the-late-show-with-stephen-colbert/), a cartoonist at [The New Yorker](https://condenaststore.com/art/asher+perlman?searchType=artistname), and a performer with the Improvised Shakespeare Company. I also perform all around New York City as myself. My award-winning short film, "[Accountabilibuddies](https://vimeo.com/334507378)," was an official selection at the Just For Laughs Film Festival in Vancouver, and I’ve had two pilots premiere at the New York Television Festival, one of which went on to become an original series on the women-centric streaming platform, Pypo.
+
+I developed my comedy chops in Chicago, where I performed with [The Second City](https://www.secondcity.com/people/other/asher-perlman/), the Chicago Just For Laughs Festival, iO, The Annoyance, ComedySportz, and approximately one thousand bars.
 
 On television, I have appeared on Comedy Central, CBS, Pop TV, and several national commercials.
 

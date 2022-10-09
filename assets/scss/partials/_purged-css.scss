@@ -23,8 +23,9 @@
   --videos-200: #fdd9c0;
   --press-200: #fdf1b9;
   --contact-200: var(--about-200);
-  --hover-link-color: cornflowerblue;
+  --hover-link-color: var(--asher-blue);
   --hover-link-dark-color: #0e0d19;
+  --reward: #ddb42e;
 
   --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
   --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
@@ -1028,9 +1029,34 @@ html {
 }
 
 .rounded-highlight-image {
-  background-color: var(--headerColor);
   border-radius: calc(var(--footer-border-radius) + 1rem);
   border: 1rem solid var(--headerColor);
+}
+
+.rounded-highlight-image:hover, .rounded-highlight-image:focus {
+  animation-duration: .7s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    border-width: 1rem;
+  }
+  
+  50% {
+    border-width: 0;
+    border-color: var(--headerColor);
+  }
+
+  51% {
+    border-color: var(--reward);
+  }
+
+  to {
+    border-width: 1rem;
+    border-color: var(--reward);
+  }
 }
 
 .contact .image2 {
@@ -1187,7 +1213,7 @@ html {
   padding-top: 2rem;
   text-align: center;
   font-weight: bold;
-  text-decoration: underline;
+  text-shadow: -1px 1px;
 }
 
 h2 {
@@ -2031,9 +2057,18 @@ svg {
 }
 
 .supportIcon {
-  max-width: 60%;
+  max-width: 20ch;
+  padding: .5rem;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
 .margin-auto {
   margin: auto;
+}
+
+.tc {
+  text-align:center;
 }
