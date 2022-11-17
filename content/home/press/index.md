@@ -5,8 +5,10 @@ weight = 45
 menu = "main"
 layout = "alternategrid"
 +++
-"Asher Perlman is… [a] standout and comes armed with a dry sense of humor" {{<  logo "tribune.svg" >}}
-
-"A powerhouse" {{<  logo "chicago-reader.svg" >}}
+"one of today's great New Yorker cartoonists" {{<  logo "npr.svg" >}}
 
 "Very smart work from an unselfish player." {{<  logo "tribune.svg" >}}
+
+"a powerhouse." {{<  logo "chicago-reader.svg" >}}
+
+"standout… armed with a dry sense of humor" {{<  logo "tribune.svg" >}}
