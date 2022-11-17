@@ -1,5 +1,5 @@
 [context.production.environment]
-    HUGO_VERSION = "0.80.0"
+    HUGO_VERSION = "hugo v0.105.0-0e3b42b4a9bdeb4d866210819fc6ddcf51582ffa+extended"
     HUGO_ENV = "production"
 [build]
     command = "hugo --gc --minify"
