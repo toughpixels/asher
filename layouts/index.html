@@ -2,7 +2,7 @@
     {{ range where .Pages "Section" "home" }}
         {{ range .Pages }}
             <section id="{{ .Params.id }}" class="section bg-{{ .Params.id }}-200 {{ .Param "border" }}">
-                {{ .Render }}
+                {{ .Render .Params.layout }}
             </section>
         {{ end }}
     {{ end }}
