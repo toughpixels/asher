@@ -11,6 +11,9 @@
         class="external-link relative social-link"
       >
         {{ partial "image.html" (dict "image" $image1 "sizes" (slice (dict
+        "size" 1260 "breakpoint" 1260) (dict
+        "size" 900 "breakpoint" 900) (dict
+        "size" 640 "breakpoint" 640) (dict
         "size" 320 "breakpoint" 320))) }}
       </a>
     </div>
@@ -22,8 +25,11 @@
         target="_blank"
         class="external-link relative social-link"
       >
-        {{ partial "image.html" (dict "image" $image2 "sizes" (slice (dict
-        "size" 320 "breakpoint" 320))) }}
+      {{ partial "image.html" (dict "image" $image2 "sizes" (slice (dict
+      "size" 1260 "breakpoint" 1260) (dict
+      "size" 900 "breakpoint" 900) (dict
+      "size" 640 "breakpoint" 640) (dict
+      "size" 320 "breakpoint" 320))) }}
       </a>
     </div>
     <h3 class="support-header support-wide tc mt-8 mb-8">
@@ -49,7 +55,9 @@
         {{ partial "svg/big-cartel.svg" . }}
       </a>
     </div>
-    <div class="full-grid-width support-wide support-footer tc m-4 lightShadowSvg">
+    <div
+      class="full-grid-width support-wide support-footer tc m-4 lightShadowSvg"
+    >
       {{ partial "svg/thanksForVisiting.svg" . }}
     </div>
   </div>
