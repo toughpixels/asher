@@ -1635,6 +1635,9 @@ a:focus {
 .book-title {
   font-weight: 800; }
 
+.items-baseline {
+  align-items: baseline; }
+
 .r-90 {
   transform: rotate(90deg); }
 
