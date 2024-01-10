@@ -14,7 +14,6 @@
   --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
   --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
   --asher-pink: rgba(220, 119, 128, var(--tw-text-opacity));
-  --border-size: 1px;
   --border-color: grey;
   --dark-border-color: black;
   --light-border-color: lightgrey;
@@ -530,7 +529,7 @@ img {
   --headerColor: #c7d2fe; }
 
 body {
-  background: var(--headerColor);
+  background: var(--asher-blue);
   font-size: 20px; }
 
 @media (min-width: 768px) {
@@ -575,7 +574,7 @@ body .pb-section {
     display: flex;
     z-index: 30;
     border-right: none;
-    border-bottom: var(--border-size) solid var(--headerColor); }
+    border-bottom: var(--border-width) solid var(--headerColor); }
   section {
     scroll-snap-margin: var(--mobileHeaderHeight);
     scroll-margin: var(--mobileHeaderHeight); }
@@ -646,7 +645,7 @@ body .pb-section {
     max-width: 70vw;
     transition-duration: 0.3s;
     transform: translateX(-100%);
-    border-right: var(--border-size) solid var(--headerColor); }
+    border-right: var(--border-width) solid var(--headerColor); }
   body.mobileNavShow .pageNav {
     transform: translateX(0); }
   body:not(.mobileNavShow) .pageNav a {
@@ -660,7 +659,7 @@ body .pb-section {
 
 .siteHeader {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 57, 92, var(--tw-bg-opacity));
+  background-color: var(--asher-blue);
   display: flex;
   position: sticky;
   top: 0px; }
@@ -1051,7 +1050,7 @@ h2 {
 
 .sliderAction {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 57, 92, var(--tw-bg-opacity));
+  background-color: var(--asher-blue);
   --tw-text-opacity: 1;
   color: var(--headerColor); }
 
@@ -1110,7 +1109,7 @@ h2 {
   color: var(--hover-link-color); }
 
 #writings .linkTile {
-  border: var(--border-size) solid transparent; }
+  border: var(--border-width) solid transparent; }
   @media (max-width: 767px) {
     #writings .linkTile {
       padding-top: 4rem; } }
