@@ -1,99 +1,136 @@
-{{ $cartoonImageSize := (slice (dict "size" 600 "breakpoint" 1200) (dict "size" 320 "breakpoint" 320)) }}
+{{ $cartoonImageSize := (slice (dict "size" 600 "breakpoint" 1200) (dict "size"
+320 "breakpoint" 320)) }}
 <div class="container pb-section">
-<h2 class="sectionHeader">{{ .Params.title }}</h2>
-<div class="sectionContent">
-  {{ .Content }}
-</div>
-<div data-slider-nav="#cartoonsSlider"
-  class="py-8 grid grid-cols-2 md:grid-cols-3 gap-4"
->
-  {{ range .Pages }}
-  <button type="button" class="block cartoonLink" data-micromodal-trigger="cartoonsModal" >
-    {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize "alt" .Params.alt) }}
-  </button>
-  {{ end }}
-</div>
-<div id="cartoonsModal" aria-hidden="true" class="modal micromodal-slide  md:flex items-center">
-  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-    <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
-  <header class="flex justify-end">
-    <h2 class="sr-only" id="modal-1-title">Cartoons Slider</h2>
-    <button aria-label="Close modal" data-micromodal-close class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-6xl sliderAction">&times;</button>
-  </header>
-  <div  class="slider flex items-center" data-position="0">
-    <div class="slider__slidesWrap flex-1">
-      <div class="slider__slides" id="cartoonsSlider">
-        {{ range .Pages }}
-        <div class="flex justify-center items-center w-full">
-          {{ partial "image.html" (dict "image"  (resources.Get .Params.image) "sizes" $cartoonImageSize "alt" .Params.alt) }}
+  <h2 class="sectionHeader">{{ .Params.title }}</h2>
+  <div class="sectionContent">{{ .Content }}</div>
+  <div
+    data-slider-nav="#cartoonsSlider"
+    class="py-8 grid grid-cols-2 md:grid-cols-3 gap-4"
+  >
+    {{ range .Pages }}
+    <button
+      type="button"
+      class="block cartoonLink"
+      data-micromodal-trigger="cartoonsModal"
+    >
+      {{ partial "image.html" (dict "image" (resources.Get .Params.image)
+      "sizes" $cartoonImageSize "alt" .Params.alt) }}
+    </button>
+    {{ end }}
+  </div>
+  <div
+    id="cartoonsModal"
+    aria-hidden="true"
+    class="modal micromodal-slide md:flex items-center"
+  >
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="flex justify-end">
+          <h2 class="sr-only" id="modal-1-title">Cartoons Slider</h2>
+          <button
+            aria-label="Close modal"
+            data-micromodal-close
+            class="md:absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-6xl sliderAction"
+          >
+            &times;
+          </button>
+        </header>
+        <div class="slider flex items-center" data-position="0">
+          <div class="slider__slidesWrap flex-1">
+            <div class="slider__slides" id="cartoonsSlider">
+              {{ range .Pages }}
+              <div class="flex justify-center items-center w-full">
+                {{ partial "image.html" (dict "image" (resources.Get
+                .Params.image) "sizes" $cartoonImageSize "alt" .Params.alt) }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          <button
+            aria-label="Next Slide"
+            type="button"
+            class="sliderAction slider_nav slider__next lh-none"
+          >
+            {{- partial "icon.html" (dict "name" "butter-arrow" "class"
+            "inline-block r-90") -}}
+          </button>
+          <button
+            aria-label="Previous Slide"
+            type="button"
+            class="sliderAction slider_nav slider__prev lh-none"
+          >
+            {{- partial "icon.html" (dict "name" "butter-arrow" "class"
+            "inline-block -r-90") -}}
+          </button>
         </div>
-        {{ end }}
       </div>
     </div>
-    <button aria-label="Next Slide" type="button" class="sliderAction slider_nav slider__next lh-none">
-      {{- partial "icon.html" (dict "name" "butter-arrow" "class" "inline-block r-90") -}}
-    </button>
-    <button aria-label="Previous Slide" type="button" class="sliderAction slider_nav slider__prev lh-none">
-      {{- partial "icon.html" (dict "name" "butter-arrow" "class" "inline-block -r-90") -}}
-    </button>
   </div>
-</div>
+  <div class="sectionContent balance-text">
+    You can see more in my new book:
+    <span class="book-title">Well, This Is Me</span>
   </div>
-</div>
-
-<script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+  <div class="flex justify-center items-center w-full m-4">
+    <a href="https://publishing.andrewsmcmeel.com/book/well-this-is-me/" target="_blank" rel="noopener noreferrer">
+    {{ partial "image.html" (dict "image" (resources.Get
+    "2023_book_cover.jpg") "sizes" $cartoonImageSize "alt" "The cover of 'Well, this is me', a cartoon collection from Asher Perlman.") }}
+  </a>
+  </div>
+  <div class="sectionContent balance-text">This perfect gift for every single person on the planet is out <b>June 18th</b>.</div>
+  <div class="flex justify-center items-center w-full">
+    {{ partial "image.html" (dict "image" (resources.Get .Params.image) "sizes"
+    $cartoonImageSize "alt" .Params.alt) }}
+  </div>
+  <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-<script>
-    var sliderElem = document.getElementById('cartoonsSlider');
+  <script>
+    var sliderElem = document.getElementById("cartoonsSlider");
     var slider = simpleslider.getSlider({
       container: sliderElem,
       paused: true,
-      prop: 'opacity',
+      prop: "opacity",
       duration: 0,
       init: 0,
       show: 1,
       end: 0,
-      unit: '',
+      unit: "",
     });
 
     var manager = new Hammer.Manager(sliderElem);
     var Swipe = new Hammer.Swipe();
     manager.add(Swipe);
-    manager.on('swiperight', function() {
+    manager.on("swiperight", function () {
       slider.prev();
     });
-    manager.on('swipeleft', function() {
+    manager.on("swipeleft", function () {
       slider.next();
     });
-    var sliderNext = document.querySelector('.slider__next');
-    var sliderPrev = document.querySelector('.slider__prev');
-    sliderNext.addEventListener('click', function(){
+    var sliderNext = document.querySelector(".slider__next");
+    var sliderPrev = document.querySelector(".slider__prev");
+    sliderNext.addEventListener("click", function () {
       slider.next();
-  });
-  sliderPrev.addEventListener('click', function(){
+    });
+    sliderPrev.addEventListener("click", function () {
       slider.prev();
-  });
+    });
 
-
-    document.addEventListener('keydown', function(event) {
-          var keycode = event.which || event.keyCode;
-          if(keycode === 37) {
-            sliderPrev.click();
-            sliderPrev.focus();
-          }
-          if(keycode === 39) {
-            sliderNext.click();
-            sliderNext.focus();
-          }
-        });
-        const cartoonLinks = document.querySelectorAll('.cartoonLink');
-        for (let index = 0; index < cartoonLinks.length; index++) {
-          const cartoonLink = cartoonLinks[index];
-          cartoonLink.addEventListener('click', function(){
-            slider.change(index);
-          });
-        }
-
-</script>
+    document.addEventListener("keydown", function (event) {
+      var keycode = event.which || event.keyCode;
+      if (keycode === 37) {
+        sliderPrev.click();
+        sliderPrev.focus();
+      }
+      if (keycode === 39) {
+        sliderNext.click();
+        sliderNext.focus();
+      }
+    });
+    const cartoonLinks = document.querySelectorAll(".cartoonLink");
+    for (let index = 0; index < cartoonLinks.length; index++) {
+      const cartoonLink = cartoonLinks[index];
+      cartoonLink.addEventListener("click", function () {
+        slider.change(index);
+      });
+    }
+  </script>
 </div>
-

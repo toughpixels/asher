@@ -1,10 +1,10 @@
 <header class="siteHeader">
     <h1 id="homeTitle" class="logoH1 sr-only">{{ .Title }}</h1>
-    <a href="#home" aria-labelledby="homeTitle" class="justify-center items-center logoLink logoLinkLarge">
+    <a href="#home" aria-labelledby="homeTitle" class="justify-center items-center logoLink logoLinkLarge midShadowSvg">
             {{ $logo  := resources.GetMatch "asher/asher-logo-filled.svg" }}
             {{ $logo.Content | safeHTML }}
     </a>
-    <a href="#home" aria-labelledby="homeTitle" class="items-center logoLink logoLinkSmall">
+    <a href="#home" aria-labelledby="homeTitle" class="items-center logoLink logoLinkSmall midShadowSvg">
         {{ $logo  := resources.GetMatch "asher/asher-logo-vertical.svg" }}
         {{ $logo.Content | safeHTML }}
     </a>

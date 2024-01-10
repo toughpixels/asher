@@ -3,7 +3,6 @@ id = "cartoons"
 title = "Cartoons"
 layout = "images"
 weight = 30
-imageBreakpoints = ""
 menu = "main"
 +++
 
