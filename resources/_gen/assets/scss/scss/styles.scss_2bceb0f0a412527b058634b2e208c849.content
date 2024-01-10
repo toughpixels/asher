@@ -530,7 +530,7 @@ img {
   --headerColor: #c7d2fe; }
 
 body {
-  background: pink;
+  background: var(--headerColor);
   font-size: 20px; }
 
 @media (min-width: 768px) {
