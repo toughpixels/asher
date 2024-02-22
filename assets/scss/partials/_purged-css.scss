@@ -1,20 +1,18 @@
 :root {
-  --tw-bg-opacity: 1;
   --border-width: 1px;
-  --tw-text-opacity: 1;
   --about-200: #daf8e9;
   --writings-200: #D6D4FF;
   --cartoons-200: #fbc6c4;
   --videos-200: #fdd9c0;
   --press-200: #fdf1b9;
-  --contact-200: var(--about-200);
-  --hover-link-color: var(--asher-blue);
+  --contact-200: #daf8e9;
+  --hover-link-color: rgb(47, 57, 92);
   --hover-link-dark-color: #0e0d19;
   --reward: #ddb42e;
 
-  --asher-blue: rgba(47, 57, 92, var(--tw-bg-opacity));
-  --asher-lblue: rgba(186, 216, 199, var(--tw-text-opacity));
-  --asher-pink: rgba(220, 119, 128, var(--tw-text-opacity));
+  --asher-blue: rgb(47, 57, 92);
+  --asher-lblue: rgb(186, 216, 199);
+  --asher-pink: rgb(220, 119, 128);
 
   --border-color: grey;
   --dark-border-color: black;
@@ -22,8 +20,8 @@
   --theater-border-color: rgb(90, 0, 0);
   --footer-border-radius: 20px;
 
-  --writings-800: rgba(55, 48, 163, var(--tw-text-opacity));
-  --writings-900: rgba(49, 46, 129, var(--tw-border-opacity));
+  --writings-800: rgb(55, 48, 163);
+  --writings-900: rgb(49, 46, 129);
 
 
 }
