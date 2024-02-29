@@ -98,6 +98,7 @@ body {
     sans-serif,
     'Apple Color Emoji',
     'Segoe UI Emoji';
+  font-size: 18px;
 }
 
 /*
@@ -1092,8 +1093,12 @@ html {
   grid-row: 3;
 }
 
-.support-footer {
+.contact-form {
   grid-row: 5;
+}
+
+.support-footer {
+  grid-row: 6;
 }
 
 .grid-left {
@@ -1106,6 +1111,10 @@ html {
 
 .support {
   grid-row: 4;
+}
+
+.gap-xsm {
+  gap: .5rem;
 }
 
 @media (min-width: 768px) {

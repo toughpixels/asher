@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cartoons on Asher Perlman, A Comedian</title><link>https://ashermaxperlman.com/home/cartoons/</link><description>Recent content in Cartoons on Asher Perlman, A Comedian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 26 May 2021 22:03:46 +0000</lastBuildDate><atom:link href="https://ashermaxperlman.com/home/cartoons/index.xml" rel="self" type="application/rss+xml"/><item><title>Wrong Notes</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-wrong-notes/</link><pubDate>Wed, 26 May 2021 22:03:46 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-wrong-notes/</guid><description/></item><item><title>Hemingway</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-hemingway/</link><pubDate>Wed, 26 May 2021 22:00:49 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-hemingway/</guid><description/></item><item><title>Dissappointed</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-dissappointed/</link><pubDate>Wed, 26 May 2021 21:42:39 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-dissappointed/</guid><description/></item><item><title>Pigeon Bench</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-pigeon-bench/</link><pubDate>Wed, 26 May 2021 20:51:24 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-pigeon-bench/</guid><description/></item><item><title>Sherlock</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-sherlock/</link><pubDate>Wed, 26 May 2021 20:49:22 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-sherlock/</guid><description/></item><item><title>Fantasy</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-fantasy/</link><pubDate>Wed, 26 May 2021 20:48:20 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-fantasy/</guid><description/></item><item><title>This Is Me</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-this-is-me/</link><pubDate>Wed, 26 May 2021 20:46:58 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-this-is-me/</guid><description/></item><item><title>Unicorns</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-26-unicorns/</link><pubDate>Wed, 26 May 2021 20:45:19 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-unicorns/</guid><description/></item><item><title>X-Ray Art</title><link>https://ashermaxperlman.com/home/cartoons/2021-05-25-x-ray-art/</link><pubDate>Tue, 25 May 2021 15:30:23 +0000</pubDate><guid>https://ashermaxperlman.com/home/cartoons/2021-05-25-x-ray-art/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cartoons on Asher Perlman, A Comedian</title>
+    <link>http://localhost:34563/home/cartoons/</link>
+    <description>Recent content in Cartoons on Asher Perlman, A Comedian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 May 2021 22:03:46 +0000</lastBuildDate>
+    <atom:link href="http://localhost:34563/home/cartoons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wrong Notes</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-wrong-notes/</link>
+      <pubDate>Wed, 26 May 2021 22:03:46 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-wrong-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hemingway</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-hemingway/</link>
+      <pubDate>Wed, 26 May 2021 22:00:49 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-hemingway/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dissappointed</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-dissappointed/</link>
+      <pubDate>Wed, 26 May 2021 21:42:39 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-dissappointed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pigeon Bench</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-pigeon-bench/</link>
+      <pubDate>Wed, 26 May 2021 20:51:24 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-pigeon-bench/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sherlock</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-sherlock/</link>
+      <pubDate>Wed, 26 May 2021 20:49:22 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-sherlock/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fantasy</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-fantasy/</link>
+      <pubDate>Wed, 26 May 2021 20:48:20 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-fantasy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This Is Me</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-this-is-me/</link>
+      <pubDate>Wed, 26 May 2021 20:46:58 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-this-is-me/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unicorns</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-26-unicorns/</link>
+      <pubDate>Wed, 26 May 2021 20:45:19 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-26-unicorns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>X-Ray Art</title>
+      <link>http://localhost:34563/home/cartoons/2021-05-25-x-ray-art/</link>
+      <pubDate>Tue, 25 May 2021 15:30:23 +0000</pubDate>
+      <guid>http://localhost:34563/home/cartoons/2021-05-25-x-ray-art/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 <div class="container container-contact">
   <h2 class="sectionHeader">{{ .Title }}</h2>
   <p class="lead">Follow me on social. <b>PLEASE</b>.</p>
-  <div class="pt-8 md:grid contact-grid contact">
+  <div class="pt-8 md:grid contact-grid contact gap-xsm">
     <div class="image1 rounded-highlight-image">
       {{ $image1 := .Resources.GetMatch "twitter" }}
       <a
@@ -55,6 +55,7 @@
         {{ partial "svg/big-cartel.svg" . }}
       </a>
     </div>
+    {{ partial "contactform.html" . }}
     <div
       class="full-grid-width support-wide support-footer tc m-4 lightShadowSvg"
     >
