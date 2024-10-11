@@ -1,5 +1,5 @@
 {{- $vital := resources.Get "css/vital.scss" | toCSS -}}
-{{- if not .Site.IsServer }}
+{{- if not hugo.IsServer }}
     {{- $vital := $vital | minify | fingerprint -}}
 {{ end -}}
 {{- $vitalContent := $vital.Content | safeCSS }}

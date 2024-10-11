@@ -772,6 +772,10 @@ body .pb-section {
   }
 }
 
+.h100 {
+  height: 100%;
+}
+
 .pageNav {
   height: 100%;
 }
@@ -880,6 +884,12 @@ body .pb-section {
 
 .hoverDeeperShadowSvg:hover svg, .hoverDeeperShadowSvg:focus svg {
   filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.741));
+}
+
+.splashyOutsideLink svg {
+  fill: var(--contactOutlines);
+  stroke: black;
+  stroke-width: 2px;
 }
 
 .contact-grid {
@@ -1149,7 +1159,7 @@ html {
 }
 
 .contact a {
-  display: block;
+  flex-direction: column;
   border-radius: var(--footer-border-radius);
 }
 
@@ -1584,6 +1594,11 @@ svg {
   background-color: var(--writings-200);
 }
 
+.bg-support-200 {
+  --tw-bg-opacity: 1;
+  background-color: var(--writings-200);
+}
+
 .bg-contact-200 {
   --tw-bg-opacity: 1;
   background-color: var(--contact-200);
@@ -1924,6 +1939,11 @@ svg {
   color: var(--writings-200);
 }
 
+.text-support-200 {
+  --tw-text-opacity: 1;
+  color: var(--writings-200);
+}
+
 .text-writings-800 {
   --tw-text-opacity: 1;
   color: var(--writings-800);
@@ -2112,7 +2132,6 @@ svg {
 }
 
 .supportIcon {
-  max-width: 20ch;
   padding: .5rem;
 }
 
