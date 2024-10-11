@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asher Perlman on Asher Perlman, A Comedian</title>
-    <link>https://ashermaxperlman.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Asher Perlman on Asher Perlman, A Comedian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 May 2021 22:03:46 +0000</lastBuildDate>
-    <atom:link href="https://ashermaxperlman.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 22:03:46 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writings</title>
-      <link>https://ashermaxperlman.com/home/writings/</link>
+      <link>http://localhost:1313/home/writings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/writings/</guid>
+      <guid>http://localhost:1313/home/writings/</guid>
       <description>&lt;p&gt;My writing has appeared in places like The New Yorker, McSweeney’s, and the Chicago RedEye. Here&amp;rsquo;s a taste:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Support Me</title>
-      <link>https://ashermaxperlman.com/home/shop/</link>
+      <link>http://localhost:1313/home/shop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/shop/</guid>
+      <guid>http://localhost:1313/home/shop/</guid>
       <description>&lt;p&gt;Support my dreams directly:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Wrong Notes</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-wrong-notes/</link>
-      <pubDate>Wed, 26 May 2021 22:03:46 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-wrong-notes/</guid>
+      <title>Stay Off His Lawn</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-stay-off-his-lawn/</link>
+      <pubDate>Thu, 26 Sep 2024 22:03:46 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-stay-off-his-lawn/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hemingway</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-hemingway/</link>
-      <pubDate>Wed, 26 May 2021 22:00:49 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-hemingway/</guid>
+      <title>Coffee</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-coffee/</link>
+      <pubDate>Thu, 26 Sep 2024 22:00:49 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-coffee/</guid>
       <description></description>
     </item>
     <item>
-      <title>Dissappointed</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-dissappointed/</link>
-      <pubDate>Wed, 26 May 2021 21:42:39 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-dissappointed/</guid>
+      <title>Forgetful about Fire</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-forgetful-about-fire/</link>
+      <pubDate>Thu, 26 Sep 2024 21:42:39 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-forgetful-about-fire/</guid>
       <description></description>
     </item>
     <item>
-      <title>Pigeon Bench</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-pigeon-bench/</link>
-      <pubDate>Wed, 26 May 2021 20:51:24 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-pigeon-bench/</guid>
+      <title>Judge Peril</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-judge-peril/</link>
+      <pubDate>Thu, 26 Sep 2024 20:51:24 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-judge-peril/</guid>
       <description></description>
     </item>
     <item>
-      <title>Sherlock</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-sherlock/</link>
-      <pubDate>Wed, 26 May 2021 20:49:22 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-sherlock/</guid>
+      <title>Caesar FOMO</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-caesar-fomo/</link>
+      <pubDate>Thu, 26 Sep 2024 20:49:22 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-caesar-fomo/</guid>
       <description></description>
     </item>
     <item>
-      <title>Fantasy</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-fantasy/</link>
-      <pubDate>Wed, 26 May 2021 20:48:20 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-fantasy/</guid>
+      <title>Monsters In Chicago</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-monsters-in-chicago/</link>
+      <pubDate>Thu, 26 Sep 2024 20:48:20 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-monsters-in-chicago/</guid>
       <description></description>
     </item>
     <item>
-      <title>This Is Me</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-this-is-me/</link>
-      <pubDate>Wed, 26 May 2021 20:46:58 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-this-is-me/</guid>
+      <title>Negative Self Talk</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-negative-self-talk/</link>
+      <pubDate>Thu, 26 Sep 2024 20:46:58 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-negative-self-talk/</guid>
       <description></description>
     </item>
     <item>
-      <title>Unicorns</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-26-unicorns/</link>
-      <pubDate>Wed, 26 May 2021 20:45:19 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-26-unicorns/</guid>
+      <title>Not Here, Jimmy</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-26-not-here-jimmy/</link>
+      <pubDate>Thu, 26 Sep 2024 20:45:19 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-26-not-here-jimmy/</guid>
       <description></description>
     </item>
     <item>
-      <title>X-Ray Art</title>
-      <link>https://ashermaxperlman.com/home/cartoons/2021-05-25-x-ray-art/</link>
-      <pubDate>Tue, 25 May 2021 15:30:23 +0000</pubDate>
-      <guid>https://ashermaxperlman.com/home/cartoons/2021-05-25-x-ray-art/</guid>
+      <title>Kissing Booth</title>
+      <link>http://localhost:1313/home/cartoons/2021-05-25-kissing-booth/</link>
+      <pubDate>Wed, 25 Sep 2024 15:30:23 +0000</pubDate>
+      <guid>http://localhost:1313/home/cartoons/2021-05-25-kissing-booth/</guid>
       <description></description>
     </item>
   </channel>

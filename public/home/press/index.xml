@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Press on Asher Perlman, A Comedian</title>
-    <link>https://ashermaxperlman.com/home/press/</link>
+    <link>http://localhost:1313/home/press/</link>
     <description>Recent content in Press on Asher Perlman, A Comedian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://ashermaxperlman.com/home/press/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/home/press/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
