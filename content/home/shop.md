@@ -1,6 +1,6 @@
 +++
 id = "support"
-title = "Support Me"
+title = "Merch, etc"
 weight = 55
 menu = "main"
 border = "light-grey-border"

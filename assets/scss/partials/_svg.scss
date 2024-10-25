@@ -1,0 +1,16 @@
+.shop-svg {
+    fill: black;
+}
+
+.shop-link:hover .shop-hover-neon, .shop-link:focus .shop-hover-neon {
+    fill: red;
+    filter: drop-shadow(0px 0px 1px rgb(238, 6, 6))
+    drop-shadow(0px 0px 3px #ea0f0f)
+    drop-shadow(0px 0px 8px #ff80b3)
+    drop-shadow(0px 0px 15px #ff4d94)
+    drop-shadow(0px 0px 30px #ff0066);
+}
+
+.patreon-link:hover .patreon-hover-color, .patreon-link:focus .patreon-hover-color {
+    fill: #ff5920;
+}
