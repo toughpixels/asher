@@ -1129,6 +1129,10 @@ html {
   gap: .5rem;
 }
 
+.gap-sm {
+  gap: 1rem;
+}
+
 @media (min-width: 768px) {
   .contact .image3 {
     display: block;
