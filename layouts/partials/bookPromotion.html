@@ -1,0 +1,26 @@
+{{ $bookImageSize := (slice (dict "size" 1200 "breakpoint" 1200) (dict "size"
+900 "breakpoint" 900) (dict "size" 600 "breakpoint" 600) (dict "size"
+320 "breakpoint" 320)) }}
+
+<div class="sectionContent balance-text">
+    My newest book is out September 2nd, 2025:
+    <span class="book-title">Hi, It's Me Again</span>
+</div>
+<div class="flex justify-center items-center w-full mt-4">
+    <a href="https://www.amazon.com/exec/obidos/ASIN/B0DV4MYT81" target="_blank" rel="noopener noreferrer">
+        {{ partial "image.html" (dict "image" (resources.Get "2025_book_cover.jpg") "sizes" $bookImageSize "alt" "The cover of 'Hi, it's me Again', with a large man reaching out and picking a smaller version of himself up off a city street with several other different sized selves watching.") }}
+    </a>
+</div>
+<div class="sectionContent balance-text mt-4">
+    Or step back in time to behold my first book:
+    <span class="book-title">Well, This Is Me</span>
+</div>
+<div class="flex justify-center items-center mt-4">
+    <a href="https://publishing.andrewsmcmeel.com/book/well-this-is-me/" target="_blank" rel="noopener noreferrer">
+        {{ partial "image.html" (dict "image" (resources.Get
+        "2023_book_cover.jpg") "sizes" $bookImageSize "alt" "The cover of 'Well, this is me', a cartoon collection from Asher Perlman.") }}
+    </a>
+</div>
+<div class="sectionContent balance-text mt-4">These perfect gifts for every single person on the planet are <b><a
+            href="https://www.simonandschuster.com/authors/Asher-Perlman/216496911" target="_blank">available.</a></b>
+</div>

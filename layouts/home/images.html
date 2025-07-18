@@ -67,17 +67,7 @@
       </div>
     </div>
   </div>
-  <div class="sectionContent balance-text">
-    You can see more in my new book:
-    <span class="book-title">Well, This Is Me</span>
-  </div>
-  <div class="flex justify-center items-center w-full mt-4">
-    <a href="https://publishing.andrewsmcmeel.com/book/well-this-is-me/" target="_blank" rel="noopener noreferrer">
-    {{ partial "image.html" (dict "image" (resources.Get
-    "2023_book_cover.jpg") "sizes" $cartoonImageSize "alt" "The cover of 'Well, this is me', a cartoon collection from Asher Perlman.") }}
-  </a>
-  </div>
-  <div class="sectionContent balance-text mt-4">This perfect gift for every single person on the planet is <b><a href="https://www.simonandschuster.com/books/Well-This-Is-Me/Asher-Perlman/9781524892050" target="_blank">now available</a></b>.</div>
+  {{ partial "bookPromotion.html" . }}
   <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" defer></script>
   <script>

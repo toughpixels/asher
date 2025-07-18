@@ -1,7 +1,7 @@
 +++
 id = "writings"
 title = "Writings"
-weight = 20
+weight = 43
 menu = "main"
 border = "light-grey-border"
 layout = "externalLinkTiles"
