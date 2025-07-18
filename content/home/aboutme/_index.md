@@ -6,7 +6,7 @@ menu = "main"
 layout = "left"
 [[resources]]
   src = "aboutme.jpg"
-  title = "Asher Perlman, smiling and laughing at the camera. He's a comedian who  writes scripts and cartoons."
+  title = "Asher Perlman, smiling and laughing at the camera. He's a comedian who writes scripts and cartoons."
 +++
 
 ## Hi!

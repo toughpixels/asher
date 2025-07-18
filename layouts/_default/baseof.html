@@ -3,7 +3,6 @@
     {{- partial "head.html" . -}}
     <body id="home" class="{{ .Kind }} {{ .Layout }}">
         {{- partial "header.html" . -}}
-        {{- partial "svgSymbols.svg" . -}}
         <div id="content" class="flex-1">
         {{- block "main" . }}{{- end }}
         {{- partial "modal.html" . -}}

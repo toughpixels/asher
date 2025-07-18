@@ -1,10 +1,10 @@
-{{ $bookImageSize := (slice (dict "size" 1200 "breakpoint" 1200) (dict "size"
-900 "breakpoint" 900) (dict "size" 600 "breakpoint" 600) (dict "size"
+{{ $bookImageSize := (slice (dict "size" 700 "breakpoint" 700) (dict "size"
+600 "breakpoint" 600) (dict "size" 450 "breakpoint" 450) (dict "size"
 320 "breakpoint" 320)) }}
 
 <div class="sectionContent balance-text">
     My newest book is out September 2nd, 2025:
-    <span class="book-title">Hi, It's Me Again</span>
+    <span class="book-title"><i>Hi, It's Me Again</i></span>
 </div>
 <div class="flex justify-center items-center w-full mt-4">
     <a href="https://www.amazon.com/exec/obidos/ASIN/B0DV4MYT81" target="_blank" rel="noopener noreferrer">
@@ -13,10 +13,10 @@
 </div>
 <div class="sectionContent balance-text mt-4">
     Or step back in time to behold my first book:
-    <span class="book-title">Well, This Is Me</span>
+    <span class="book-title"><i>Well, This Is Me</i></span>
 </div>
 <div class="flex justify-center items-center mt-4">
-    <a href="https://publishing.andrewsmcmeel.com/book/well-this-is-me/" target="_blank" rel="noopener noreferrer">
+    <a href="https://publishing.andrewsmcmeel.com/book/well-this-is-me/" target="_blank" rel="noopener noreferrer" class="md:w-1/2">
         {{ partial "image.html" (dict "image" (resources.Get
         "2023_book_cover.jpg") "sizes" $bookImageSize "alt" "The cover of 'Well, this is me', a cartoon collection from Asher Perlman.") }}
     </a>

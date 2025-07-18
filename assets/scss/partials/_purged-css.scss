@@ -6,6 +6,7 @@
   --videos-200: #fdd9c0;
   --press-200: #fdf1b9;
   --contact-200: #daf8e9;
+  --support-200: #fbc6c4;
   --hover-link-color: rgb(47, 57, 92);
   --hover-link-dark-color: #0e0d19;
   --reward: #ddb42e;
@@ -882,7 +883,8 @@ body .pb-section {
   filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.741));
 }
 
-.hoverDeeperShadowSvg:hover svg, .hoverDeeperShadowSvg:focus svg {
+.hoverDeeperShadowSvg:hover svg,
+.hoverDeeperShadowSvg:focus svg {
   filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.741));
 }
 
@@ -2171,7 +2173,8 @@ a:focus {
 
 .book-title {
   font-weight: 800;
-  
+
+
 }
 
 .items-baseline {
