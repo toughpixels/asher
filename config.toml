@@ -2,6 +2,7 @@ baseURL = "https://ashermaxperlman.com/"
 languageCode = "en-us"
 title = "Asher Perlman, A Comedian"
 theme = "base"
+timeout = "240s"
 [params]
   description = "Asher is an Emmy-nominated, WGA award-winning, Peabody-award winning comedian, writer, actor, cartoonist, and hyphen-hunting multi-hyphenate."
   images = ["preview.jpg"]
