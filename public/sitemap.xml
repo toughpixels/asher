@@ -4,12 +4,18 @@
   <url>
     <loc>http://localhost:1313/home/landing/</loc>
   </url><url>
-    <loc>http://localhost:1313/shop/shopify/</loc>
+    <loc>http://localhost:1313/home/shop/shopify/</loc>
   </url><url>
     <loc>http://localhost:1313/home/aboutme/</loc>
   </url><url>
+    <loc>http://localhost:1313/home/shop/patreon/</loc>
+  </url><url>
     <loc>http://localhost:1313/home/cartoons/</loc>
     <lastmod>2024-09-26T22:03:46+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/home/shop/substack/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/shop/books/</loc>
   </url><url>
     <loc>http://localhost:1313/home/videos/</loc>
   </url><url>
@@ -17,7 +23,7 @@
   </url><url>
     <loc>http://localhost:1313/home/press/</loc>
   </url><url>
-    <loc>http://localhost:1313/shop/</loc>
+    <loc>http://localhost:1313/home/shop/</loc>
   </url><url>
     <loc>http://localhost:1313/home/contact/</loc>
   </url><url>

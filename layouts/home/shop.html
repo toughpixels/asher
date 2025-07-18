@@ -1,0 +1,8 @@
+<div class="container container-contact balance-text">
+  <h2 class="sectionHeader">{{ .Title }}</h2>
+  <div class="md:grid contact-grid contact gap-md">
+    {{ range .Pages }}
+      {{ partial "merch-item.html" . }}
+    {{ end }}
+  </div>
+</div>

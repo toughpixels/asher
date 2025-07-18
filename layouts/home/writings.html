@@ -1,0 +1,17 @@
+<div class="container pb-section">
+    <h2 class="sectionHeader mt-4">{{ .Title }}</h2>
+    <div class="sectionContent">
+        {{ .Content }}
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mt-4 items-baseline">
+        {{ range $item := .Params.tiles }}
+        {{ $logoName := $item.logo}}
+        <a href="{{ $item.url }}" class="linkTile external-link flex flex-col text-center relative" target="_blank">
+            {{- partial "logo" (dict "logoName" $logoName ) -}}
+            <h3 class="mb-4 text-2xl font-bold">
+                {{ $item.title }}
+            </h3>
+        </a>
+        {{ end }}
+    </div>
+</div>
