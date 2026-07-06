@@ -4,7 +4,9 @@ title = "Praise"
 weight = 45
 menu = "main"
 layout = "alternategrid"
+header = "Here are some nice things people have said about me and my work:"
 +++
+
 “PERLMAN IS MEDDLING IN GOD’S DOMAIN.” {{<  attribute "Patton Oswalt" >}}
 
 “My favorite cartoonist." {{<  attribute "Bowen Yang" >}}
