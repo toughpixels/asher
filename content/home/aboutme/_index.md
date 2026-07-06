@@ -11,7 +11,7 @@ layout = "left"
 
 ## Hi!
 
-I am an Emmy-nominated, WGA award-winning, Peabody Award-winning comedian, writer, cartoonist, and best-selling author.
+I am an Emmy-nominated, WGA Award-winning, Peabody Award-winning comedian, writer, cartoonist, and best-selling author.
 
 Until recently, I was a writer/performer on *The Late Show with Stephen Colbert*, where I famously [couldn’t dunk a basketball](https://www.youtube.com/watch?v=Hn21Ci3Sqj4 "YouTube: Stephen Colbert’s “Prove It!” - Can Asher Perlman Dunk A Basketball?"). I am currently a cartoonist at [*The New Yorker*](https://condenaststore.com/art/asher+perlman?searchType=artistname "Conde Nast Page for Asher Perlman"), a performer with the Improvised Shakespeare Company, and a touring comic. On the road, I’ve played sold-out shows everywhere from iconic comedy venues like The Bell House to enormous performing arts centers like The Kennedy Center.
 
