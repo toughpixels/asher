@@ -4,17 +4,8 @@
     {{- $sizes := .sizes -}}
     {{- $breakpoints := .breakpoints -}}
     {{- $formats := slice "webp" "jpeg" -}}
-    {{- $defaultImage := $image -}}
-    {{- with $image.Exif -}}
-        {{- $orientation  := .Tags.Orientation -}}
-        {{- if in (slice 3 4) $orientation -}}
-            {{ $rotation = " r180" }}
-        {{- else if in (slice 5 6) $orientation -}}
-            {{ $rotation = " r270" }}
-        {{- else if in (slice 7 8) $orientation -}}
-            {{ $rotation = " r90" }}
-        {{- end -}}
-    {{- end -}}
+    {{ $filter := images.AutoOrient }}
+    {{- $defaultImage := $image | images.Filter $filter -}}
     {{- range $sizes -}}
     {{- $size := .size -}}
     {{- $breakpoint := .breakpoint -}}
