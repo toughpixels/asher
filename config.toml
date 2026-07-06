@@ -1,5 +1,5 @@
 baseURL = "https://ashermaxperlman.com/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Asher Perlman, A Comedian"
 theme = "base"
 timeout = "240s"
