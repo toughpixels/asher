@@ -1,14 +1,35 @@
 +++
 id = "press"
-title = "Press"
+title = "Praise"
 weight = 45
 menu = "main"
 layout = "alternategrid"
 +++
-"one of today's great New Yorker cartoonists" {{<  logo "npr.svg" >}}
+“PERLMAN IS MEDDLING IN GOD’S DOMAIN.” {{<  attribute "Patton Oswalt" >}}
 
-"Very smart work from an unselfish player." {{<  logo "tribune.svg" >}}
+“My favorite cartoonist." {{<  attribute "Bowen Yang" >}}
 
-"a powerhouse." {{<  logo "chicago-reader.svg" >}}
+“...in my fantasy version of myself, I am Asher Perlman.” {{<  attribute "John Dickerson" >}}
 
-"standout… armed with a dry sense of humor" {{<  logo "tribune.svg" >}}
+“Asher Perlman makes your favorite comic’s favorite comics.” {{<  attribute "Nikki Glaser" >}}
+
+“Asher Perlman belongs to the great American Tradition of the Deadpan.” {{<  attribute "Michael McKean" >}}
+
+“Hilariously perceptive of life’s mundane tragedies.” {{<  attribute "Jordan Klepper" >}}
+
+"At once hilarious and plaintive” {{<  attribute "Ed Helms" >}}
+
+“\[H\]ilarious, fresh, and brilliant… I am in awe.” {{<  attribute "Roz Chast" >}}
+
+“Asher Perlman can do in one frame what I need two hours and seventeen minutes to accomplish half as well! Insightful, human and hilarious.” {{<  attribute "Judd Apatow" >}}
+
+“\[V\]ery funny \[and\] keenly attuned to the inherent strangeness of existence.”
+ {{<  attribute "Stephen Colbert" >}}
+
+“Asher Perlman’s cartoons are the kind of funny that make you question what it is to be a person, but in a good way.”  {{<  attribute "Ben Stiller" >}}
+
+“\[L\]augh-out-loud funny.” {{<  attribute "Amber Ruffin" >}}
+
+“Asher Perlman’s comics are pure gold.” {{<  attribute "Rian Johnson" >}}
+
+“Asher Perlman is the James Joyce of cartooning.” {{<  attribute "Paul Feig" >}}

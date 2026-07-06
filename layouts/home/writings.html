@@ -3,10 +3,10 @@
     <div class="sectionContent">
         {{ .Content }}
     </div>
-    <div class="grid md:grid-cols-2 gap-4 mt-4 items-baseline">
+    <div class="grid md:grid-cols-2 gap-4 mt-4 vertical-middle">
         {{ range $item := .Params.tiles }}
         {{ $logoName := $item.logo}}
-        <a href="{{ $item.url }}" class="linkTile external-link flex flex-col text-center relative" target="_blank">
+        <a href="{{ $item.url }}" class="linkTile vertical-middle external-link flex flex-col text-center relative align-middle" target="_blank">
             {{- partial "logo" (dict "logoName" $logoName ) -}}
             <h3 class="mb-4 text-2xl font-bold">
                 {{ $item.title }}

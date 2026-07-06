@@ -12,4 +12,4 @@ tiles = [
     ]
 +++
 
-My writing has appeared in places like The New Yorker, McSweeney’s, and the Chicago RedEye. Here's a taste:
+I’ve written humor pieces for places like *The New Yorker* and *McSweeney’s*.
