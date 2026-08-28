@@ -1,9 +1,9 @@
 ---
-title: Detroit
-venue: Go Comedy
-description: "With very special guest: Adam Peacock (“I Think You Should Leave”)"
-purchase_link: https://www.crowdwork.com/e/asher-perlman?date=2026-08-02T19:30:00
-date: 2026-08-02
-sold_out_boolean: true
+title: Nashville
+venue: Third Coast Comedy Club
+description: Postponed!! New Date Coming Soon!
+purchase_link: https://www.eventbrite.com/e/asher-perlman-back-to-the-drawing-board-tickets-1992161306094
+date: 2026-09-11
+sold_out_boolean: false
 visible: true
 ---
