@@ -14,6 +14,7 @@ collections:
       preview: false
     fields:
       - { label: 'Location, appears as title', name: 'title', widget: 'string' }
+      - { label: 'Event Venue', name: 'venue', widget: 'string', required: false }      
       - { label: 'Description of the event', name: 'description', widget: 'string', required: false }
       - { label: 'Ticket purchase link', name: 'purchase_link', widget: 'string' }
       - { label: 'Event date', name: 'date', widget: 'datetime', date_format: "YYYY-MM-DD" }
