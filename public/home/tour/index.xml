@@ -10,13 +10,22 @@
 		
 		
 		
+			<lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/home/tour/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Chicago</title>
 				<link>http://localhost:1313/home/tour/stops/2026-07-26-chicago/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/home/tour/stops/2026-07-26-chicago/</guid>
 				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>http://localhost:1313/home/tour/after/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/home/tour/after/</guid>
+				<description>&lt;p&gt;I’m also booking dates in Madison, Pittsburgh, Philly, Memphis, Los Angeles, and Austin. If you’re in one of those places, fill out the aforementioned form or email me at &lt;a href=&#34;mailto:cartoonsbyasher@gmail.com&#34;&gt;cartoonsbyasher@gmail.com&lt;/a&gt; and I’ll add you to the pre-sale list.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

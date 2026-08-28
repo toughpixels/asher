@@ -16,7 +16,7 @@ collections:
       - { label: 'Location, appears as title', name: 'title', widget: 'string' }
       - { label: 'Description of the event', name: 'description', widget: 'string', required: false }
       - { label: 'Ticket purchase link', name: 'purchase_link', widget: 'string' }
-      - { label: 'Event date', name: 'date', widget: 'datetime', date_format: "MM.DD.YYYY" }
+      - { label: 'Event date', name: 'date', widget: 'datetime', date_format: "YYYY-MM-DD" }
       - { label: 'Sold Out?', name: 'sold_out_boolean', widget: 'boolean', default: false }      
       - { label: 'Custom sold out description', name: 'sold_out_description', widget: 'string', required: false }
   - name: 'cartoons'
