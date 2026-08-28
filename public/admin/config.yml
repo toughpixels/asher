@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: tour # Branch to update (optional; defaults to master)
 media_folder: assets/cartoons/
 public_folder: cartoons/
 collections:
@@ -25,6 +25,8 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Quick description of the action or premise of the image', name: 'alt', widget: 'string' }
-      - { label: 'Date (Images are ordered newest to oldest)', name: 'date', widget: 'datetime' }
+      - { label: 'Quick description of the event', name: 'description', widget: 'string' }
+      - { label: 'Ticket purchase link', name: 'purchase_link', widget: 'string' }
+      - { label: 'Event Date', name: 'date', widget: 'datetime' }
+      - { label: 'Sold Out?', name: 'sold_out_boolean', widget: 'boolean', default: false }      
+      - { label: 'Custom Sold Out Description', name: 'sold_out_description', widget: 'string' }
