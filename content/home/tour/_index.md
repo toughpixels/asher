@@ -1,7 +1,7 @@
 +++
 id = "tours"
 title = "Upcoming Shows"
-layout = "images"
+layout = "tour"
 weight = 30
 menu = "main"
 visible = false

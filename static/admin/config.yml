@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
   branch: tour # Branch to update (optional; defaults to master)
-media_folder: assets/cartoons/
-public_folder: cartoons/
+media_folder: assets/
+public_folder: static/
 collections:
   - name: 'tours'
     label: 'Tour Dates'
-    folder: 'content/home/tour/'
+    folder: 'content/home/tour/stops'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     filter: {field: "visible", value: true}
@@ -19,10 +19,11 @@ collections:
       - { label: 'Event date', name: 'date', widget: 'datetime', date_format: "MM.DD.YYYY" }
       - { label: 'Sold Out?', name: 'sold_out_boolean', widget: 'boolean', default: false }      
       - { label: 'Custom sold out description', name: 'sold_out_description', widget: 'string', required: false }
-      - {name: visible, widget: hidden, default: true, i18n: duplicate}
   - name: 'cartoons'
     label: 'Cartoons'
     folder: 'content/home/cartoons/'
+    media_folder: assets/cartoons/
+    public_folder: cartoons/
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     filter: {field: "visible", value: true}
