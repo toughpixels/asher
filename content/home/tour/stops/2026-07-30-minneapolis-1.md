@@ -1,8 +1,8 @@
 ---
-title: Minneapolis
-venue: Sisyphus Brewing
-purchase_link: https://www.sisyphusbrewing.com/pages/events
-date: 2026-07-30
-sold_out_boolean: false
+title: Brooklyn
+venue: Union Hall
+purchase_link: https://www.eventbrite.com/e/asher-perlman-back-to-the-drawing-board-tickets-1992161306094
+date: 2026-08-10
+sold_out_boolean: true
 visible: true
 ---
