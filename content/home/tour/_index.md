@@ -1,6 +1,6 @@
 +++
-id = "cartoons"
-title = "Cartoons"
+id = "tours"
+title = "Upcoming Shows"
 layout = "images"
 weight = 30
 menu = "main"
