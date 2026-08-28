@@ -1,10 +1,11 @@
 +++
-id = "tours"
-title = "Upcoming Shows"
+id = "tour"
+title = "Shows"
 layout = "tour"
-weight = 30
+weight = 33
 menu = "main"
 visible = false
 +++
 
-My cartoons regularly appear in [*The New Yorker*](https://www.newyorker.com/contributors/asher-perlman "Asher Perlman's New Yorker Contributor Page"), *Alta Journal*, and *Airmail*. In 2026, I became the first-ever cartoonist-in-residence for *Playboy*. You can see all of my work on [Instagram](https://www.instagram.com/asherperlman "Asher Perlman's Collection of Comics on Instagram"), but here’s a taste:
+Here are the upcoming live shows I have planned. If your city is sold out or it’s not on the schedule, fill out [*THIS form*](https://forms.gle/g9N12y2EfcxqtEw5A "Help Guide Asher's Tour"). I’ll use that info to figure out where I should go next (or return to).
+

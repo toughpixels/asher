@@ -1,4 +1,23 @@
-<div class="container py-yGap prose">
-    <h2 class="sectionHeader">{{ .Params.title }}</h2>
-    {{ .Content }}
+<div class="container balance-text">
+    <h2 class="sectionHeader">{{ .Title }}</h2>
+    <div class="sectionContent mb-4">
+        {{ .Content }}
+    </div>
+    <div class="md:grid gap-md tour-grid contact mb-4"> 
+        {{ $stops := .GetPage "/home/tour/stops" }}
+        {{ with $stops }}
+        {{ $stops := $stops.Resources.ByType "page" }}
+        {{ $upcomingStops := where $stops "Date" "lt" now}}
+            {{ range $upcomingStops }}
+                {{ .Render "stop" }}
+            {{ end }}
+        {{ end }}
+    </div>
+    {{ with .RegularPages }}
+    {{ range . }}
+        <div class="sectionContent mb-4">
+        {{ .Content }}
+        </div>
+    {{ end }}
+    {{ end }}
 </div>

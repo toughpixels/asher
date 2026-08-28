@@ -1,0 +1,12 @@
+<div class="tc sectionContent">
+    <h3 class="book-title underline">{{.Title}}</h3>
+    <div class="mb-2">{{.Date | time.Format ":date_medium"}}</div>
+    {{ with .Param "description" }}
+        <div class="mb-2">{{ . }} </div>        
+    {{ end }}
+    {{ if .Param "sold_out" }}
+        <a href="{{ .Param "purchase_link" }}">Buy Tickets Here</a>
+    {{ else }}
+        <div>Sold Out.</div>
+    {{ end }}
+</div>
