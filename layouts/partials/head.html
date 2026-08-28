@@ -5,6 +5,7 @@
   <title>{{ .Site.Title }}</title>
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
   <meta name="author" content="Asher Perlman">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {{ template "_internal/opengraph.html" . }}
   {{- partial "cssCompile.html" . -}}
   {{- partial "favicons.html" . -}}
