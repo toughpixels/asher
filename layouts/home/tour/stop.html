@@ -5,7 +5,7 @@
             at <i>{{ . }}</i>
         {{ end }}
     </div>
-    {{ with .Param "description" }}
+    {{ with .Param "show_description" }}
         <div class="mb-2">{{ . }}</div>        
     {{ end }}
     {{ if .Param "sold_out" }}
