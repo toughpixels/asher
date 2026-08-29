@@ -3,15 +3,17 @@
     <div class="sectionContent mb-4">
         {{ .Content }}
     </div>
-    <div class="md:grid gap-md tour-grid contact mb-4"> 
-        {{ $stops := .GetPage "/home/tour/stops" }}
-        {{ with $stops }}
-        {{ $stops := $stops.Resources.ByType "page" }}
-        {{ $upcomingStops := where $stops "Date" "lt" now}}
-            {{ range $upcomingStops }}
-                {{ .Render "stop" }}
+    <div class="sectionContent">
+        <div class="flex-column align-left mb-4 unaligned-lead"> 
+            {{ $stops := .GetPage "/home/tour/stops" }}
+            {{ with $stops }}
+            {{ $stops := $stops.Resources.ByType "page" }}
+            {{ $upcomingStops := where $stops "Date" "lt" now}}
+                {{ range $upcomingStops }}
+                    {{ .Render "stop" }}
+                {{ end }}
             {{ end }}
-        {{ end }}
+        </div>
     </div>
     {{ with .RegularPages }}
     {{ range . }}
