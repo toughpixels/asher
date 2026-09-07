@@ -1,4 +1,4 @@
-<div class="container balance-text">
+<div class="container">
     <h2 class="sectionHeader">{{ .Title }}</h2>
     <div class="sectionContent mb-4">
         {{ .Content }}
@@ -8,8 +8,8 @@
             {{ $stops := .GetPage "/home/tour/stops" }}
             {{ with $stops }}
             {{ $stops := $stops.Resources.ByType "page" }}
-            {{ $upcomingStops := where $stops "Date" "lt" now}}
-                {{ range $upcomingStops }}
+            {{ $upcomingStops := where $stops "Date" "ge" now}}
+                {{ range sort $upcomingStops "Date" "asc" }}
                     {{ .Render "stop" }}
                 {{ end }}
             {{ end }}

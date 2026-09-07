@@ -1576,7 +1576,7 @@ svg {
   animation: spin 1.5s linear infinite;
   animation-play-state: paused; }
 
-.stop-list-marker:hover::before, .stop-list-marker:hover::after {
+.stop-list-marker:hover::before, .stop-list-marker::after {
   /* Unpauses the loop without resetting position */
   animation-play-state: running; }
 

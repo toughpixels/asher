@@ -1,11 +1,10 @@
 +++
 id = "tour"
-title = "Shows"
+title = "Live Shows"
 layout = "tour"
 weight = 33
 menu = "main"
 visible = false
 +++
 
-Here are the upcoming live shows I have planned. If your city is sold out or it’s not on the schedule, fill out [*THIS form*](https://forms.gle/g9N12y2EfcxqtEw5A "Help Guide Asher's Tour"). I’ll use that info to figure out where I should go next (or return to).
-
+I tour all over the country. If you’d like me to visit your city, let me know by filling out [THIS](https://docs.google.com/forms/d/e/1FAIpQLSd3toFVu3TPwk4Vmt1manB-rsqpFzAmhruHo60N-P98budvWg/viewform "Submit a Request For Asher to Visit Your City") form.
