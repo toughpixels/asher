@@ -1567,7 +1567,7 @@ svg {
   to {
     transform: rotate(360deg); } }
 
-.stop-list-marker::before, .stop-list-marker::after {
+.stop-list-marker::before {
   content: "✦";
   color: var(--asher-blue);
   display: inline-block;
@@ -1576,7 +1576,7 @@ svg {
   animation: spin 1.5s linear infinite;
   animation-play-state: paused; }
 
-.stop-list-marker:hover::before, .stop-list-marker:hover::after {
+.stop-list-marker:hover::before {
   /* Unpauses the loop without resetting position */
   animation-play-state: running; }
 
