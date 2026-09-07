@@ -2036,6 +2036,7 @@ svg {
   /* Always active, but paused by default */
   animation: spin 1.5s linear infinite;
   animation-play-state: paused;
+  margin-right: .5rem;
 }
 
 .stop-list-marker:hover::before {
