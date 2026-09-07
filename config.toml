@@ -1,4 +1,4 @@
-baseURL = "https://www.asherperlman.com/"
+baseURL = "https://asherperlman.netlify.app/"
 locale = "en-us"
 title = "Asher Perlman, A Comedian"
 theme = "base"
