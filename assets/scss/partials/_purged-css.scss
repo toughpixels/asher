@@ -1729,6 +1729,7 @@ svg {
 
 .logoLinkSmall {
   display: flex;
+  margin-left: .5rem;
 }
 
 .logoLinkLarge {
@@ -1999,6 +2000,7 @@ svg {
 }
 
 .text-writings-200 {
+
   --tw-text-opacity: 1;
   color: var(--writings-200);
 }

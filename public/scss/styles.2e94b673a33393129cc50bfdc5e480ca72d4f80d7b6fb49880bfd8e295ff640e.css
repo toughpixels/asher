@@ -1333,7 +1333,7 @@ svg {
 
 .logoLinkSmall {
   display: flex;
-  margin-left: .5rem; }
+  margin-left: .25rem; }
 
 .logoLinkLarge {
   display: none; }

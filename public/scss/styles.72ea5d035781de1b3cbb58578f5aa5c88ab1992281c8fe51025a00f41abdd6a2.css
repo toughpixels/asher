@@ -684,7 +684,8 @@ body .pb-section {
   font-size: 2.25rem;
   line-height: 2.5rem;
   --tw-text-opacity: 1;
-  color: rgba(186, 216, 199, var(--tw-text-opacity)); }
+  color: rgba(186, 216, 199, var(--tw-text-opacity));
+  margin-left: .25rem; }
 
 .logoLink svg {
   width: 90%;
@@ -1332,8 +1333,7 @@ svg {
   display: block; }
 
 .logoLinkSmall {
-  display: flex;
-  margin-left: .5rem; }
+  display: flex; }
 
 .logoLinkLarge {
   display: none; }
