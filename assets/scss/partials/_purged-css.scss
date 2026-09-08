@@ -10,6 +10,7 @@
   --hover-link-color: rgb(47, 57, 92);
   --hover-link-dark-color: #0e0d19;
   --reward: #ddb42e;
+  --tour-200: #7F9A85;
 
   --asher-blue: rgb(47, 57, 92);
   --asher-lblue: rgb(186, 216, 199);
@@ -520,6 +521,10 @@ img {
   }
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .prose {
   color: #374151;
   max-width: 65ch;
@@ -898,6 +903,19 @@ body .pb-section {
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 320px));
     justify-content: center;
+  }
+}
+
+.tour-grid {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 320px));
+    justify-content: center;
+  }
+}
+
+.tour-grid> :first-child {
+  @media (min-width: 768px) {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1281,6 +1299,14 @@ h2 {
   font-weight: bold;
 }
 
+.unaligned-lead {
+  max-width: 57rem;
+  font-size: 1.5rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
 .lead {
   max-width: 57rem;
   margin-right: auto;
@@ -1589,6 +1615,11 @@ svg {
   background-color: var(--about-200);
 }
 
+.bg-tour-200 {
+  --tw-bg-opacity: 1;
+  background-color: var(--tour-200);
+}
+
 .bg-cartoons-200 {
   --tw-bg-opacity: 1;
   background-color: var(--cartoons-200);
@@ -1622,6 +1653,11 @@ svg {
 .hover\:bg-about-200:hover {
   --tw-bg-opacity: 1;
   background-color: var(--about-200);
+}
+
+.hover\:bg-tour-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: var(--tour-200);
 }
 
 .hover\:bg-cartoons-200:hover {
@@ -1693,6 +1729,7 @@ svg {
 
 .logoLinkSmall {
   display: flex;
+  margin-left: .5rem;
 }
 
 .logoLinkLarge {
@@ -1796,6 +1833,14 @@ svg {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: .5rem;
 }
 
 .mt-8 {
@@ -1934,6 +1979,11 @@ svg {
   color: var(--about-200);
 }
 
+.text-tour-200 {
+  --tw-text-opacity: 1;
+  color: var(--tour-200);
+}
+
 .text-cartoons-200 {
   --tw-text-opacity: 1;
   color: var(--cartoons-200);
@@ -1950,6 +2000,7 @@ svg {
 }
 
 .text-writings-200 {
+
   --tw-text-opacity: 1;
   color: var(--writings-200);
 }
@@ -1972,6 +2023,27 @@ svg {
 .hover\:text-default:hover {
   --tw-text-opacity: 1;
   color: rgba(29, 31, 32, var(--tw-text-opacity));
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.stop-list-marker::before {
+  content: "✦";
+  color: var(--asher-blue);
+  display: inline-block; /* Required for transform/animation to work */
+  
+  /* Always active, but paused by default */
+  animation: spin 1.5s linear infinite;
+  animation-play-state: paused;
+  margin-right: .5rem;
+}
+
+.stop-list-marker:hover::before {
+  /* Unpauses the loop without resetting position */
+  animation-play-state: running;
 }
 
 .align-top {
@@ -2036,6 +2108,18 @@ svg {
 
 .auto-rows-fr {
   grid-auto-rows: minmax(0, 1fr);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .2rem;
+}
+
+.align-left {
+  align-items: left;
+  text-align: left;
 }
 
 .transform {

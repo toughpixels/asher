@@ -1,0 +1,26 @@
+{{ if .Param "sold_out_boolean" }}
+    <div class="mb-2 ml-4 stop-list-marker">
+{{ else }}
+    <a class="mb-2 ml-4 stop-list-marker stop-list-link" href='{{ .Param "purchase_link" }}'>
+{{ end }}
+    {{ if ne .Date.Year now.Year }}
+        <span>{{ .Date.Format "Jan 2, 06" }}</span>
+    {{ else }}
+        <span>{{.Date | time.Format "Jan 2"}}</span>
+    {{ end }}
+    <span> - </span>
+    <span class="book-title">{{.Title}}</span>
+    <span> - </span>
+    {{ with .Param "venue" }}
+        <span><i>{{ . }}.</i></span>
+    {{ end }}
+    {{ with .Param "show_description" }}
+        <span> {{ . }}</span>
+    {{ end }}
+{{ if .Param "sold_out_boolean" }}
+        <span> | </span>
+        <span>SOLD OUT</span>
+    </div>
+{{ else }}
+    </a>
+{{ end }}

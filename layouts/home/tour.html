@@ -1,0 +1,25 @@
+<div class="container">
+    <h2 class="sectionHeader">{{ .Title }}</h2>
+    <div class="sectionContent mb-4">
+        {{ .Content }}
+    </div>
+    <div class="sectionContent">
+        <div class="flex-column align-left mb-4 unaligned-lead"> 
+            {{ $stops := .GetPage "/home/tour/stops" }}
+            {{ with $stops }}
+            {{ $stops := $stops.Resources.ByType "page" }}
+            {{ $upcomingStops := where $stops "Date" "ge" now}}
+                {{ range sort $upcomingStops "Date" "asc" }}
+                    {{ .Render "stop" }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    {{ with .RegularPages }}
+    {{ range . }}
+        <div class="sectionContent mb-4">
+        {{ .Content }}
+        </div>
+    {{ end }}
+    {{ end }}
+</div>

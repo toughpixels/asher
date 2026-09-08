@@ -1,14 +1,34 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-media_folder: assets/cartoons/
-public_folder: cartoons/
+  branch: tour # Branch to update (optional; defaults to master)
+media_folder: assets/
+public_folder: static/
 collections:
+  - name: 'tours'
+    label: 'Tour Dates'
+    folder: 'content/home/tour/stops'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    filter: {field: "visible", value: true}
+    editor:
+      preview: false
+    fields:
+      - { label: 'Location, appears as title', name: 'title', widget: 'string' }
+      - { label: 'Event Venue', name: 'venue', widget: 'string', required: false }      
+      - { label: 'Description of the event', name: 'show_description', widget: 'string', required: false }
+      - { label: 'Ticket purchase link', name: 'purchase_link', widget: 'string' }
+      - { label: 'Event date', name: 'date', widget: 'datetime', date_format: "YYYY-MM-DD" }
+      - { label: 'Sold Out?', name: 'sold_out_boolean', widget: 'boolean', default: false }      
+      - { label: 'Custom sold out description', name: 'sold_out_description', widget: 'string', required: false }
+      - {name: visible, widget: hidden, default: true, i18n: duplicate}
   - name: 'cartoons'
     label: 'Cartoons'
     folder: 'content/home/cartoons/'
+    media_folder: assets/cartoons/
+    public_folder: cartoons/
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    filter: {field: "visible", value: true}
     editor:
       preview: false
     fields:
@@ -16,3 +36,4 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Quick description of the action or premise of the image', name: 'alt', widget: 'string' }
       - { label: 'Date (Images are ordered newest to oldest)', name: 'date', widget: 'datetime' }
+      - {name: visible, widget: hidden, default: true, i18n: duplicate}
