@@ -1,7 +1,7 @@
 {{ if .Param "sold_out_boolean" }}
     <div class="mb-2 ml-4 stop-list-marker">
 {{ else }}
-    <a class="mb-2 ml-4 stop-list-marker stop-list-link" href="{{ .Param " purchase_link" }}">
+    <a class="mb-2 ml-4 stop-list-marker stop-list-link" href='{{ .Param "purchase_link" }}'>
 {{ end }}
     {{ if ne .Date.Year now.Year }}
         <span>{{ .Date.Format "Jan 2, 06" }}</span>
